@@ -1,0 +1,118 @@
+.background_image_portfolio {
+     background: url("../assets/Portfolio_Banner-min.png") center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.background_image_portfolio:before {
+         content: "";
+  position: absolute;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+ background-color: rgba(51, 87, 130, 0.85);
+}
+.portfolio_banner_content {
+	text-align: center;
+	color: #fff;
+}
+.portfolio_sub_section {
+	padding: 0 15%;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 1.3rem
+}
+.portfolio-subheading p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0 18%;
+}
+.portfolio_rectangle {
+	    background: #f1f9ff;
+    padding: 2rem;
+    width: 349px;
+    height: 340px;
+    border-top: 2px solid #f7f7f7;
+}
+.new_portfolio_flex_container_display {
+     display: inherit;
+}
+.new_portfolio_rectangle {
+    /* opacity: 0.95; */
+    background-color: #fafafa;
+    border: 1px solid #d5d3d3;
+    padding: 2rem 4rem;
+    /* width: 306px; */
+    height: 290px;
+    position: absolute;
+    bottom: 100%;
+    /* z-index: 2; */
+    width: 101%;
+    /* margin-top: -306px;*/        
+    height: 720px;
+
+}
+.new_portfolio_rectangle .lni-close{
+   font-size: 28px;
+    width: 25px;
+    height: 27px;
+    /*background-color: #fff;*/
+    /*border-radius: 50%;*/
+    position: relative;
+    top: -5px;
+    /*right: 30px;*/
+    float: right;
+    cursor: pointer;
+    /*background-size: 24px 24px;*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center center;*/
+   color: #11193e;
+  }
+  .new_portfolio_rectangle .new_portfolio_content {
+    padding: 0 8rem;
+    color: #4a4a4a;
+    line-height: 1.5rem;
+  }
+
+.portfolio_rectangle .crm_img_class_margin {
+    margin-top: 15%;
+}
+.portfolio_rectangle .manhatan_img_margin {
+    margin-top: 21%;
+}
+.portfolio_rectangle:hover {
+	    border-top-color: #28508b;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.15);
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    cursor: pointer; 
+}
+.portfolio_rectangle img {
+	    margin: 0 auto;
+    display: block;
+    margin-top: 35%;
+}
+@media only screen and (min-width : 320px) and (max-width : 764px) {
+    .portfolio_rectangle {
+        width: auto;
+        height: auto;
+    }
+    .portfolio_rectangle img {
+    margin-top: 0;
+    }
+    .portfolio_rectangle .crm_img_class_margin {
+    margin-top: 0;
+}
+.portfolio_rectangle .manhatan_img_margin {
+    margin-top: 0;
+}
+
+}
+/*@media only screen and (min-width : 320px) and (max-width : 480px) {
+	   .portfolio_rectangle {
+    margin : 10px 0;
+}
+}
+@media only screen and (min-width : 760px) and (max-width : 900px) {
+	.portfolio_rectangle {
+		margin : 0 10px;
+	}
+
+}*/

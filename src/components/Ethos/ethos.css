@@ -1,0 +1,149 @@
+@import url('https://cdn.lineicons.com/2.0/LineIcons.css');
+.background_image_ethos_main {
+	  background: url("../assets/Ethos_Banner-min.png") center center no-repeat;
+  background-size: cover;
+  position: relative;
+  /*height: 100vh;*/
+}
+.background_image_ethos_main:before {
+	 content: "";
+  position: absolute;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+ background-color: rgba(51, 87, 130, 0.85);
+}
+.ethos_seperate_component_data {
+	color: #28508b;
+}
+.ethos-framework-para p {
+	font-size: 1.8rem;
+	font-weight: 600;
+	color: #4a4a4a;
+}
+.ethos_banner_heading {
+	letter-spacing: normal;
+	font-weight: 600;
+}
+.ethos_sub_section {
+	padding: 0 10%;
+	text-align: center;
+	letter-spacing: 1px;
+}
+.expansion_rectangle {
+	background: #f1f9ff;
+	padding : 2rem;
+	width: 306px;
+	/*height: 290px;*/
+	border-top: 2px solid #f7f7f7;
+	margin : 10px;
+}
+.new_expansion_rectangle {
+      width: 100%;
+    margin-top: 0;
+    position: absolute;
+    bottom: 100%;
+    /*background: #28508b;*/
+    /*border-top: 2px solid #f7f7f7;*/
+      background: url("../assets/Ethos_Banner-min.png") center center no-repeat;
+  background-size: cover;
+  position: relative;
+    color: #fff;
+    padding : 2rem;
+        height: 555px;
+}
+.new_expansion_rectangle:before {
+     content: "";
+  position: absolute;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+ background-color: rgba(18, 27, 66, 0.9);
+}
+.new_expansion_rectangle .lni-close{
+   font-size: 28px;
+    width: 25px;
+    height: 27px;
+    /*background-color: #fff;*/
+    /*border-radius: 50%;*/
+    position: relative;
+    top: -5px;
+    /*right: 30px;*/
+    float: right;
+    cursor: pointer;
+    /*background-size: 24px 24px;*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center center;*/
+    color: #fff;
+  }
+  .new_expansion_rectangle .ethos_seperate_component_data {
+    color: #fff;
+  }
+.new_flex_container_display {   
+ display: inherit;
+    /*opacity: 0.8;*/
+    width: 59%;
+    margin-left: 21%;
+}
+.expansion_rectangle .ethos-content {
+	color: #28508b;
+}
+.expansion_rectangle .fa-angle-right {
+	padding-left: 30px;
+}
+.expansion_rectangle .Path-2-Copy-3 {
+
+  width: 12px;
+
+  height: 7px;
+
+  object-fit: contain;
+
+  transform: rotate(90deg);
+
+  border: solid 2px #28508b;
+
+}
+.expansion_rectangle:hover {
+	    border-top-color: #28508b;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.15);
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    cursor: pointer; 
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+.expansion_rectangle {
+	margin : 10px auto;
+	text-align: center;
+}	
+.new_flex_container_display {
+    display: block;
+    width: 100%;
+    margin-left: 0
+}
+.new_expansion_rectangle {
+    width: 104%;
+    height: 1090px;
+}
+} 
+
+
+@media only screen and (min-width: 800px) and (max-width : 830px) {
+.new_flex_container_display {
+    display: block;
+    width: 100%;
+    margin-left: 0
+}	
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1024px) {
+.new_flex_container_display {
+    display: block;
+    width: 70%;
+    margin-left: 15%;
+}	
+}
+/*@media only screen and (min-width: 500px) and (max-width : 1024px) {
+.expansion_rectangle_parent_container_first{
+margin: auto
+}
+}
+*/

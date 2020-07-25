@@ -1,0 +1,49 @@
+html {
+  padding: 0px; }
+
+body {
+  margin: 0px;
+  background-image: url("https://s3.ap-south-1.amazonaws.com/avataar.vc/Line.svg");
+  background-repeat: no-repeat;
+  background-position-y: 7rem;
+  font-family: "Montserrat", sans-serif; }
+
+.nav-link {
+  font-weight: 400;
+  color: #3b73b5;
+  font-size: 1rem !important;
+  margin-left: 2rem;
+  font-family: "Montserrat", sans-serif; }
+
+.navbar:hover {
+  box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12); }
+
+.theme_color {
+  color: #3b73b5; }
+
+h4 {
+  letter-spacing: 0.1rem;
+  font-family: "Montserrat", sans-serif; }
+
+.press_release_container {
+  margin-top: 13rem; }
+
+.subheading {
+  font-weight: 600; }
+
+.press_release_title {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2.25rem; }
+
+.press_release_content {
+  font-size: 1rem;
+  color: #474747;
+  line-height: 2rem; }
+
+.add_navbar_background {
+  box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
+  background-color: white; }
+
+#btn > div {
+  background-color: #3b73b5; }

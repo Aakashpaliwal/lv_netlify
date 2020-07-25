@@ -1,0 +1,107 @@
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+  .home_section {
+    height: 30vh;
+    padding-top: 7rem; }
+  .ethos-flex-container > div {
+    flex: auto; }
+  .arrow {
+    display: none; }
+  .navbar {
+    display: none !important; }
+  .background_image {
+    height: 60rem; }
+  .mobile_logo img {
+    display: block;
+    float: right;
+    opacity: 1;
+    position: absolute;
+    right: 10px;
+    z-index: 9;
+    width: 20%;
+    top: 30px; }
+  * {
+    box-sizing: border-box; }
+  #page-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none; }
+  #title {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em; }
+  #btn {
+    position: fixed;
+    z-index: 15;
+    top: 25px;
+    left: 15px;
+    cursor: pointer;
+    transition: left 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91); }
+    #btn div {
+      width: 30px;
+      height: 2px;
+      margin-bottom: 8px;
+      background-color: white;
+      transition: transform 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91), opacity 500ms, background-color 250ms; }
+    #btn .add_harmburger_color {
+      background-color: black; }
+  #btn.active {
+    left: 135px; }
+    #btn.active div {
+      background-color: black; }
+    #btn.active #top {
+      transform: translateY(10px) rotate(-135deg); }
+    #btn.active #middle {
+      opacity: 0;
+      transform: rotate(135deg); }
+    #btn.active #bottom {
+      transform: translateY(-10px) rotate(-45deg); }
+  #box {
+    position: fixed;
+    z-index: 10;
+    overflow: auto;
+    top: 0px;
+    left: -275px;
+    width: 190px;
+    opacity: 0;
+    padding: 20px 0px;
+    height: 100%;
+    background-color: white;
+    color: black;
+    transition: all 350ms cubic-bezier(0.6, 0.05, 0.28, 0.91); }
+  #box.active {
+    left: 0px;
+    opacity: 1; }
+  #items {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
+    #items a {
+      text-decoration: none;
+      color: #3f4147; }
+    #items .item {
+      position: relative;
+      cursor: pointer;
+      font-size: 1.2em;
+      font-family: "Montserrat", sans-serif;
+      padding: 15px 30px;
+      transition: all 250ms; }
+      #items .item:hover {
+        padding: 15px 45px;
+        background-color: rgba(0, 0, 0, 0.2); }
+    #items .background_image {
+      background-position: 0% bottom !important; }
+  #btn,
+  #btn * {
+    will-change: transform; }
+  #box {
+    will-change: transform, opacity; } }
