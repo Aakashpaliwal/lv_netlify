@@ -160,7 +160,9 @@ class Portfolio extends Component {
 									<div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 										<div
 											className="portfolio_rectangle"
-											onClick={this.zenotiToogle}
+											// onClick={this.zenotiToogle}
+											data-toggle="modal"
+											data-target="#zenotiModal"
 										>
 											<a
 												href="https://www.zenoti.com/"
@@ -169,15 +171,104 @@ class Portfolio extends Component {
 												<img
 													src="https://s3.ap-south-1.amazonaws.com/avataar.vc/Zenoti.svg"
 													alt="Zenoti"
-													className="displayed"
+													className="displayed img-fluid"
 												/>
 											</a>
+										</div>
+										<div
+											class="modal fade"
+											id="zenotiModal"
+											tabindex="-1"
+											role="dialog"
+											aria-labelledby="exampleModalLabel"
+											aria-hidden="true"
+										>
+											<div
+												class="modal-dialog modal-lg team_modal_bg"
+												role="document"
+											>
+												<div class="modal-content team_modal_content">
+													<div className="row">
+														<div className="container">
+															<div class="modal-header portfolio_modal_header">
+																<i
+																	className="lni lni-close"
+																	data-dismiss="modal"
+																></i>
+															</div>
+														</div>
+													</div>
+													<div class="modal-body">
+														<div className="new_portfolio_content">
+															<div className="col-12">
+																<img
+																	src="https://s3.ap-south-1.amazonaws.com/avataar.vc/Zenoti.svg"
+																	alt="Zenoti"
+																	className="displayed"
+																/>
+															</div>
+															<div clasasName="col-12">
+																<p className="mt-5">
+																	Having
+																	experienced
+																	first-hand
+																	the
+																	difficulty
+																	in running a
+																	chain of
+																	spa, salon
+																	and fitness
+																	centers and
+																	not finding
+																	software
+																	that was
+																	affordable,
+																	reliable,
+																	easy to use,
+																	and
+																	supported
+																	the whole
+																	ecosystem
+																	with a
+																	multi-location
+																	chain of a
+																	thriving spa
+																	and salon
+																	business,
+																	Zenoti was
+																	founded in
+																	2010. Today,
+																	Zenoti is
+																	used by over
+																	5,000
+																	businesses
+																	in 32
+																	countries.
+																	<br />
+																	<strong>
+																		Website
+																		:{" "}
+																	</strong>
+																	<a
+																		href="{https://www.zenoti.com/}"
+																		target="_blank"
+																	>
+																		https://www.zenoti.com/
+																	</a>
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
 									<div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 										<div
 											className="portfolio_rectangle"
-											onClick={this.capillaryToogle}
+											// onClick={this.capillaryToogle}
+											data-toggle="modal"
+											data-target="#capillaryModal"
 										>
 											<a
 												href="https://www.capillarytech.com/"
@@ -186,14 +277,149 @@ class Portfolio extends Component {
 												<img
 													src="https://s3.ap-south-1.amazonaws.com/avataar.vc/Capillary.svg"
 													alt="Capillary"
+													className="img-fluid"
 												/>
 											</a>
+										</div>
+										<div
+											class="modal fade"
+											id="capillaryModal"
+											tabindex="-1"
+											role="dialog"
+											aria-labelledby="exampleModalLabel"
+											aria-hidden="true"
+										>
+											<div
+												class="modal-dialog modal-lg team_modal_bg"
+												role="document"
+											>
+												<div class="modal-content team_modal_content">
+													<div className="row">
+														<div className="container">
+															<div class="modal-header portfolio_modal_header">
+																<i
+																	className="lni lni-close"
+																	data-dismiss="modal"
+																></i>
+															</div>
+														</div>
+													</div>
+													<div class="modal-body">
+														<div className="new_portfolio_content">
+															<div className="col-12">
+																<img
+																	src="https://s3.ap-south-1.amazonaws.com/avataar.vc/Capillary.svg"
+																	alt="Capillary"
+																/>
+															</div>
+															<div clasasName="col-12">
+																<p className="mt-5">
+																	CAPILLARY
+																	Founded in
+																	2008,
+																	Capillary
+																	has been at
+																	the
+																	forefront of
+																	the constant
+																	evolution in
+																	consumer
+																	experiences.
+																	When
+																	consumer
+																	brands faced
+																	the biggest
+																	challenges
+																	due to the
+																	inability to
+																	capture
+																	customer
+																	data,
+																	identify
+																	consumers
+																	visiting
+																	their stores
+																	and to
+																	communicate
+																	effectively
+																	with them,
+																	the Idea of
+																	Capillary
+																	Tech was
+																	conceptualised.
+																	Capillary’s
+																	products
+																	help brands
+																	get a 360°
+																	single view
+																	of customer
+																	and
+																	inventory
+																	across all
+																	channels, so
+																	they could
+																	stitch
+																	together
+																	previously
+																	siloed
+																	customer
+																	journeys
+																	with data,
+																	and build a
+																	unified,
+																	cross
+																	channel
+																	strategies
+																	that deliver
+																	a
+																	consistent,
+																	omnichannel
+																	experience.
+																</p>
+																<p>
+																	In this era
+																	of
+																	Artificial
+																	Intelligence,
+																	they
+																	continue to
+																	innovate and
+																	find ways to
+																	help brands
+																	stay
+																	consumer
+																	ready and
+																	deliver
+																	newer,
+																	better
+																	experiences
+																	into the
+																	future.
+																	<br />
+																	<strong>
+																		Website
+																		:{" "}
+																	</strong>
+																	<a
+																		href="{https://www.capillarytech.com/}"
+																		target="_blank"
+																	>
+																		https://www.capillarytech.com/
+																	</a>
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
 									<div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 										<div
 											className="portfolio_rectangle"
-											onClick={this.carmnetToogle}
+											// onClick={this.carmnetToogle}
+											data-toggle="modal"
+											data-target="#crmModal"
 										>
 											<a
 												href="https://www.crmnext.com/"
@@ -202,9 +428,122 @@ class Portfolio extends Component {
 												<img
 													src="https://s3.ap-south-1.amazonaws.com/avataar.vc/CRM.svg"
 													alt="CRM"
-													className="crm_img_class_margin"
+													className="crm_img_class_margin img-fluid"
 												/>
 											</a>
+										</div>
+										<div
+											class="modal fade"
+											id="crmModal"
+											tabindex="-1"
+											role="dialog"
+											aria-labelledby="exampleModalLabel"
+											aria-hidden="true"
+										>
+											<div
+												class="modal-dialog modal-lg team_modal_bg"
+												role="document"
+											>
+												<div class="modal-content team_modal_content">
+													<div className="row">
+														<div className="container">
+															<div class="modal-header portfolio_modal_header">
+																<i
+																	className="lni lni-close"
+																	data-dismiss="modal"
+																></i>
+															</div>
+														</div>
+													</div>
+													<div class="modal-body">
+														<div className="new_portfolio_content">
+															<div className="col-12">
+																<img
+																	src="https://s3.ap-south-1.amazonaws.com/avataar.vc/CRM.svg"
+																	alt="CRM"
+																	className="crm_img_class_margin"
+																/>
+															</div>
+															<div clasasName="col-12">
+																<p className="mt-5">
+																	CRM NEXT
+																	Founded in
+																	2001,
+																	CRMNEXT
+																	takes it
+																	from where
+																	traditional
+																	CRMs leave
+																	off. From
+																	Fortune 500
+																	to
+																	start-ups,
+																	businesses
+																	across nine
+																	verticals
+																	have built
+																	profitable
+																	customer
+																	relationships
+																	via CRMNEXT.
+																	It
+																	eliminates
+																	the
+																	artificial
+																	barriers
+																	between
+																	human and
+																	digital
+																	channels,
+																	enabling
+																	world-class,
+																	omni-channel
+																	customer
+																	interactions
+																	from a
+																	single,
+																	unified
+																	platform.
+																	With more
+																	than a
+																	million
+																	financial
+																	service
+																	associates
+																	and a
+																	billion
+																	customers
+																	supported by
+																	the platform
+																	globally,
+																	CRMNEXT
+																	effectively
+																	recalibrates
+																	banks’
+																	potential to
+																	grow
+																	engagement,
+																	drive
+																	profitability
+																	and deliver
+																	innovation.
+																	<br />
+																	<strong>
+																		Website
+																		:{" "}
+																	</strong>
+																	<a
+																		href="{https://www.crmnext.com/}"
+																		target="_blank"
+																	>
+																		https://www.crmnext.com/
+																	</a>
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -213,7 +552,9 @@ class Portfolio extends Component {
 									<div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 										<div
 											className="portfolio_rectangle"
-											onClick={this.apnomicToogle}
+											// onClick={this.apnomicToogle}
+											data-toggle="modal"
+											data-target="#appnomicModal"
 										>
 											<a
 												href="http://appnomic.com/"
@@ -226,11 +567,126 @@ class Portfolio extends Component {
 												/>
 											</a>
 										</div>
+										<div
+											class="modal fade"
+											id="appnomicModal"
+											tabindex="-1"
+											role="dialog"
+											aria-labelledby="exampleModalLabel"
+											aria-hidden="true"
+										>
+											<div
+												class="modal-dialog modal-lg team_modal_bg"
+												role="document"
+											>
+												<div class="modal-content team_modal_content">
+													<div className="row">
+														<div className="container">
+															<div class="modal-header portfolio_modal_header">
+																<i
+																	className="lni lni-close"
+																	data-dismiss="modal"
+																></i>
+															</div>
+														</div>
+													</div>
+													<div class="modal-body">
+														<div className="new_portfolio_content">
+															<div className="col-12">
+																<img
+																	src="https://s3.ap-south-1.amazonaws.com/avataar.vc/appnomic.png"
+																	alt="appnomic"
+																	className="appnomic-img img-fluid"
+																/>
+															</div>
+															<div clasasName="col-12">
+																<p className="mt-5">
+																	APPNOMIC
+																	Founded in
+																	2001,
+																	CRMNEXT
+																	takes it
+																	from where
+																	traditional
+																	CRMs leave
+																	off. From
+																	Fortune 500
+																	to
+																	start-ups,
+																	businesses
+																	across nine
+																	verticals
+																	have built
+																	profitable
+																	customer
+																	relationships
+																	via CRMNEXT.
+																	It
+																	eliminates
+																	the
+																	artificial
+																	barriers
+																	between
+																	human and
+																	digital
+																	channels,
+																	enabling
+																	world-class,
+																	omni-channel
+																	customer
+																	interactions
+																	from a
+																	single,
+																	unified
+																	platform.
+																	With more
+																	than a
+																	million
+																	financial
+																	service
+																	associates
+																	and a
+																	billion
+																	customers
+																	supported by
+																	the platform
+																	globally,
+																	CRMNEXT
+																	effectively
+																	recalibrates
+																	banks’
+																	potential to
+																	grow
+																	engagement,
+																	drive
+																	profitability
+																	and deliver
+																	innovation.
+																	<br />
+																	<strong>
+																		Website
+																		:{" "}
+																	</strong>
+																	<a
+																		href="{http://appnomic.com/}"
+																		target="_blank"
+																	>
+																		http://appnomic.com/
+																	</a>
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>{" "}
 									</div>
 									<div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 										<div
 											className="portfolio_rectangle"
-											onClick={this.elasticToogle}
+											// onClick={this.elasticToogle}
+											data-toggle="modal"
+											data-target="#elasticModal"
 										>
 											<a
 												href="https://www.elastic.run/"
@@ -243,11 +699,126 @@ class Portfolio extends Component {
 												/>
 											</a>
 										</div>
+										<div
+											class="modal fade"
+											id="elasticModal"
+											tabindex="-1"
+											role="dialog"
+											aria-labelledby="exampleModalLabel"
+											aria-hidden="true"
+										>
+											<div
+												class="modal-dialog modal-lg team_modal_bg"
+												role="document"
+											>
+												<div class="modal-content team_modal_content">
+													<div className="row">
+														<div className="container">
+															<div class="modal-header portfolio_modal_header">
+																<i
+																	className="lni lni-close"
+																	data-dismiss="modal"
+																></i>
+															</div>
+														</div>
+													</div>
+													<div class="modal-body">
+														<div className="new_portfolio_content">
+															<div className="col-12">
+																<img
+																	src="https://s3.ap-south-1.amazonaws.com/avataar.vc/Elastic_Run.svg"
+																	alt="Elastic_Run"
+																	className="img-fluid"
+																/>
+															</div>
+															<div clasasName="col-12">
+																<p className="mt-5">
+																	APPNOMIC
+																	Founded in
+																	2001,
+																	CRMNEXT
+																	takes it
+																	from where
+																	traditional
+																	CRMs leave
+																	off. From
+																	Fortune 500
+																	to
+																	start-ups,
+																	businesses
+																	across nine
+																	verticals
+																	have built
+																	profitable
+																	customer
+																	relationships
+																	via CRMNEXT.
+																	It
+																	eliminates
+																	the
+																	artificial
+																	barriers
+																	between
+																	human and
+																	digital
+																	channels,
+																	enabling
+																	world-class,
+																	omni-channel
+																	customer
+																	interactions
+																	from a
+																	single,
+																	unified
+																	platform.
+																	With more
+																	than a
+																	million
+																	financial
+																	service
+																	associates
+																	and a
+																	billion
+																	customers
+																	supported by
+																	the platform
+																	globally,
+																	CRMNEXT
+																	effectively
+																	recalibrates
+																	banks’
+																	potential to
+																	grow
+																	engagement,
+																	drive
+																	profitability
+																	and deliver
+																	innovation.
+																	<br />
+																	<strong>
+																		Website
+																		:{" "}
+																	</strong>
+																	<a
+																		href="{https://www.elastic.run/}"
+																		target="_blank"
+																	>
+																		https://www.elastic.run/
+																	</a>
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
 									</div>
 									<div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 										<div
 											className="portfolio_rectangle"
-											onClick={this.manhattanToggle}
+											// onClick={this.manhattanToggle}
+											data-toggle="modal"
+											data-target="#manhattanModal"
 										>
 											<a
 												href="https://www.manthan.com/"
@@ -256,9 +827,122 @@ class Portfolio extends Component {
 												<img
 													src="https://s3.ap-south-1.amazonaws.com/avataar.vc/Manthan.svg"
 													alt="Manthan"
-													className="manhatan_img_margin"
+													className="manhatan_img_margin img-fluid"
 												/>
 											</a>
+										</div>
+										<div
+											class="modal fade"
+											id="manhattanModal"
+											tabindex="-1"
+											role="dialog"
+											aria-labelledby="exampleModalLabel"
+											aria-hidden="true"
+										>
+											<div
+												class="modal-dialog modal-lg team_modal_bg"
+												role="document"
+											>
+												<div class="modal-content team_modal_content">
+													<div className="row">
+														<div className="container">
+															<div class="modal-header portfolio_modal_header">
+																<i
+																	className="lni lni-close"
+																	data-dismiss="modal"
+																></i>
+															</div>
+														</div>
+													</div>
+													<div class="modal-body">
+														<div className="new_portfolio_content">
+															<div className="col-12">
+																<img
+																	src="https://s3.ap-south-1.amazonaws.com/avataar.vc/Manthan.svg"
+																	alt="Manthan"
+																	className="manhatan_img_margin"
+																/>
+															</div>
+															<div clasasName="col-12">
+																<p className="mt-5">
+																	APPNOMIC
+																	Founded in
+																	2001,
+																	CRMNEXT
+																	takes it
+																	from where
+																	traditional
+																	CRMs leave
+																	off. From
+																	Fortune 500
+																	to
+																	start-ups,
+																	businesses
+																	across nine
+																	verticals
+																	have built
+																	profitable
+																	customer
+																	relationships
+																	via CRMNEXT.
+																	It
+																	eliminates
+																	the
+																	artificial
+																	barriers
+																	between
+																	human and
+																	digital
+																	channels,
+																	enabling
+																	world-class,
+																	omni-channel
+																	customer
+																	interactions
+																	from a
+																	single,
+																	unified
+																	platform.
+																	With more
+																	than a
+																	million
+																	financial
+																	service
+																	associates
+																	and a
+																	billion
+																	customers
+																	supported by
+																	the platform
+																	globally,
+																	CRMNEXT
+																	effectively
+																	recalibrates
+																	banks’
+																	potential to
+																	grow
+																	engagement,
+																	drive
+																	profitability
+																	and deliver
+																	innovation.
+																	<br />
+																	<strong>
+																		Website
+																		:{" "}
+																	</strong>
+																	<a
+																		href="{https://www.manthan.com/}"
+																		target="_blank"
+																	>
+																		https://www.manthan.com/
+																	</a>
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>

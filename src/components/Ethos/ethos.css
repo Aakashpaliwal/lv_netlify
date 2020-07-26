@@ -14,20 +14,27 @@
 }
 .ethos_seperate_component_data {
 	color: #28508b;
+  font-size: 25px;
+}
+.custom_ethos_component_subheading p{
+font-weight: 500;
 }
 .ethos-framework-para p {
-	font-size: 1.8rem;
+	font-size: 30px;
 	font-weight: 600;
 	color: #4a4a4a;
 }
 .ethos_banner_heading {
 	letter-spacing: normal;
 	font-weight: 600;
+  font-size: 48px;
 }
 .ethos_sub_section {
 	padding: 0 10%;
 	text-align: center;
-	letter-spacing: 1px;
+	letter-spacing: -0.22px;
+  font-size: 24px;
+    line-height: 33px;
 }
 .expansion_rectangle {
 	background: #f1f9ff;
@@ -46,7 +53,7 @@
     /*border-top: 2px solid #f7f7f7;*/
       background: url("../assets/Ethos_Banner-min.png") center center no-repeat;
   background-size: cover;
-  position: relative;
+  /*position: relative;*/
     color: #fff;
     padding : 2rem;
         height: 555px;
@@ -108,8 +115,222 @@
     transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
     cursor: pointer; 
 }
+.ethos_btn_center .btn {
+  width: 626px;
+  height: 68px;
+  border: solid 1px #99bcde;
+  border-radius: 0;
+  color: #28508b;
+  font-size: 20px;
+  line-height: 33px;
+}
+.ethos_btn_center .btn:hover {
+background: #28508b;
+  transition: all ease-in-out 0.3s;
+  color: #fff;
 
-@media only screen and (min-width: 320px) and (max-width: 768px) {
+}
+.ethos_btn_center .lni-chevron-right {
+  /*float: right;*/
+  position: relative;
+  top: 1px; 
+}
+
+@media screen and (max-width: 320px), (min-device-width: 320px) and (max-device-width: 480px) and (orientation : portrait) {
+.ethos_btn_center .btn {
+  width: 100%;
+    font-size: 10px;
+    height: auto;
+    line-height: normal;
+}
+.new_expansion_rectangle {
+      width: 112%;
+    height: 1150px;
+}
+.new_flex_container_display {
+  display: inherit;
+  width: 100%;
+  margin-left: 0;
+}
+
+}
+@media screen and (min-width: 320px) and (max-width: 480px), (min-device-width: 320px) and
+(max-device-width: 480px) and (orientation : landscape) {
+.new_expansion_rectangle {
+      width: 100%;
+    height: 1150px;
+}
+.ethos_btn_center .btn {
+  width: 70%;
+    font-size: 11px;
+    height: auto;
+    line-height: normal;
+}
+.expansion_rectangle {
+  margin: 10px auto;
+  text-align: center;
+}
+}
+
+@media screen and (max-width: 320px), (min-device-width: 320px) and (max-device-width: 568px) and (orientation : portrait) {
+.ethos_btn_center .btn {
+  width: 100%;
+    font-size: 10px;
+    height: auto;
+    line-height: normal;
+}
+.ethos_btn_center .lni-chevron-right {
+  position: relative;
+  top: 0px; 
+}
+.new_expansion_rectangle {
+      width: 112%;
+    height: 1150px;
+}
+.expansion_rectangle {
+  width: 100%;
+}
+}
+@media screen and (min-width: 320px) and (max-width: 568px), (min-device-width: 320px) and
+(max-device-width: 568px) and (orientation : landscape) {
+.background_image_ethos_main {
+  height: 100vh;
+}
+.home_section {
+  padding-top: 0;
+}
+.ethos_banner_heading {
+  font-size: 2rem;
+}
+.home-content {
+  margin-top: 0;
+}
+.ethos_sub_section {
+  padding: 0;
+      font-size: 1rem;
+    line-height: inherit;
+}
+.ethos_btn_center .btn {
+  width: 60%;
+    height: auto;
+    line-height: normal;
+    font-size: 12px;
+}
+.new_flex_container_display {
+  display: inherit;
+  width: 100%;
+  margin-left: 0;
+}
+.expansion_rectangle {
+  margin: 10px auto;
+  text-align: center;
+}
+}
+@media screen and (max-width: 360px), (min-device-width: 360px) and (max-device-width: 640px) and (orientation : portrait) {
+.background_image_ethos_main {
+  height: auto;
+}
+.ethos_btn_center .btn {
+  width: 100%;
+    height: auto;
+    line-height: normal;
+    font-size: 10px;
+}
+}
+@media screen and (min-width: 360px) and (max-width: 640px), (min-device-width: 360px) and
+(max-device-width: 640px) and (orientation : landscape) {
+.background_image_ethos_main {
+  height: 100vh;
+}
+.home_section {
+  padding-top: 0;
+}
+.ethos_banner_heading {
+  font-size: 2rem;
+}
+.home-content {
+  margin-top: 0;
+}
+.ethos_sub_section {
+  padding: 0;
+      font-size: 1rem;
+    line-height: inherit;
+}
+.ethos-framework-para p {
+  font-size: 1.5rem;
+}
+.ethos_btn_center .btn {
+  width: 60%;
+    height: auto;
+    line-height: normal;
+    font-size: 11px;
+}
+.ethos_btn_center .lni-chevron-right {
+  position: relative;
+  top: 0px; 
+}
+.new_expansion_rectangle {
+      width: 100%;
+    height: 1150px;
+}
+.expansion_rectangle {
+  margin: 10px auto;
+  text-align: center;
+}
+}
+@media screen and (max-width: 600px), (min-device-width: 600px) and (max-device-width: 960px) and (orientation : portrait) {
+.background_image_ethos_main {
+  height: auto;
+}
+}
+@media screen and (min-width: 600px) and (max-width: 960px), (min-device-width: 600px) and
+(max-device-width: 960px) and (orientation : landscape) {
+.background_image_ethos_main {
+  height: 50vh;
+}
+.home_section {
+  padding-top: 0;
+}
+.ethos_banner_heading {
+  font-size: 2rem;
+}
+.home-content {
+  margin-top: 0;
+}
+.ethos_sub_section {
+  padding: 0;
+      font-size: 1rem;
+    line-height: inherit;
+}
+.new_expansion_rectangle {
+  height: 585px;
+}
+.new_flex_container_display {
+  width: 100%;
+  margin-left: 0;
+}
+}
+@media screen and (min-width: 768px) and (max-width: 1024px), (min-device-width: 768px) and
+(max-device-width: 1024px) and (orientation : landscape) {
+  .background_image_ethos_main {
+  height: 100vh;
+}
+.new_expansion_rectangle {
+  height: 588px;
+}
+.new_flex_container_display {
+  display: inherit;
+  width: 100%;
+  margin-left: 0;
+}
+}
+@media screen and (max-width: 768px), (min-device-width: 768px) and (max-device-width: 1024px) and (orientation : portrait) {
+.background_image_ethos_main {
+  height: auto;
+}
+}
+
+/*@media only screen and (min-width: 320px) and (max-width: 768px) {
 .expansion_rectangle {
 	margin : 10px auto;
 	text-align: center;
@@ -124,9 +345,9 @@
     height: 1090px;
 }
 } 
+*/
 
-
-@media only screen and (min-width: 800px) and (max-width : 830px) {
+/*@media only screen and (min-width: 800px) and (max-width : 830px) {
 .new_flex_container_display {
     display: block;
     width: 100%;
@@ -140,7 +361,7 @@
     width: 70%;
     margin-left: 15%;
 }	
-}
+}*/
 /*@media only screen and (min-width: 500px) and (max-width : 1024px) {
 .expansion_rectangle_parent_container_first{
 margin: auto

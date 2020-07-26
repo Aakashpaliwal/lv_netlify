@@ -14,7 +14,9 @@
 body {
   padding: 0;
   margin: 0;
-  width: 100%; }
+  width: 100%;
+    font-family: Montserrat;
+   }
 
 html {
   scroll-behavior: smooth; }
@@ -105,7 +107,7 @@ h4 {
   background-repeat: no-repeat;
   position: absolute;
   display: block;
-  height: 60rem;
+  height: 65rem;
   width: 100%;
   transform: rotate(180deg);
   background-color: #f4faff; }
@@ -182,8 +184,10 @@ strong {
 .ethos-heading {
   /*color: #3b73b5;*/
   color : #28508b;
-  font-size: 2rem;
-  font-weight: 300; }
+  font-size: 40px;
+  font-weight: 600; 
+  font-family: "Montserrat", sans-serif;
+}
 
 .ethos-subheading {
   color: #4a4a4a;
@@ -226,8 +230,10 @@ strong {
 
 .focus-subheading {
   color: #4a4a4a;
-  font-size: 1.3rem;
-  line-height: 1.8rem;
+  /*font-size: 1.3rem;*/
+  font-size: 24px;
+  /*line-height: 1.8rem;*/
+  line-height: 35px;
   margin: 0 auto; }
 
 .focus-content {
@@ -268,7 +274,8 @@ strong {
   font-size: 1.33rem; }
 
 .contact-us-bitmap {
-  color: #16175e; }
+  color: #16175e;
+   }
 
 .contact-us-title {
   color: #28508b;
@@ -505,7 +512,7 @@ h3 {
   font-weight: 400;
   /*color: #3b73b5;*/
     color : #28508b;
-  font-size: 2rem;
+  /*font-size: 2rem;*/
   letter-spacing: 0.1rem;
   font-family: "Montserrat", sans-serif; }
 

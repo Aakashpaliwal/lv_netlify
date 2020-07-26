@@ -105,7 +105,7 @@ class Ethos extends Component {
 					data-aos="fade-up"
 					data-aos-duration="100"
 				>
-					<div className="ethos-subheading col-sm-12 mt-3">
+					<div className="ethos-subheading col-sm-12 mt-3 custom_ethos_component_subheading">
 						<p>
 							We believe that a successful enterprise is built in
 							the operational trenches week-on-week,
@@ -1029,21 +1029,25 @@ class Ethos extends Component {
 					</div>
 
 					<div className="container">
-						<div className="about_btn_center">
-							<center>
-								<Link to="/portfolio">
-									<button
-										type="button"
-										className="btn btn-outline-primary"
-									>
-										OUR INVESTMENT FOCUS & PORTFOLIO{" "}
-										<span>
-											{" "}
-											<i className="fas fa-angle-right"></i>
-										</span>
-									</button>
-								</Link>
-							</center>
+						<div className="row">
+							<div className="col-12">
+								<div className="ethos_btn_center mt-5">
+									<center>
+										<Link to="/portfolio">
+											<button
+												type="button"
+												className="btn btn-outline-primary"
+											>
+												OUR INVESTMENT FOCUS & PORTFOLIO{" "}
+												<span>
+													{" "}
+													<i className="lni lni-chevron-right"></i>
+												</span>
+											</button>
+										</Link>
+									</center>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>

@@ -58,7 +58,7 @@ class Home extends Component {
 				<div className="background_image_home_page">
 					<div className="container">
 						<div
-							className="row home_section"
+							className="row home_section custom_home_section"
 							id="home"
 							// data-aos="fade-up"
 							// data-aos-duration="1500"
@@ -72,25 +72,28 @@ class Home extends Component {
 									ACCELERATING TRANSFORMATION
 								</h1>
 								<div className="home-content d-inline-flex mt-5">
-									<p className="vl"></p>
-									<p className="sub_section home_content_subsection">
-										Avataar is a
-										<span className="strong">
-											growth stage, Operational fund
-										</span>
-										partnering actively with brilliant
-										regional Tech-led B2B & SaaS startups to
-										Re-invent, Scale & Transform into
-										successful, enduring global businesses.
-										<br />
-										<br />
-										Together, we believe we can scale new
-										peaks and transform India & South-East
-										Asia into product nations, building for
-										the world! So say hello to your scale-up
-										sherpas, and goodbye to tons of
-										preparation for the next board meeting.
-									</p>
+									<div className="sub_section home_content_subsection">
+										<p>
+											Avataar is a
+											<span className="strong">
+												growth stage, Operational fund
+											</span>
+											partnering actively with brilliant
+											regional Tech-led B2B & SaaS
+											startups to Re-invent, Scale &
+											Transform into successful, enduring
+											global businesses.
+										</p>
+										<p>
+											Together, we believe we can scale
+											new peaks and transform India &
+											South-East Asia into product
+											nations, building for the world! So
+											say hello to your scale-up sherpas,
+											and goodbye to tons of preparation
+											for the next board meeting.
+										</p>
+									</div>
 								</div>
 								{/*<button className="btn btn-primary theme_button">PRESS RELEASE</button>*/}
 							</div>
@@ -110,21 +113,15 @@ class Home extends Component {
 						</a>
 					</div>
 				</div>
-				<div
-					className="row"
-					id="ethos"
-					style={{ height: "20px" }}
-				></div>
+
 				<div
 					className="ethos ethos_more_about_inverted_line"
-					data-aos="fade-up"
-					data-aos-duration="100"
+					// data-aos="fade-up"
+					// data-aos-duration="100"
 				>
 					<div className="ethos-heading">
 						<center>
-							<h3>
-								<strong>ETHOS</strong>
-							</h3>
+							<p>ETHOS</p>
 						</center>
 					</div>
 					<div className="ethos-subheading col-sm-12 mt-3">
@@ -136,7 +133,7 @@ class Home extends Component {
 							entrepreneurs.
 						</p>
 
-						<p>
+						<p className="ethos_subheading_second_para">
 							Funding is only one part of your journey with us. We
 							have orchestrated a paradigm shift in the
 							Entrepreneur-VC equation with our{" "}
@@ -171,7 +168,7 @@ class Home extends Component {
 									</div>
 									<div className="ethos-content">
 										KNOW MORE
-										<i className="fas fa-angle-right"></i>
+										<i className="lni lni-chevron-right"></i>
 									</div>
 								</div>
 							</div>
@@ -196,7 +193,7 @@ class Home extends Component {
 									</div>
 									<div className="ethos-content">
 										KNOW MORE
-										<i className="fas fa-angle-right"></i>
+										<i className="lni lni-chevron-right"></i>
 									</div>
 								</div>
 							</div>
@@ -221,7 +218,7 @@ class Home extends Component {
 									</div>
 									<div className="ethos-content">
 										KNOW MORE
-										<i className="fas fa-angle-right"></i>
+										<i className="lni lni-chevron-right"></i>
 									</div>
 								</div>
 							</div>
@@ -268,28 +265,24 @@ class Home extends Component {
 										>
 											<div className="growth_reactangle_toogle_div mb-3">
 												<div className="row">
-													<div className="col-2"></div>
-													<div className="col-6">
-														<div className="ethos-title">
+													<div className="col-lg-2 col-md-2 col-sm-0 col-xs-0"></div>
+													<div className="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+														<span className="ethos-title">
 															GROWTH & EXPANSION
 															FOCUS
-														</div>
-													</div>
-													<div className="col-4">
-														<div className="ethos-bitmap">
-															<span
-																onClick={
-																	this
-																		.closeHandler
-																}
-															>
-																<i className="lni lni-close"></i>
-															</span>
-														</div>
+														</span>
+
+														<i
+															className="lni lni-close"
+															onClick={
+																this
+																	.closeHandler
+															}
+														></i>
 													</div>
 												</div>
 												<div className="row mt-3">
-													<div className="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+													<div className="col-lg-2 col-md-2 col-sm-0 col-xs-0">
 														<div className="ethos-bitmap">
 															<img
 																src={require("../assets/portfolio.svg")}
@@ -380,23 +373,18 @@ class Home extends Component {
 										>
 											<div className="operation_reactangle_toogle_div mb-3">
 												<div className="row">
-													<div className="col-2"></div>
-													<div className="col-6">
-														<div className="ethos-title">
+													<div className="col-lg-2 col-md-2 col-sm-0 col-xs-0"></div>
+													<div className="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+														<span className="ethos-title">
 															OPERATIONAL MINDSET
-														</div>
-													</div>
-													<div className="col-4">
-														<div className="ethos-bitmap">
-															<span
-																onClick={
-																	this
-																		.closeHandler
-																}
-															>
-																<i className="lni lni-close"></i>
-															</span>
-														</div>
+														</span>
+														<i
+															className="lni lni-close"
+															onClick={
+																this
+																	.closeHandler
+															}
+														></i>
 													</div>
 												</div>
 												<div className="row mt-3">
@@ -472,24 +460,19 @@ class Home extends Component {
 										>
 											<div className="concentrated_reactangle_toogle_div mb-3">
 												<div className="row">
-													<div className="col-2"></div>
-													<div className="col-6">
-														<div className="ethos-title">
+													<div className="col-lg-2 col-md-2 col-sm-0 col-xs-0"></div>
+													<div className="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+														<span className="ethos-title">
 															CONCENTRATED
 															PORTFOLIO
-														</div>
-													</div>
-													<div className="col-4">
-														<div className="ethos-bitmap">
-															<span
-																onClick={
-																	this
-																		.closeHandler
-																}
-															>
-																<i className="lni lni-close"></i>
-															</span>
-														</div>
+														</span>
+														<i
+															className="lni lni-close"
+															onClick={
+																this
+																	.closeHandler
+															}
+														></i>
 													</div>
 												</div>
 												<div className="row mt-3">
@@ -619,12 +602,12 @@ class Home extends Component {
 									<Link to="/ethos">
 										<button
 											type="button"
-											className="btn btn-outline-primary"
+											className="btn btn-outline-primary content_end_btn_spec"
 										>
 											ABOUT OUR 4E FRAMEWORK{" "}
 											<span>
 												{" "}
-												<i className="fas fa-angle-right"></i>
+												<i className="lni lni-chevron-right"></i>
 											</span>
 										</button>
 									</Link>
@@ -649,17 +632,15 @@ class Home extends Component {
 					>
 						<div className="ethos-heading">
 							<center>
-								<h3>
-									<strong>FOCUS</strong>
-								</h3>
+								<p>FOCUS</p>
 							</center>
 						</div>
-						<div className="focus-subheading mt-3">
+						<div className="focus-subheading mt-5">
 							We focus on brilliant companies with robust teams,
 							who harbour global ambitions. <br />
 						</div>
 						<div className="focus-subheading">We Look For:</div>
-						<div className="focus-content mt-2">
+						<div className="focus-content mt-3">
 							<span className="light_strong">$15 Million</span> +
 							in Annual Recurring Revenues
 							<br />
@@ -688,14 +669,12 @@ class Home extends Component {
 				{/*PORTFOLIO SECTION */}
 				<div className="row pt-5 pb-5" id="portfolio">
 					<div
-						className="col-sm-12 mt-5 text-center"
+						className="col-sm-12 text-center"
 						data-aos="fade-up"
 						data-aos-duration="1500"
 					>
 						<div className="ethos-heading">
-							<h3>
-								<strong>PORTFOLIO</strong>
-							</h3>
+							<p>PORTFOLIO</p>
 						</div>
 						<p className="theme_sub_heading mt-3">
 							The mountaineers scaling the new peaks & building
@@ -772,7 +751,7 @@ class Home extends Component {
 						</div>
 					</div>
 					<div className="container">
-						<div className="about_btn_center">
+						<div className="portfolio_btn_center">
 							<center>
 								<button
 									type="button"
@@ -780,7 +759,7 @@ class Home extends Component {
 								>
 									KNOW MORE
 									<span>
-										<i className="fas fa-angle-right"></i>
+										<i className="lni lni-chevron-right"></i>
 									</span>
 								</button>
 							</center>
@@ -804,9 +783,7 @@ class Home extends Component {
 						>
 							<div className="ethos-heading">
 								<center>
-									<h3>
-										<strong>CORE TEAM</strong>
-									</h3>
+									<p>CORE TEAM</p>
 								</center>
 							</div>
 						</div>
@@ -977,14 +954,8 @@ class Home extends Component {
 														// onmouseover="this.src='https://s3.ap-south-1.amazonaws.com/avataar.vc/george_color.jpg'"
 														// onmouseout="this.src='https://s3.ap-south-1.amazonaws.com/avataar.vc/george1-black_white.png'"
 													/>
-													<div className="overlay">
-														<div
-															className="text"
-															style={{
-																fontSize:
-																	"0.8rem",
-															}}
-														>
+													<div className="overlay george-overlay">
+														<div className="text">
 															GEORGE THANGADURAI
 															<br />
 															<span>
@@ -1095,7 +1066,7 @@ class Home extends Component {
 										>
 											THE TEAMS WE ARE BUILDING
 											<span>
-												<i className="fas fa-angle-right"></i>
+												<i className="lni lni-chevron-right"></i>
 											</span>
 										</button>
 									</Link>
@@ -1106,11 +1077,7 @@ class Home extends Component {
 				</div>
 
 				{/***MEDIA SECTION*******/}
-				<div
-					className="row"
-					id="media"
-					style={{ height: "6.25rem" }}
-				></div>
+				<div className="row media_section_parent_div" id="media"></div>
 				<div
 					className="row justify-content-center mb-5"
 					data-aos="fade-up"
@@ -1118,9 +1085,7 @@ class Home extends Component {
 				>
 					<div className="col-sm-10">
 						<div className="ethos-heading text-center">
-							<h3>
-								<strong>IN THE MEDIA</strong>
-							</h3>
+							<p>IN THE MEDIA</p>
 						</div>
 						<div className="custom_media_card_container">
 							<div
@@ -1129,12 +1094,12 @@ class Home extends Component {
 							>
 								{/*card -1*/}
 								<div
-									className="card"
-									style={{ width: "18rem" }}
+									className="card custom-card-spec"
+									// style={{ width: "18rem" }}
 								>
 									<img
 										className="card-img-top"
-										src={require("./286x180.png")}
+										src={require("./288x331.png")}
 										alt="Card image cap"
 									/>
 									<div className="card-body">
@@ -1170,13 +1135,10 @@ class Home extends Component {
 							</div>
 						</a>*/}
 								{/*card -2*/}
-								<div
-									className="card"
-									style={{ width: "18rem" }}
-								>
+								<div className="card custom-card-spec">
 									<img
 										className="card-img-top"
-										src={require("./286x180.png")}
+										src={require("./288x331.png")}
 										alt="Card image cap"
 									/>
 									<div className="card-body">
@@ -1214,12 +1176,12 @@ class Home extends Component {
 						</a>*/}
 								{/*card-3*/}
 								<div
-									className="card"
-									style={{ width: "18rem" }}
+									className="card custom-card-spec"
+									// style={{ width: "18rem" }}
 								>
 									<img
 										className="card-img-top"
-										src={require("./286x180.png")}
+										src={require("./288x331.png")}
 										alt="Card image cap"
 									/>
 									<div className="card-body">
@@ -1267,14 +1229,12 @@ class Home extends Component {
 						data-aos="fade-up"
 						data-aos-duration="1500"
 					>
-						<div className="contact-us-bitmap mt-5 text-center ethos-heading">
+						<div className="mt-5 text-center ethos-heading">
 							<center>
-								<h3>
-									<strong>CONTACT US</strong>
-								</h3>
+								<p>CONTACT US</p>
 							</center>
 						</div>
-						<div className="contact-wrapper mt-3">
+						<div className="contact-wrapper mt-4">
 							<div className="contact-item">
 								<img
 									src="https://s3.ap-south-1.amazonaws.com/avataar.vc/Location.svg"

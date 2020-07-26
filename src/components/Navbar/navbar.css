@@ -39,6 +39,8 @@
 {
 	.navbar-fixed-top {
 		background: #343a40!important;
+    width: 100%;
+    position: relative;
 	}
  /*.custom-collapse-bg {
    background: #343a40!important;

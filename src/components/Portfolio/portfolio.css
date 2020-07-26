@@ -89,6 +89,44 @@
     display: block;
     margin-top: 35%;
 }
+.portfolio_modal_header {
+    float: right;
+}
+.portfolio_rectangle {
+    margin: 10px 0;
+}
+@media screen and (min-width: 320px) and (max-width: 568px), (min-device-width: 320px) and
+(max-device-width: 568px) and (orientation : landscape) {
+.background_image_portfolio {
+    height: 100vh;
+}
+}
+@media screen and (min-width: 360px) and (max-width: 640px), (min-device-width: 360px) and
+(max-device-width: 640px) and (orientation : landscape) {
+.background_image_portfolio {
+    height: 100vh;
+}
+}
+@media screen and (min-width: 600px) and (max-width: 960px), (min-device-width: 600px) and
+(max-device-width: 960px) and (orientation : landscape) {
+.background_image_portfolio {
+    height: 100vh;
+}
+}
+@media screen and (max-width: 600px), (min-device-width: 600px) and (max-device-width: 960px) and (orientation : portrait) {
+.background_image_portfolio {
+    height: 50vh;
+}
+}
+@media screen and (min-width: 768px) and (max-width: 1024px), (min-device-width: 768px) and
+(max-device-width: 1024px) and (orientation : landscape) {
+.background_image_portfolio {
+    height: 100vh;
+}
+.portfolio_rectangle {
+    width: 100%;
+}
+}
 @media only screen and (min-width : 320px) and (max-width : 764px) {
     .portfolio_rectangle {
         width: auto;

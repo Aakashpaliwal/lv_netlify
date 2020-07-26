@@ -6,9 +6,16 @@
   position: relative;
 }
 .banner_text_bg {
-  background-color: rgba(51, 87, 130, 0.6);
-  position: absolute;
-  bottom: 0;
+    background-color: rgba(51, 87, 130, 0.6);
+    position: absolute;
+    bottom: 0;
+    padding-top: 2rem;
+    height: 536px;
+    width: 525px;
+}
+.custom_home_section {
+  height: 100vh;
+  margin-left: 0!important;
 }
 .home_content_subsection {
   font-size: 14px;
@@ -183,6 +190,13 @@
 	    position: relative;
     top: 2px;
 }
+.lni-chevron-right {
+ margin-left: 14px;
+  font-size: 1.3rem;
+      position: relative;
+    top: 2px; 
+    font-weight: 600!important;
+}
 .operational_reactangle {
 	  opacity: 0.95;
   background-color: #2a518a;
@@ -223,32 +237,70 @@
 	color: #fff;
 }
 .ethos-subheading p {
-	font-size : 1.3rem;
+	font-size : 20px;
+  color: #000;
+}
+.ethos_subheading_second_para {
+  margin : 30px 0;
 }
 .about_btn_center .btn {
 border-radius: 0;
-border : solid 1px #121b42;
+border : solid 1px #28508b;
 margin-top: 60px;
-color: #121b42
+color: #28508b;
+width : 381px;
+font-size: 18px;
+height: 55px;
 }
 .about_btn_center .btn:hover {
-	background: #121b42;
+	background: #28508b;
 	transition: all ease-in-out 0.3s;
 	color: #fff;
 }
+.about_btn_center .lni-chevron-right {
+  padding-left: 4%;
+}
+
 .team_btn_center {
 	position: relative;
 }
 .team_btn_center .btn {
 	border-radius: 0;
-border : solid 1px #121b42;
+border : solid 1px #28508b;
 margin-top: 60px;
-color: #121b42;
+color: #28508b;
+width : 453px;
+height: 55px;
+font-size: 18px;
+padding-right: 2rem;
+  font-family: Montserrat;
 }
 .team_btn_center .btn:hover {
-	background: #121b42;
+	background: #28508b;
 	transition: all ease-in-out 0.3s;
 	color: #fff;
+}
+.team_btn_center .lni-chevron-right {
+  float: right;
+  position: relative;
+  top: 4px; 
+}
+.portfolio_btn_center .btn {
+    border-radius: 0;
+border : solid 1px #28508b;
+margin-top: 60px;
+color: #28508b;
+width : 206px;
+height: 53px;
+font-size: 18px;
+}
+.portfolio_btn_center .btn:hover {
+  background: #28508b;
+  transition: all ease-in-out 0.3s;
+  color: #fff;
+}
+.portfolio_btn_center .lni-chevron-right {
+  padding-left: 4%;
 }
 .parent_team_img_container {
 	  width: 292px;
@@ -304,6 +356,7 @@ color: #121b42;
 }
 .custom_media_card_container .card-text {
 	color : #4a4a4a;
+  font-size: 1rem;
 }
 .growth_parent_col {
   padding-right: 0;
@@ -375,16 +428,163 @@ position: relative;
     width: 306px;
   }
 }*/
+.custom-card-spec {
+      width: 350px;
+      /*width: 18rem;*/
+    height: 516px;
+    background: #f7f7f7;
+    border: none;
+    box-shadow: none;
+    overflow: hidden;
+
+}
+.custom-card-spec .card-img-top {
+  height: 331px;
+}
+.custom-card-spec a {
+color: #3b73b5;
+font-weight: 500;
+}
+.george-overlay .text {
+    font-size : 15px;
+  }
+.media_section_parent_div {
+  height: 6.25rem;
+}
+  @media only screen and (min-width:320px) and (max-width : 480px) {
+     .about_btn_center .btn {
+    font-size: 14px;
+    height: auto;
+    width: 100%;
+  }
+
+  }
+
+@media only screen and (min-width : 320px) and (max-width : 568px) {
+  .banner_text_bg {
+/*    position: relative;
+   */
+    width: 100%;
+    height: 100vh;
+
+
+  }
+  .banner_text_bg h1 {
+    font-size: 1.5rem;
+  }
+  .growth_reactangle_toogle_div .lni-close {
+    position: absolute;
+    top: 0;
+     left: 90%;
+  }
+   .operation_reactangle_toogle_div .lni-close {
+    position: absolute;
+    top: 0;
+    left: 90%;
+  }
+   .concentrated_reactangle_toogle_div .lni-close {
+    position: absolute;
+    top: 0;
+    left: 90%;
+  }
+ 
+
+  .george-overlay .text {
+    font-size : 11px;
+  }
+  .ethos-heading {
+    font-size: 2rem;
+  }
+  .ethos-subheading p {
+    font-size: 1rem;
+  }
+  .focus-subheading {
+    font-size:  1rem;
+  }
+  .focus-content {
+    font-size: 1rem;
+  }
+  .theme_sub_heading {
+    font-size: 1rem;
+  }
+}
+@media  screen and (min-width : 320px) and (max-width : 568px) and (max-device-width: 568px) and (orientation : landscape){
+  .banner_text_bg {
+ /*   position: relative;
+    width: 100%;*/
+    height: 100vh;  
+
+  }
+   .about_btn_center .btn {
+    font-size: 1rem;
+    height: auto;
+    width: 60%;
+  }
+  }
+
+  @media screen and (max-width: 360px), (min-device-width: 360px) and (max-device-width: 640px) and (orientation : portrait) {
+.team_btn_center .btn {
+  width: 100%;
+    font-size: 1rem;
+    height: auto;
+}
+.media_section_parent_div {
+display: none;
+}
+}
+@media screen and (min-width: 360px) and (max-width: 640px), (min-device-width: 360px) and
+(max-device-width: 640px) and (orientation : landscape) {
+  .ethos-heading {
+    font-size: 2rem;
+  }
+  .ethos-subheading p {
+    font-size: 1rem;
+  }
+.focus-subheading {
+    font-size: 1rem;
+  }
+  .focus-content {
+    font-size: 1rem;
+  }
+  .theme_sub_heading {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 600px), (min-device-width: 600px) and (max-device-width: 960px) and (orientation : portrait) {
+.banner_text_bg {
+  height: auto;
+}
+.page_heading {
+  font-size: 1rem;
+}
+}
+@media screen and (min-width: 600px) and (max-width: 960px), (min-device-width: 600px) and
+(max-device-width: 960px) and (orientation : landscape) {
+.banner_text_bg {
+  height: auto;
+}
+.page_heading {
+  font-size: 1rem;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px), (min-device-width: 768px) and
+(max-device-width: 1024px) and (orientation : landscape) {
+.page_heading {
+  font-size: 1.8rem;
+}
+}
 
 @media only screen and (min-width : 320px) and (max-width : 764px) {
-  .banner_text_bg {
-    display: none;
-  }
+
     .growth_reactangle {
     width: 100%;
     display: block;
     margin : auto;
     text-align: center;
+  }
+  .growth_reactangle_toogle_div img {
+    display: none;
   }
   .operational_reactangle {
     width: 100%;
@@ -392,20 +592,27 @@ position: relative;
     margin : auto;
     text-align: center;
   }
+  .operation_reactangle_toogle_div img {
+    display: none;
+  }
   .concentrated_reactangle {
     width: 100%;
     display: block;
     margin : auto;
     text-align: center;
   }
+  .concentrated_reactangle_toogle_div img {
+    display: none;
+  }
 
-  .growth_reactangle_toogle_div {
+  .growth_reactangle_toogle_div , .concentrated_reactangle_toogle_div, .operation_reactangle_toogle_div{
     height: 905px;
   }
-}
+ }
 
 
-@media only screen and (min-width:320px) and (max-width: 938px) {
+
+/*@media only screen and (min-width:320px) and (max-width: 938px) {
   .growth_reactangle .ethos-title {
   font-size: 1rem;
 }
@@ -415,8 +622,18 @@ position: relative;
 .concentrated_reactangle .ethos-title {
    font-size: 1rem;
 }
+.about_btn_center .btn {
+ 
+     font-size: 14px;
+    height: auto;
 }
-
+.team_btn_center .btn {
+  width: 100%;
+    font-size: 13px;
+    height: auto;
+}
+}
+*/
 @media only screen and (min-width : 320px) and (max-width : 1029px) {
   .growth_parent_col {
   padding: 0;
