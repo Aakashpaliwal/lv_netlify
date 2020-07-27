@@ -72,6 +72,7 @@ class Team extends Component {
 
 				<div
 					className="ethos"
+					id="ethos"
 					data-aos="fade-up"
 					data-aos-duration="100"
 				>
@@ -632,7 +633,7 @@ class Team extends Component {
 										data-target="#productModal"
 									>
 										<div className="ethos-title">
-											Product & Texh COE
+											Product & Tech COE
 										</div>
 										<div
 											className="ethos-content"
@@ -715,9 +716,9 @@ class Team extends Component {
 							<center>
 								<button
 									type="button"
-									className="btn btn-outline-primary"
+									className="btn btn-outline-primary team_avataar_media_end_btn_spec"
 								>
-									AVTAAR IN THE MEDIA
+									AVATAAR IN THE MEDIA
 									<span>
 										{" "}
 										<i className="fas fa-angle-right"></i>

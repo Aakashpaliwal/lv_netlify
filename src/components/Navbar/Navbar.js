@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
 import "./navbar.css";
 import $ from "jquery";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 class Navbar extends Component {
 	componentDidMount() {
@@ -63,30 +63,34 @@ class Navbar extends Component {
 							id="navbarResponsive"
 						>
 							<ul className="navbar-nav ml-auto">
-								<li className="nav-item active">
-									<Link to="/ethos">
-										<a className="nav-link" href="{#}">
-											ETHOS
-											<span className="sr-only">
-												(current)
-											</span>
-										</a>
-									</Link>
+								<li className="nav-item nav-link active">
+									<NavLink
+										to="/ethos"
+										activeClassName="activeRoute"
+									>
+										ETHOS
+										<span className="sr-only">
+											(current)
+										</span>
+									</NavLink>
 								</li>
-								<li className="nav-item">
-									<Link to="/team">
-										<a className="nav-link" href="#">
-											TEAM
-										</a>
-									</Link>
+								<li className="nav-item nav-link">
+									<NavLink
+										to="/portfolio"
+										activeClassName="activeRoute"
+									>
+										PORTFOLIO
+									</NavLink>
 								</li>
-								<li className="nav-item">
-									<Link to="/portfolio">
-										<a className="nav-link" href="#">
-											PORTFOLIO
-										</a>
-									</Link>
+								<li className="nav-item nav-link">
+									<NavLink
+										to="/team"
+										activeClassName="activeRoute"
+									>
+										TEAM
+									</NavLink>
 								</li>
+
 								<li className="nav-item">
 									<a
 										className="nav-link"

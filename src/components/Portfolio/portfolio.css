@@ -13,12 +13,28 @@
 .portfolio_banner_content {
 	text-align: center;
 	color: #fff;
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 500;
+    letter-spacing: normal;
 }
 .portfolio_sub_section {
 	padding: 0 15%;
     text-align: center;
-    letter-spacing: 1px;
-    font-size: 1.3rem
+    /*letter-spacing: 1px;*/
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.dot {
+  height: 8px;
+  width: 8px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
+  top: -5px;
 }
 .portfolio-subheading p{
     font-size: 1.2rem;
@@ -32,8 +48,25 @@
     height: 340px;
     border-top: 2px solid #f7f7f7;
 }
+.portfolio_list_content ul {
+    text-align: center;
+}
+.portfolio_modal_content {
+    background: #fff;
+    border-radius: 0;
+}
+.portfolio_modal_content .lni-close {
+     font-size: 28px;
+    width: 25px;
+    height: 27px;
+    color: #11193e;
+    cursor: pointer;
+}
 .new_portfolio_flex_container_display {
      display: inherit;
+}
+.new_portfolio_content img {
+    width: 25%;
 }
 .new_portfolio_rectangle {
     /* opacity: 0.95; */
@@ -73,10 +106,16 @@
   }
 
 .portfolio_rectangle .crm_img_class_margin {
-    margin-top: 15%;
+    margin-top: 9%;
 }
 .portfolio_rectangle .manhatan_img_margin {
-    margin-top: 21%;
+    margin-top: 35%;
+}
+.portfolio_rectangle .appnomic-img {
+    margin-top: 35%;
+}
+.portfolio_rectangle .elastic_run_image {
+    margin-top: 35%;
 }
 .portfolio_rectangle:hover {
 	    border-top-color: #28508b;
@@ -87,7 +126,11 @@
 .portfolio_rectangle img {
 	    margin: 0 auto;
     display: block;
-    margin-top: 35%;
+    margin-top: 30%;
+    width: 70%;
+}
+.portfolio_rectangle .cap_img {
+    margin-top: 9%;
 }
 .portfolio_modal_header {
     float: right;
@@ -95,6 +138,25 @@
 .portfolio_rectangle {
     margin: 10px 0;
 }
+.website_url_container {
+    padding-top: 20px;
+}
+.portfolio_meet_end_btn_spec:focus {
+  background: #28508b!important;
+  border: solid 1px #28508b!important;
+  box-shadow: 0 0 0 0.2rem rgba(48,80,139,.8)!important;
+  color : #fff!important; 
+}
+.portfolio_meet_end_btn_spec:active {
+  background: #28508b!important;
+  border: solid 1px #28508b!important; 
+}
+.portfolio_meet_end_btn_spec:not(:disabled):not(.disabled).active:focus, .portfolio_meet_end_btn_spec:not(:disabled):not(.disabled):active:focus, .show>.portfolio_meet_end_btn_spec.dropdown-toggle:focus {
+
+        color: #fff!important;
+
+}
+
 @media screen and (min-width: 320px) and (max-width: 568px), (min-device-width: 320px) and
 (max-device-width: 568px) and (orientation : landscape) {
 .background_image_portfolio {

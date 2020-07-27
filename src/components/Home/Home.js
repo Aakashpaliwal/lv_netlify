@@ -116,6 +116,7 @@ class Home extends Component {
 
 				<div
 					className="ethos ethos_more_about_inverted_line"
+					id="ethos"
 					// data-aos="fade-up"
 					// data-aos-duration="100"
 				>
@@ -124,7 +125,8 @@ class Home extends Component {
 							<p>ETHOS</p>
 						</center>
 					</div>
-					<div className="ethos-subheading col-sm-12 mt-3">
+
+					<div className="ethos-subheading col-sm-12 mt-3 home_ethos_subheading">
 						<p>
 							Avataar partners are not just VCs on your board, we
 							are scale-up sherpas in action – labouring
@@ -249,21 +251,23 @@ class Home extends Component {
 					</div>
 
 					{this.state.isGrowthDivShow ? (
-						<Animated
-							animationIn="fadeInLeft"
-							animationOut="fadeOutLeft"
-							animationInDuration={1000}
-							animationOutDuration={1000}
-							isVisible={this.state.isGrowthDivShow}
-						>
-							<div className="toggle_elements">
-								<div className="container">
-									<div className="row">
-										<div
-											className="col-12"
-											style={{ padding: "0" }}
-										>
-											<div className="growth_reactangle_toogle_div mb-3">
+						<div className="toggle_elements">
+							<div className="container">
+								<div className="row">
+									<div
+										className="col-12"
+										style={{ padding: "0" }}
+									>
+										<div className="growth_reactangle_toogle_div mb-3">
+											<Animated
+												animationIn="fadeInLeft"
+												animationOut="fadeOutLeft"
+												animationInDuration={100}
+												animationOutDuration={100}
+												isVisible={
+													this.state.isGrowthDivShow
+												}
+											>
 												<div className="row">
 													<div className="col-lg-2 col-md-2 col-sm-0 col-xs-0"></div>
 													<div className="col-lg-10 col-md-10 col-sm-12 col-xs-12">
@@ -332,8 +336,10 @@ class Home extends Component {
 														</p>
 													</div>
 												</div>
-											</div>
-											{/*<div className="ethos-bitmap">
+											</Animated>
+										</div>
+
+										{/*<div className="ethos-bitmap">
 													<img
 														src={require("../assets/portfolio.svg")}
 														alt="growth"
@@ -346,32 +352,34 @@ class Home extends Component {
 														<i className="fas fa-times"></i>
 													</span>
 												</div>*/}
-											{/*<div className="ethos-title">
+										{/*<div className="ethos-title">
 													GROWTH & EXPANSION FOCUS
 												</div>*/}
-										</div>
 									</div>
 								</div>
 							</div>
-						</Animated>
+						</div>
 					) : null}
 
 					{this.state.isOperationDisShow ? (
-						<Animated
-							animationIn="fadeInLeft"
-							animationOut="fadeOutLeft"
-							animationInDuration={1000}
-							animationOutDuration={1000}
-							isVisible={this.state.isOperationDisShow}
-						>
-							<div className="toggle_elements">
-								<div className="container">
-									<div className="row">
-										<div
-											className="col-12"
-											style={{ padding: "0" }}
-										>
-											<div className="operation_reactangle_toogle_div mb-3">
+						<div className="toggle_elements">
+							<div className="container">
+								<div className="row">
+									<div
+										className="col-12"
+										style={{ padding: "0" }}
+									>
+										<div className="operation_reactangle_toogle_div mb-3">
+											<Animated
+												animationIn="fadeInLeft"
+												animationOut="fadeOutLeft"
+												animationInDuration={100}
+												animationOutDuration={100}
+												isVisible={
+													this.state
+														.isOperationDisShow
+												}
+											>
 												<div className="row">
 													<div className="col-lg-2 col-md-2 col-sm-0 col-xs-0"></div>
 													<div className="col-lg-10 col-md-10 col-sm-12 col-xs-12">
@@ -435,30 +443,33 @@ class Home extends Component {
 														</p>
 													</div>
 												</div>
-											</div>
+											</Animated>
 										</div>
 									</div>
 								</div>
 							</div>
-						</Animated>
+						</div>
 					) : null}
 
 					{this.state.isConcentratedDivShow ? (
-						<Animated
-							animationIn="fadeInLeft"
-							animationOut="fadeOutLeft"
-							animationInDuration={1000}
-							animationOutDuration={1000}
-							isVisible={this.state.isConcentratedDivShow}
-						>
-							<div className="toggle_elements">
-								<div className="container">
-									<div className="row">
-										<div
-											className="col-12"
-											style={{ padding: "0" }}
-										>
-											<div className="concentrated_reactangle_toogle_div mb-3">
+						<div className="toggle_elements">
+							<div className="container">
+								<div className="row">
+									<div
+										className="col-12"
+										style={{ padding: "0" }}
+									>
+										<div className="concentrated_reactangle_toogle_div mb-3">
+											<Animated
+												animationIn="fadeInLeft"
+												animationOut="fadeOutLeft"
+												animationInDuration={100}
+												animationOutDuration={100}
+												isVisible={
+													this.state
+														.isConcentratedDivShow
+												}
+											>
 												<div className="row">
 													<div className="col-lg-2 col-md-2 col-sm-0 col-xs-0"></div>
 													<div className="col-lg-10 col-md-10 col-sm-12 col-xs-12">
@@ -508,12 +519,12 @@ class Home extends Component {
 														</p>
 													</div>
 												</div>{" "}
-											</div>
+											</Animated>
 										</div>
 									</div>
 								</div>
 							</div>
-						</Animated>
+						</div>
 					) : null}
 					{/*<div className="container">
 						<div className="ethos-flex-container mt-5">
@@ -753,15 +764,17 @@ class Home extends Component {
 					<div className="container">
 						<div className="portfolio_btn_center">
 							<center>
-								<button
-									type="button"
-									className="btn btn-outline-primary"
-								>
-									KNOW MORE
-									<span>
-										<i className="lni lni-chevron-right"></i>
-									</span>
-								</button>
+								<Link to="/portfolio">
+									<button
+										type="button"
+										className="btn btn-outline-primary content_end_btn_spec"
+									>
+										KNOW MORE
+										<span>
+											<i className="lni lni-chevron-right"></i>
+										</span>
+									</button>
+								</Link>
 							</center>
 						</div>
 					</div>
@@ -1062,7 +1075,7 @@ class Home extends Component {
 									<Link to="/team">
 										<button
 											type="button"
-											className="btn btn-outline-primary"
+											className="btn btn-outline-primary home_team_btn_focus_bg"
 										>
 											THE TEAMS WE ARE BUILDING
 											<span>

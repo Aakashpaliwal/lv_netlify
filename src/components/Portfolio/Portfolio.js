@@ -88,29 +88,31 @@ class Portfolio extends Component {
 								</p>
 							</div>
 							<div className="focus-content mt-2 portfolio_banner_content">
-								<span className="light_strong">
-									$15 Million
-								</span>{" "}
-								+ in Annual Recurring Revenues
+								{/*<center>
+									<ul>
+										<li>
+											$15 Million + in Annual Recurring
+											Revenues
+										</li>
+										<li>Strong Tech-Led B2B & SaaS</li>
+										<li>Open to Active Partnering</li>
+										<li>
+											Core Operations in India/ South East
+											Asia
+										</li>
+									</ul>
+								</center>*/}
+								<span className="dot"></span>
+								$15 Million + in Annual Recurring Revenues
 								<br />
-								Strong
-								<span className="light_strong">
-									{" "}
-									Tech-Led B2B & SaaS
-								</span>{" "}
-								Companies
+								<span className="dot"></span>
+								Strong Tech-Led B2B & SaaS Companies
 								<br />
-								Open to{" "}
-								<span className="light_strong">
-									Active Partnering
-								</span>
+								<span className="dot"></span>
+								Open to Active Partnering
 								<br />
-								Core Operations in
-								<span className="light_strong">
-									{" "}
-									India/ South East Asia
-								</span>
-								<br />
+								<span className="dot"></span>
+								Core Operations in India/ South East Asia
 							</div>
 						</div>
 					</div>
@@ -153,7 +155,7 @@ class Portfolio extends Component {
 						</p>
 					</div>
 
-					<div className="row">
+					<div className="">
 						<div className="container">
 							<div className="people_flex_container mt-4">
 								<div className="row">
@@ -164,16 +166,11 @@ class Portfolio extends Component {
 											data-toggle="modal"
 											data-target="#zenotiModal"
 										>
-											<a
-												href="https://www.zenoti.com/"
-												target="_blank"
-											>
-												<img
-													src="https://s3.ap-south-1.amazonaws.com/avataar.vc/Zenoti.svg"
-													alt="Zenoti"
-													className="displayed img-fluid"
-												/>
-											</a>
+											<img
+												src={require("../assets/Zenoti.png")}
+												alt="Zenoti"
+												className="displayed img-fluid"
+											/>
 										</div>
 										<div
 											class="modal fade"
@@ -187,7 +184,7 @@ class Portfolio extends Component {
 												class="modal-dialog modal-lg team_modal_bg"
 												role="document"
 											>
-												<div class="modal-content team_modal_content">
+												<div class="modal-content portfolio_modal_content">
 													<div className="row">
 														<div className="container">
 															<div class="modal-header portfolio_modal_header">
@@ -202,9 +199,9 @@ class Portfolio extends Component {
 														<div className="new_portfolio_content">
 															<div className="col-12">
 																<img
-																	src="https://s3.ap-south-1.amazonaws.com/avataar.vc/Zenoti.svg"
+																	src={require("../assets/Zenoti.png")}
 																	alt="Zenoti"
-																	className="displayed"
+																	className="displayed img-fluid"
 																/>
 															</div>
 															<div clasasName="col-12">
@@ -245,16 +242,20 @@ class Portfolio extends Component {
 																	in 32
 																	countries.
 																	<br />
-																	<strong>
-																		Website
-																		:{" "}
-																	</strong>
-																	<a
-																		href="{https://www.zenoti.com/}"
-																		target="_blank"
-																	>
-																		https://www.zenoti.com/
-																	</a>
+																	<div className="website_url_container">
+																		<p>
+																			<strong>
+																				Website
+																				:{" "}
+																			</strong>
+																			<a
+																				href="{https://www.zenoti.com/}"
+																				target="_blank"
+																			>
+																				https://www.zenoti.com/
+																			</a>
+																		</p>
+																	</div>
 																</p>
 															</div>
 														</div>
@@ -270,16 +271,11 @@ class Portfolio extends Component {
 											data-toggle="modal"
 											data-target="#capillaryModal"
 										>
-											<a
-												href="https://www.capillarytech.com/"
-												target="_blank"
-											>
-												<img
-													src="https://s3.ap-south-1.amazonaws.com/avataar.vc/Capillary.svg"
-													alt="Capillary"
-													className="img-fluid"
-												/>
-											</a>
+											<img
+												src={require("../assets/Capillary.png")}
+												alt="Capillary"
+												className="img-fluid cap_img"
+											/>
 										</div>
 										<div
 											class="modal fade"
@@ -293,7 +289,7 @@ class Portfolio extends Component {
 												class="modal-dialog modal-lg team_modal_bg"
 												role="document"
 											>
-												<div class="modal-content team_modal_content">
+												<div class="modal-content portfolio_modal_content">
 													<div className="row">
 														<div className="container">
 															<div class="modal-header portfolio_modal_header">
@@ -308,8 +304,9 @@ class Portfolio extends Component {
 														<div className="new_portfolio_content">
 															<div className="col-12">
 																<img
-																	src="https://s3.ap-south-1.amazonaws.com/avataar.vc/Capillary.svg"
+																	src={require("../assets/Capillary.png")}
 																	alt="Capillary"
+																	className="img-fluid"
 																/>
 															</div>
 															<div clasasName="col-12">
@@ -396,16 +393,20 @@ class Portfolio extends Component {
 																	into the
 																	future.
 																	<br />
-																	<strong>
-																		Website
-																		:{" "}
-																	</strong>
-																	<a
-																		href="{https://www.capillarytech.com/}"
-																		target="_blank"
-																	>
-																		https://www.capillarytech.com/
-																	</a>
+																	<div className="website_url_container">
+																		<p>
+																			<strong>
+																				Website
+																				:{" "}
+																			</strong>
+																			<a
+																				href="{https://www.capillarytech.com/}"
+																				target="_blank"
+																			>
+																				https://www.capillarytech.com/
+																			</a>
+																		</p>
+																	</div>
 																</p>
 															</div>
 														</div>
@@ -421,16 +422,11 @@ class Portfolio extends Component {
 											data-toggle="modal"
 											data-target="#crmModal"
 										>
-											<a
-												href="https://www.crmnext.com/"
-												target="_blank"
-											>
-												<img
-													src="https://s3.ap-south-1.amazonaws.com/avataar.vc/CRM.svg"
-													alt="CRM"
-													className="crm_img_class_margin img-fluid"
-												/>
-											</a>
+											<img
+												src={require("../assets/CRM_Next.png")}
+												alt="CRM"
+												className="crm_img_class_margin img-fluid"
+											/>
 										</div>
 										<div
 											class="modal fade"
@@ -444,7 +440,7 @@ class Portfolio extends Component {
 												class="modal-dialog modal-lg team_modal_bg"
 												role="document"
 											>
-												<div class="modal-content team_modal_content">
+												<div class="modal-content portfolio_modal_content">
 													<div className="row">
 														<div className="container">
 															<div class="modal-header portfolio_modal_header">
@@ -459,7 +455,7 @@ class Portfolio extends Component {
 														<div className="new_portfolio_content">
 															<div className="col-12">
 																<img
-																	src="https://s3.ap-south-1.amazonaws.com/avataar.vc/CRM.svg"
+																	src={require("../assets/CRM_Next.png")}
 																	alt="CRM"
 																	className="crm_img_class_margin"
 																/>
@@ -528,16 +524,20 @@ class Portfolio extends Component {
 																	and deliver
 																	innovation.
 																	<br />
-																	<strong>
-																		Website
-																		:{" "}
-																	</strong>
-																	<a
-																		href="{https://www.crmnext.com/}"
-																		target="_blank"
-																	>
-																		https://www.crmnext.com/
-																	</a>
+																	<div className="website_url_container">
+																		<p>
+																			<strong>
+																				Website
+																				:{" "}
+																			</strong>
+																			<a
+																				href="{https://www.crmnext.com/}"
+																				target="_blank"
+																			>
+																				https://www.crmnext.com/
+																			</a>
+																		</p>
+																	</div>
 																</p>
 															</div>
 														</div>
@@ -556,16 +556,11 @@ class Portfolio extends Component {
 											data-toggle="modal"
 											data-target="#appnomicModal"
 										>
-											<a
-												href="http://appnomic.com/"
-												target="_blank"
-											>
-												<img
-													src="https://s3.ap-south-1.amazonaws.com/avataar.vc/appnomic.png"
-													alt="appnomic"
-													className="appnomic-img img-fluid"
-												/>
-											</a>
+											<img
+												src={require("../assets/APPNOmic.png")}
+												alt="appnomic"
+												className="appnomic-img img-fluid"
+											/>
 										</div>
 										<div
 											class="modal fade"
@@ -579,7 +574,7 @@ class Portfolio extends Component {
 												class="modal-dialog modal-lg team_modal_bg"
 												role="document"
 											>
-												<div class="modal-content team_modal_content">
+												<div class="modal-content portfolio_modal_content">
 													<div className="row">
 														<div className="container">
 															<div class="modal-header portfolio_modal_header">
@@ -594,9 +589,9 @@ class Portfolio extends Component {
 														<div className="new_portfolio_content">
 															<div className="col-12">
 																<img
-																	src="https://s3.ap-south-1.amazonaws.com/avataar.vc/appnomic.png"
+																	src={require("../assets/APPNOmic.png")}
 																	alt="appnomic"
-																	className="appnomic-img img-fluid"
+																	className="img-fluid"
 																/>
 															</div>
 															<div clasasName="col-12">
@@ -663,16 +658,20 @@ class Portfolio extends Component {
 																	and deliver
 																	innovation.
 																	<br />
-																	<strong>
-																		Website
-																		:{" "}
-																	</strong>
-																	<a
-																		href="{http://appnomic.com/}"
-																		target="_blank"
-																	>
-																		http://appnomic.com/
-																	</a>
+																	<div className="website_url_container">
+																		<p>
+																			<strong>
+																				Website
+																				:{" "}
+																			</strong>
+																			<a
+																				href="{http://appnomic.com/}"
+																				target="_blank"
+																			>
+																				http://appnomic.com/
+																			</a>
+																		</p>
+																	</div>
 																</p>
 															</div>
 														</div>
@@ -688,16 +687,11 @@ class Portfolio extends Component {
 											data-toggle="modal"
 											data-target="#elasticModal"
 										>
-											<a
-												href="https://www.elastic.run/"
-												target="_blank"
-											>
-												<img
-													src="https://s3.ap-south-1.amazonaws.com/avataar.vc/Elastic_Run.svg"
-													alt="Elastic_Run"
-													className="img-fluid"
-												/>
-											</a>
+											<img
+												src={require("../assets/Elastic_Run.png")}
+												alt="Elastic_Run"
+												className="img-fluid elastic_run_image"
+											/>
 										</div>
 										<div
 											class="modal fade"
@@ -711,7 +705,7 @@ class Portfolio extends Component {
 												class="modal-dialog modal-lg team_modal_bg"
 												role="document"
 											>
-												<div class="modal-content team_modal_content">
+												<div class="modal-content portfolio_modal_content">
 													<div className="row">
 														<div className="container">
 															<div class="modal-header portfolio_modal_header">
@@ -726,7 +720,7 @@ class Portfolio extends Component {
 														<div className="new_portfolio_content">
 															<div className="col-12">
 																<img
-																	src="https://s3.ap-south-1.amazonaws.com/avataar.vc/Elastic_Run.svg"
+																	src={require("../assets/Elastic_Run.png")}
 																	alt="Elastic_Run"
 																	className="img-fluid"
 																/>
@@ -795,16 +789,20 @@ class Portfolio extends Component {
 																	and deliver
 																	innovation.
 																	<br />
-																	<strong>
-																		Website
-																		:{" "}
-																	</strong>
-																	<a
-																		href="{https://www.elastic.run/}"
-																		target="_blank"
-																	>
-																		https://www.elastic.run/
-																	</a>
+																	<div className="website_url_container">
+																		<p>
+																			<strong>
+																				Website
+																				:{" "}
+																			</strong>
+																			<a
+																				href="{https://www.elastic.run/}"
+																				target="_blank"
+																			>
+																				https://www.elastic.run/
+																			</a>
+																		</p>
+																	</div>
 																</p>
 															</div>
 														</div>
@@ -820,16 +818,11 @@ class Portfolio extends Component {
 											data-toggle="modal"
 											data-target="#manhattanModal"
 										>
-											<a
-												href="https://www.manthan.com/"
-												target="_blank"
-											>
-												<img
-													src="https://s3.ap-south-1.amazonaws.com/avataar.vc/Manthan.svg"
-													alt="Manthan"
-													className="manhatan_img_margin img-fluid"
-												/>
-											</a>
+											<img
+												src={require("../assets/Manthan.png")}
+												alt="Manthan"
+												className="manhatan_img_margin img-fluid"
+											/>
 										</div>
 										<div
 											class="modal fade"
@@ -843,7 +836,7 @@ class Portfolio extends Component {
 												class="modal-dialog modal-lg team_modal_bg"
 												role="document"
 											>
-												<div class="modal-content team_modal_content">
+												<div class="modal-content portfolio_modal_content">
 													<div className="row">
 														<div className="container">
 															<div class="modal-header portfolio_modal_header">
@@ -858,7 +851,7 @@ class Portfolio extends Component {
 														<div className="new_portfolio_content">
 															<div className="col-12">
 																<img
-																	src="https://s3.ap-south-1.amazonaws.com/avataar.vc/Manthan.svg"
+																	src={require("../assets/Manthan.png")}
 																	alt="Manthan"
 																	className="manhatan_img_margin"
 																/>
@@ -927,16 +920,20 @@ class Portfolio extends Component {
 																	and deliver
 																	innovation.
 																	<br />
-																	<strong>
-																		Website
-																		:{" "}
-																	</strong>
-																	<a
-																		href="{https://www.manthan.com/}"
-																		target="_blank"
-																	>
-																		https://www.manthan.com/
-																	</a>
+																	<div className="website_url_container">
+																		<p>
+																			<strong>
+																				Website
+																				:{" "}
+																			</strong>
+																			<a
+																				href="{https://www.manthan.com/}"
+																				target="_blank"
+																			>
+																				https://www.manthan.com/
+																			</a>
+																		</p>
+																	</div>
 																</p>
 															</div>
 														</div>
@@ -1785,7 +1782,7 @@ class Portfolio extends Component {
 							<center>
 								<button
 									type="button"
-									className="btn btn-outline-primary"
+									className="btn btn-outline-primary portfolio_meet_end_btn_spec"
 								>
 									MEET THE SCALE-UP TEAM
 									<span>

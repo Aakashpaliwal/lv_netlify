@@ -101,6 +101,7 @@ class Ethos extends Component {
 					</div>
 				</div>
 				<div
+					id="ethos"
 					className="ethos"
 					data-aos="fade-up"
 					data-aos-duration="100"
@@ -1036,7 +1037,7 @@ class Ethos extends Component {
 										<Link to="/portfolio">
 											<button
 												type="button"
-												className="btn btn-outline-primary"
+												className="btn btn-outline-primary ethos_investment_portfolio_end_btn_spec"
 											>
 												OUR INVESTMENT FOCUS & PORTFOLIO{" "}
 												<span>

@@ -13,6 +13,10 @@
     height: 536px;
     width: 525px;
 }
+.home_ethos_subheading {
+  padding: 0 18%;
+  font-size: 25px;
+}
 .custom_home_section {
   height: 100vh;
   margin-left: 0!important;
@@ -285,6 +289,38 @@ padding-right: 2rem;
   position: relative;
   top: 4px; 
 }
+.home_team_btn_focus_bg:focus {
+  
+  
+  box-shadow: 0 0 0 0.2rem rgba(48,80,139,.8)!important;
+  
+}
+.home_team_btn_focus_bg:active {
+  background: #28508b;
+  border: solid 1px #28508b;
+  color : #fff;
+  box-shadow: 0 0 0 0.2rem rgba(48,80,139,.8);
+}
+.content_end_btn_spec:focus {
+  background: #28508b!important;
+  border: solid 1px #28508b!important;
+  box-shadow: 0 0 0 0.2rem rgba(48,80,139,.8)!important;
+  color : #fff!important; 
+}
+.content_end_btn_spec:active {
+  background: #28508b!important;
+  border: solid 1px #28508b!important; 
+}
+.home_team_btn_focus_bg:not(:disabled):not(.disabled).active, .home_team_btn_focus_bg:not(:disabled):not(.disabled):active, .show>.home_team_btn_focus_bg.dropdown-toggle {
+  border: solid 1px #28508b;
+  background: #28508b;
+  color : #fff!important; 
+}
+.content_end_btn_spec:not(:disabled):not(.disabled).active:focus, .content_end_btn_spec:not(:disabled):not(.disabled):active:focus, .show>.content_end_btn_spec.dropdown-toggle:focus {
+
+        color: #fff!important;
+
+}
 .portfolio_btn_center .btn {
     border-radius: 0;
 border : solid 1px #28508b;
@@ -447,6 +483,7 @@ font-weight: 500;
 }
 .george-overlay .text {
     font-size : 15px;
+    width: 100%;
   }
 .media_section_parent_div {
   height: 6.25rem;
