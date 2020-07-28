@@ -266,8 +266,9 @@ class Portfolio extends Component {
 																				:{" "}
 																			</strong>
 																			<a
-																				href="{https://www.zenoti.com/}"
+																				href="https://www.zenoti.com/"
 																				target="_blank"
+																				rel="noopener noreferrer"
 																			>
 																				https://www.zenoti.com/
 																			</a>
@@ -417,8 +418,9 @@ class Portfolio extends Component {
 																				:{" "}
 																			</strong>
 																			<a
-																				href="{https://www.capillarytech.com/}"
+																				href="https://www.capillarytech.com/"
 																				target="_blank"
+																				rel="noopener noreferrer"
 																			>
 																				https://www.capillarytech.com/
 																			</a>
@@ -548,8 +550,9 @@ class Portfolio extends Component {
 																				:{" "}
 																			</strong>
 																			<a
-																				href="{https://www.crmnext.com/}"
+																				href="https://www.crmnext.com/"
 																				target="_blank"
+																				rel="noopener noreferrer"
 																			>
 																				https://www.crmnext.com/
 																			</a>
@@ -682,8 +685,9 @@ class Portfolio extends Component {
 																				:{" "}
 																			</strong>
 																			<a
-																				href="{http://appnomic.com/}"
+																				href="http://appnomic.com/"
 																				target="_blank"
+																				rel="noopener noreferrer"
 																			>
 																				http://appnomic.com/
 																			</a>
@@ -785,8 +789,9 @@ class Portfolio extends Component {
 																				:{" "}
 																			</strong>
 																			<a
-																				href="{https://www.elastic.run/}"
+																				href="https://www.elastic.run/"
 																				target="_blank"
+																				rel="noopener noreferrer"
 																			>
 																				https://www.elastic.run/
 																			</a>
@@ -911,8 +916,9 @@ class Portfolio extends Component {
 																				:{" "}
 																			</strong>
 																			<a
-																				href="{https://www.manthan.com/}"
+																				href="https://www.manthan.com/"
 																				target="_blank"
+																				rel="noopener noreferrer"
 																			>
 																				https://www.manthan.com/
 																			</a>

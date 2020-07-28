@@ -1354,18 +1354,19 @@ class Home extends Component {
 												</div>
 											</div>
 											<div className="stakeholder-social-links">
-												<a
+												{/*<a
 													href="{}"
 													target="_blank"
 													rel="noopener noreferrer"
-												>
-													<img
-														src="https://s3.ap-south-1.amazonaws.com/avataar.vc/Mail_modal.svg"
-														width="25"
-														height="25"
-														alt="mail_modal"
-													/>
-												</a>
+												>*/}
+												<img
+													src="https://s3.ap-south-1.amazonaws.com/avataar.vc/Mail_modal.svg"
+													width="25"
+													height="25"
+													alt="mail_modal"
+													className="email_svg_nishant"
+												/>
+												{/*</a>*/}
 												<a
 													href="https://twitter.com/nishrao/"
 													target="_blank"
