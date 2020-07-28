@@ -22,7 +22,7 @@ class Team extends Component {
 							data-aos-duration="1500"
 						>
 							<h1 className="ethos_banner_heading">
-								<center>TEAM</center>
+								TEAM
 							</h1>
 							<div className="home-content d-inline-flex">
 								<div className="sub_section team_sub_section">
@@ -58,7 +58,7 @@ class Team extends Component {
 
 					<div
 						className="col-sm-12 text-center arrow bounce"
-						style={{ position: "absolute" }}
+						style={{ position: "absolute",bottom:"20px" }}
 					>
 						<a href="#ethos">
 							<img

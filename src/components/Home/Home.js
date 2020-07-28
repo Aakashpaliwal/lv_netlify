@@ -71,7 +71,7 @@ class Home extends Component {
 								<h1 className="page_heading">
 									ACCELERATING TRANSFORMATION
 								</h1>
-								<div className="home-content d-inline-flex mt-5">
+								<div className="home-content d-inline-flex mt-5 mt-xs-0">
 									<div className="sub_section home_content_subsection">
 										<p>
 											Avataar is a
@@ -101,7 +101,7 @@ class Home extends Component {
 					</div>
 
 					<div
-						className="col-sm-12 text-center arrow bounce"
+						className="col-sm-12 text-center arrow bounce mobile_bounce"
 						style={{ position: "absolute" }}
 					>
 						<a href="#ethos">

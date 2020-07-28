@@ -1,0 +1,14 @@
+@media (min-width: 320px) and (max-width: 480px) {
+    .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer-head {
+        width: 50%;
+    }
+    .footer-content  .footer-link {
+        padding: 10px;
+        width: 35%;
+    }
+}

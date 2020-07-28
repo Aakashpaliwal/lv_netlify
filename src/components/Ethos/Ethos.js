@@ -64,7 +64,7 @@ class Ethos extends Component {
 							data-aos-duration="1500"
 						>
 							<h1 className="ethos_banner_heading">
-								<center>ETHOS</center>
+								ETHOS
 							</h1>
 							<div className="home-content d-inline-flex mt-5">
 								<p className="sub_section ethos_sub_section">
@@ -89,7 +89,7 @@ class Ethos extends Component {
 
 					<div
 						className="col-sm-12 text-center arrow bounce"
-						style={{ position: "absolute" }}
+						style={{ position: "absolute",bottom: "20px" }}
 					>
 						<a href="#ethos">
 							<img

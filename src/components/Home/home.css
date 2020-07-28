@@ -489,10 +489,27 @@ font-weight: 500;
   height: 6.25rem;
 }
   @media only screen and (min-width:320px) and (max-width : 480px) {
-     .about_btn_center .btn {
+  .custom_home_section {
+    height: 90vh;
+  }
+  .custom_home_section .banner_text_bg {
+    background-color: rgba(51, 87, 130, 0);
+    width: 90%;
+    margin-bottom: 70px;
+  }
+  .mobile_bounce{
+    position: absolute;
+    bottom: 30px;
+  }
+  .about_btn_center .btn {
     font-size: 14px;
     height: auto;
-    width: 100%;
+    width: 90%;
+    height: 53px;
+  }
+
+  .contact-wrapper .contact-item {
+    margin-top: 40px;
   }
 
   }
@@ -683,6 +700,10 @@ display: none;
 .concentrated_parent_col {
   padding: 0;
   margin-bottom: 10px;
+}
+
+.contact-wrapper{
+  flex-wrap: wrap;
 }
 
 }

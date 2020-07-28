@@ -14,14 +14,14 @@ a {
 .custom_avtaar_logo {
   cursor: pointer;
 }
-.navbar-toggler {
+/* .navbar-toggler {
     padding: .25rem .75rem;
     font-size: 1.25rem;
     line-height: 1;
     background-color: none!important;
     border: 1px solid #e1e1e1!important;
     border-radius: .25rem;
-}
+} */
 .navbar-fixed-top.scrolled {
   background-color: #fff !important;
   transition: background-color 200ms linear;
@@ -33,14 +33,14 @@ a {
 .navbar-fixed-top.scrolled .activeRoute {
   color:#28508b;
 }
-@media only screen and (min-width: 320px) and (max-width: 990px) {
+/* @media only screen and (min-width: 320px) and (max-width: 990px) {
   .custom-navbar-bg {
     background: #343a40 !important;
     top: -14px;
   }
   .navbar-fixed {
     top: 0px;
-    /* background : #fff; */
+    background : #fff;
   }
 }
 
@@ -51,7 +51,21 @@ a {
     width: 100%;
     position: relative;
 	}
- /*.custom-collapse-bg {
+ .custom-collapse-bg {
    background: #343a40!important;
- }*/
+ }
+} */
+@media (min-width: 320px) and (max-width: 480px){
+  .custom-collapse-bg{
+    background-color: #fff;
+  }
+  .background_image_home_page  {
+    padding-top: 60px;
+  }
+  .home-content{
+    margin-top: 25px !important;
+  }
+  .nav-item a {
+    color: rgb(0, 0, 0, 0.9);
+  }
 }

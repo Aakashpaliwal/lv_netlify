@@ -14,25 +14,25 @@ const Footer = (props) => {
 						/>
 					</div>
 					<div className="footer-content">
-						<div>
+						<div className="footer-link">
 							<a href="#home">HOME</a>
 						</div>
-						<div>
+						<div className="footer-link">
 							<a href="#ethos">ETHOS</a>
 						</div>
-						<div>
+						<div className="footer-link">
 							<a href="#focus">FOCUS</a>
 						</div>
-						<div>
+						<div className="footer-link">
 							<a href="#portfolio">PORTFOLIO</a>
 						</div>
-						<div>
+						<div className="footer-link">
 							<a href="#people">TEAM</a>
 						</div>
-						<div>
+						<div className="footer-link">
 							<a href="#media_section">MEDIA</a>
 						</div>
-						<div>
+						<div className="footer-link">
 							<a href="#contact">CONTACT</a>
 						</div>
 					</div>

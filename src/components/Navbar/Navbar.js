@@ -15,6 +15,8 @@ class Navbar extends Component {
 					.parent()
 					.parent()[0].children[0].children[0].src =
 					"https://s3.ap-south-1.amazonaws.com/avataar.vc/avataar-logo-black-new.png";
+				$(".navbar").removeClass("navbar-dark");
+				$(".navbar").addClass("navbar-light");
 			} else {
 				$(".nav-link")
 					.parent()
@@ -22,6 +24,8 @@ class Navbar extends Component {
 					.parent()
 					.parent()[0].children[0].children[0].src =
 					"https://s3.ap-south-1.amazonaws.com/avataar.vc/avataar_log_white_new.png";
+				$(".navbar").removeClass("navbar-light");
+				$(".navbar").addClass("navbar-dark");
 			}
 		});
 	}
@@ -33,7 +37,7 @@ class Navbar extends Component {
 	render() {
 		return (
 			<Fragment>
-				<nav class="navbar navbar-expand-lg  static-top fixed-top d-inline-flex navbar-fixed-top">
+				<nav class="navbar navbar-expand-lg  static-top fixed-top d-inline-flex navbar-fixed-top navbar-dark">
 					<div class="container">
 						<div
 							class="navbar-brand custom_avtaar_logo"
@@ -113,6 +117,7 @@ class Navbar extends Component {
 						</div>
 					</div>
 				</nav>
+				<div className="navbar_space"></div>
 				{/*<div id="page-wrapper">
 					<div id="title">Sidebar Interaction</div>
 				</div>

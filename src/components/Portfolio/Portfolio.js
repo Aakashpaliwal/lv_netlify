@@ -1,6 +1,7 @@
 import React, { Fragment, Component } from "react";
 import "./portfolio.css";
 import { Animated } from "react-animated-css";
+import { Link } from "react-router-dom";
 
 class Portfolio extends Component {
 	constructor(props) {
@@ -78,7 +79,7 @@ class Portfolio extends Component {
 							data-aos-duration="1500"
 						>
 							<h1 className="ethos_banner_heading">
-								<center>FOCUS & PORTFOLIO</center>
+								FOCUS & PORTFOLIO
 							</h1>
 							<div className="home-content d-inline-flex mt-5">
 								<p className="sub_section portfolio_sub_section">
@@ -119,7 +120,7 @@ class Portfolio extends Component {
 
 					<div
 						className="col-sm-12 text-center arrow bounce"
-						style={{ position: "absolute" }}
+						style={{ position: "absolute",bottom: "20px" }}
 					>
 						<a href="#ethos">
 							<img
@@ -1780,16 +1781,18 @@ class Portfolio extends Component {
 					<div className="container">
 						<div className="about_btn_center">
 							<center>
-								<button
-									type="button"
-									className="btn btn-outline-primary portfolio_meet_end_btn_spec"
-								>
-									MEET THE SCALE-UP TEAM
-									<span>
-										{" "}
-										<i className="fas fa-angle-right"></i>
-									</span>
-								</button>
+								<Link to="/team">
+									<button
+										type="button"
+										className="btn btn-outline-primary portfolio_meet_end_btn_spec"
+									>
+										MEET THE SCALE-UP TEAM
+										<span>
+											{" "}
+											<i className="fas fa-angle-right"></i>
+										</span>
+									</button>
+								</Link>
 							</center>
 						</div>
 					</div>
