@@ -2,10 +2,6 @@ import React, { Fragment, Component } from "react";
 import "./team.css";
 
 class Team extends Component {
-	constructor(props) {
-		super(props);
-	}
-
 	render() {
 		return (
 			<Fragment>
@@ -21,9 +17,7 @@ class Team extends Component {
 							data-aos="fade-up"
 							data-aos-duration="1500"
 						>
-							<h1 className="ethos_banner_heading">
-								TEAM
-							</h1>
+							<h1 className="ethos_banner_heading">TEAM</h1>
 							<div className="home-content d-inline-flex">
 								<div className="sub_section team_sub_section">
 									<p>
@@ -58,7 +52,7 @@ class Team extends Component {
 
 					<div
 						className="col-sm-12 text-center arrow bounce"
-						style={{ position: "absolute",bottom:"20px" }}
+						style={{ position: "absolute", bottom: "20px" }}
 					>
 						<a href="#ethos">
 							<img
@@ -157,14 +151,8 @@ class Team extends Component {
 														className="card-img-top"
 														alt="..."
 													/>
-													<div className="overlay">
-														<div
-															className="text"
-															style={{
-																fontSize:
-																	"0.8rem",
-															}}
-														>
+													<div className="overlay george_team_component_text">
+														<div className="text">
 															GEORGE THANGADURAI
 															<br />
 															<span>
@@ -770,9 +758,14 @@ class Team extends Component {
 												</div>
 											</div>
 											<div className="stakeholder-social-links">
-												<a href="" target="_blank">
+												<a
+													href="{#}"
+													target="_blank"
+													rel="noopener noreferrer"
+												>
 													<img
 														src="https://s3.ap-south-1.amazonaws.com/avataar.vc/Mail_modal.svg"
+														alt="nishant_prop"
 														width="25"
 														height="25"
 													/>
@@ -780,6 +773,7 @@ class Team extends Component {
 												<a
 													href="https://twitter.com/nishrao/"
 													target="_blank"
+													rel="noopener noreferrer"
 												>
 													<img
 														src="https://s3.ap-south-1.amazonaws.com/avataar.vc/twitter_logo.svg"
@@ -791,6 +785,7 @@ class Team extends Component {
 												<a
 													href="https://www.linkedin.com/in/nishantrao/"
 													target="_blank"
+													rel="noopener noreferrer"
 												>
 													<img
 														src="https://s3.ap-south-1.amazonaws.com/avataar.vc/Linkedin.svg"
@@ -848,6 +843,7 @@ class Team extends Component {
 											<a
 												href="https://capillarytech.com/"
 												target="_blank"
+												rel="noopener noreferrer"
 											>
 												Capillary
 											</a>{" "}
@@ -855,6 +851,7 @@ class Team extends Component {
 											<a
 												href="https://www.crmnext.com/"
 												target="_blank"
+												rel="noopener noreferrer"
 											>
 												CRMNext
 											</a>{" "}
@@ -862,6 +859,7 @@ class Team extends Component {
 											<a
 												href="https://www.zenoti.com/"
 												target="_blank"
+												rel="noopener noreferrer"
 											>
 												Zenoti
 											</a>
@@ -916,6 +914,7 @@ class Team extends Component {
 												<a
 													href="https://twitter.com/kumarmohanv"
 													target="_blank"
+													rel="noopener noreferrer"
 												>
 													<img
 														src="https://s3.ap-south-1.amazonaws.com/avataar.vc/twitter_logo.svg"
@@ -927,6 +926,7 @@ class Team extends Component {
 												<a
 													href="https://www.linkedin.com/in/vmohankumar"
 													target="_blank"
+													rel="noopener noreferrer"
 												>
 													<img
 														src="https://s3.ap-south-1.amazonaws.com/avataar.vc/Linkedin.svg"
@@ -970,6 +970,7 @@ class Team extends Component {
 											<a
 												href="https://www.zenoti.com/"
 												target="_blank"
+												rel="noopener noreferrer"
 											>
 												Zenoti
 											</a>{" "}
@@ -977,6 +978,7 @@ class Team extends Component {
 											<a
 												href="https://www.elastic.run/"
 												target="_blank"
+												rel="noopener noreferrer"
 											>
 												Elastic Run
 											</a>{" "}
@@ -984,6 +986,7 @@ class Team extends Component {
 											<a
 												href="https://capillarytech.com"
 												target="_blank"
+												rel="noopener noreferrer"
 											>
 												Capillary
 											</a>{" "}
@@ -991,6 +994,7 @@ class Team extends Component {
 											<a
 												href="https://www.manthan.com/"
 												target="_blank"
+												rel="noopener noreferrer"
 											>
 												Manthan
 											</a>{" "}
@@ -998,6 +1002,7 @@ class Team extends Component {
 											<a
 												href="https://appnomic.com/"
 												target="_blank"
+												rel="noopener noreferrer"
 											>
 												Appnomic Inc
 											</a>{" "}
@@ -1005,6 +1010,7 @@ class Team extends Component {
 											<a
 												href="https://www.crmnext.com/"
 												target="_blank"
+												rel="noopener noreferrer"
 											>
 												CRMNext
 											</a>
@@ -1059,6 +1065,7 @@ class Team extends Component {
 												<a
 													href="https://www.linkedin.com/in/mikemulica/"
 													target="_blank"
+													rel="noopener noreferrer"
 												>
 													<img
 														src="https://s3.ap-south-1.amazonaws.com/avataar.vc/Linkedin.svg"
@@ -1113,6 +1120,7 @@ class Team extends Component {
 											<a
 												href="https://appnomic.com/"
 												target="_blank"
+												rel="noopener noreferrer"
 											>
 												Appnomic Inc
 											</a>
@@ -1167,6 +1175,7 @@ class Team extends Component {
 												<a
 													href="https://twitter.com/George_Thangad"
 													target="_blank"
+													rel="noopener noreferrer"
 												>
 													<img
 														src="https://s3.ap-south-1.amazonaws.com/avataar.vc/twitter_logo.svg"
@@ -1178,6 +1187,7 @@ class Team extends Component {
 												<a
 													href="https://www.linkedin.com/in/george-thangadurai-9034ba3/"
 													target="_blank"
+													rel="noopener noreferrer"
 												>
 													<img
 														src="https://s3.ap-south-1.amazonaws.com/avataar.vc/Linkedin.svg"
@@ -1245,6 +1255,7 @@ class Team extends Component {
 											<a
 												href="https://appnomic.com/"
 												target="_blank"
+												rel="noopener noreferrer"
 											>
 												Appnomic Inc
 											</a>

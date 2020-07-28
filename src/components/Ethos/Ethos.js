@@ -63,9 +63,7 @@ class Ethos extends Component {
 							data-aos="fade-up"
 							data-aos-duration="1500"
 						>
-							<h1 className="ethos_banner_heading">
-								ETHOS
-							</h1>
+							<h1 className="ethos_banner_heading">ETHOS</h1>
 							<div className="home-content d-inline-flex mt-5">
 								<p className="sub_section ethos_sub_section">
 									Our aspiration is to see India & South-East
@@ -89,7 +87,7 @@ class Ethos extends Component {
 
 					<div
 						className="col-sm-12 text-center arrow bounce"
-						style={{ position: "absolute",bottom: "20px" }}
+						style={{ position: "absolute", bottom: "20px" }}
 					>
 						<a href="#ethos">
 							<img
@@ -460,19 +458,22 @@ class Ethos extends Component {
 							</div>
 
 							{this.state.isExpansionShow ? (
-								<Animated
-									animationIn="fadeInLeft"
-									animationOut="fadeOutLeft"
-									animationInDuration={1000}
-									animationOutDuration={1000}
-									isVisible={this.state.isExpansionShow}
-								>
-									<div className="container">
-										<div className="people_flex_container mt-4 new_flex_container_display">
-											<div className="row">
-												<div
-													className="col-lg-12 col-md-12 col-sm-12 col-xs-12"
-													style={{ padding: "0" }}
+								<div className="container">
+									<div className="people_flex_container mt-4 new_flex_container_display">
+										<div className="row">
+											<div
+												className="col-lg-12 col-md-12 col-sm-12 col-xs-12"
+												style={{ padding: "0" }}
+											>
+												<Animated
+													animationIn="fadeInLeft"
+													animationOut="fadeOutLeft"
+													animationInDuration={1000}
+													animationOutDuration={1000}
+													isVisible={
+														this.state
+															.isExpansionShow
+													}
 												>
 													<div className="new_expansion_rectangle">
 														<div className="row">
@@ -549,11 +550,12 @@ class Ethos extends Component {
 															</div>
 														</div>
 													</div>
-												</div>
+												</Animated>
 											</div>
+										</div>
 
-											{/**************NEW DIV*************/}
-											{/*{this.state.isExpansionShow ? (
+										{/**************NEW DIV*************/}
+										{/*{this.state.isExpansionShow ? (
 									<Animated
 										animationIn="fadeInLeft"
 										animationOut="fadeOutLeft"
@@ -601,10 +603,9 @@ class Ethos extends Component {
 									</Animated>
 								) : null}*/}
 
-											{/*************END NEW DIV************/}
-										</div>
+										{/*************END NEW DIV************/}
 									</div>
-								</Animated>
+								</div>
 							) : null}
 
 							{this.state.isExecutionShow ? (

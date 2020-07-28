@@ -43,7 +43,7 @@
 	color: #28508b;
 }
 .team_modal_content {
-	background: #f0f0f0;
+	background: #fff;
 	border-radius: 0;
 }
 .team_modal_content .modal-title {
@@ -76,6 +76,9 @@
 
         color: #fff!important;
 
+}
+.george_team_component_text .text {
+	width: 100%
 }
 
 

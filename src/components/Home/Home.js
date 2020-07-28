@@ -74,13 +74,13 @@ class Home extends Component {
 								<div className="home-content d-inline-flex mt-5 mt-xs-0">
 									<div className="sub_section home_content_subsection">
 										<p>
-											Avataar is a
+											Avataar is a&nbsp;
 											<span className="strong">
 												growth stage, Operational fund
 											</span>
-											partnering actively with brilliant
-											regional Tech-led B2B & SaaS
-											startups to Re-invent, Scale &
+											&nbsp; partnering actively with
+											brilliant regional Tech-led B2B &
+											SaaS startups to Re-invent, Scale &
 											Transform into successful, enduring
 											global businesses.
 										</p>
@@ -693,69 +693,83 @@ class Home extends Component {
 							businesses.
 						</p>
 
-						<div id="owl-example" className="owl-carousel">
+						<div id="owl-example" className="owl-carousel mt-4">
 							<div>
 								<a
-									href="https://www.zenoti.com/"
+									href="{https://www.zenoti.com/}"
 									target="_blank"
 								>
 									<img
-										src="https://s3.ap-south-1.amazonaws.com/avataar.vc/Zenoti.svg"
+										// src={"https://s3.ap-south-1.amazonaws.com/avataar.vc/Zenoti.svg"}
+										src={require("../assets/Zenoti.png")}
 										alt="Zenoti"
+										className="img-fluid appnomic-img"
 									/>
 								</a>
 							</div>
 							<div>
 								<a
-									href="https://www.elastic.run/"
+									href="{https://www.elastic.run/}"
 									target="_blank"
 								>
 									<img
-										src="https://s3.ap-south-1.amazonaws.com/avataar.vc/Elastic_Run.svg"
+										// src="https://s3.ap-south-1.amazonaws.com/avataar.vc/Elastic_Run.svg"
+										src={require("../assets/Elastic_Run.png")}
 										alt="Elastic_Run"
+										className="img-fluid appnomic-img"
 									/>
 								</a>
 							</div>
 							<div>
 								<a
-									href="https://www.capillarytech.com/"
+									href="{https://www.capillarytech.com/}"
 									target="_blank"
 								>
 									<img
-										src="https://s3.ap-south-1.amazonaws.com/avataar.vc/Capillary.svg"
+										// src="https://s3.ap-south-1.amazonaws.com/avataar.vc/Capillary.svg"
+										src={require("../assets/Capillary.png")}
 										alt="Capillary"
+										className="img-fluid"
 									/>
 								</a>
 							</div>
 							<div>
 								<a
-									href="https://www.manthan.com/"
+									href="{https://www.manthan.com/}"
 									target="_blank"
 								>
 									<img
-										src="https://s3.ap-south-1.amazonaws.com/avataar.vc/Manthan.svg"
+										// src="https://s3.ap-south-1.amazonaws.com/avataar.vc/Manthan.svg"
+										src={require("../assets/Manthan.png")}
 										alt="Manthan"
+										className="img-fluid appnomic-img"
 									/>
 								</a>
 							</div>
 							<div>
 								<a
-									href="https://www.crmnext.com/"
+									href="{https://www.crmnext.com/}"
 									target="_blank"
 								>
 									<img
-										src="https://s3.ap-south-1.amazonaws.com/avataar.vc/CRM.svg"
+										// src="https://s3.ap-south-1.amazonaws.com/avataar.vc/CRM.svg"
+										src={require("../assets/CRM_Next.png")}
 										alt="CRM"
+										className="img-fluid"
 									/>
 								</a>
 							</div>
 
 							<div>
-								<a href="http://appnomic.com/" target="_blank">
+								<a
+									href="{http://appnomic.com/}"
+									target="_blank"
+								>
 									<img
-										src="https://s3.ap-south-1.amazonaws.com/avataar.vc/appnomic.png"
+										// src="https://s3.ap-south-1.amazonaws.com/avataar.vc/appnomic.png"
+										src={require("../assets/APPNOmic.png")}
 										alt="appnomic"
-										className="appnomic-img"
+										className="appnomic-img img-fluid"
 									/>
 								</a>
 							</div>
@@ -1113,7 +1127,7 @@ class Home extends Component {
 									<img
 										className="card-img-top"
 										src={require("./288x331.png")}
-										alt="Card image cap"
+										alt="Card cap"
 									/>
 									<div className="card-body">
 										<p className="card-title">
@@ -1124,7 +1138,7 @@ class Home extends Component {
 											Loreem Ipsum dolor amet Loreem Ipsum
 											dolor amet
 										</p>
-										<a href="#">
+										<a href="{#}">
 											More<span>&nbsp;&#62;</span>
 										</a>
 									</div>
@@ -1152,7 +1166,7 @@ class Home extends Component {
 									<img
 										className="card-img-top"
 										src={require("./288x331.png")}
-										alt="Card image cap"
+										alt="Card cap"
 									/>
 									<div className="card-body">
 										<p className="card-title">
@@ -1163,7 +1177,7 @@ class Home extends Component {
 											Loreem Ipsum dolor amet Loreem Ipsum
 											dolor amet
 										</p>
-										<a href="#">
+										<a href="{#}">
 											More<span>&nbsp;&#62;</span>
 										</a>
 									</div>
@@ -1195,7 +1209,7 @@ class Home extends Component {
 									<img
 										className="card-img-top"
 										src={require("./288x331.png")}
-										alt="Card image cap"
+										alt="Card cap"
 									/>
 									<div className="card-body">
 										<p className="card-title">
@@ -1206,7 +1220,7 @@ class Home extends Component {
 											Loreem Ipsum dolor amet Loreem Ipsum
 											dolor amet
 										</p>
-										<a href="#">
+										<a href="{#}">
 											More<span>&nbsp;&#62;</span>
 										</a>
 									</div>
@@ -1340,16 +1354,22 @@ class Home extends Component {
 												</div>
 											</div>
 											<div className="stakeholder-social-links">
-												<a href="" target="_blank">
+												<a
+													href="{}"
+													target="_blank"
+													rel="noopener noreferrer"
+												>
 													<img
 														src="https://s3.ap-south-1.amazonaws.com/avataar.vc/Mail_modal.svg"
 														width="25"
 														height="25"
+														alt="mail_modal"
 													/>
 												</a>
 												<a
 													href="https://twitter.com/nishrao/"
 													target="_blank"
+													rel="noopener noreferrer"
 												>
 													<img
 														src="https://s3.ap-south-1.amazonaws.com/avataar.vc/twitter_logo.svg"
@@ -1361,6 +1381,7 @@ class Home extends Component {
 												<a
 													href="https://www.linkedin.com/in/nishantrao/"
 													target="_blank"
+													rel="noopener noreferrer"
 												>
 													<img
 														src="https://s3.ap-south-1.amazonaws.com/avataar.vc/Linkedin.svg"
@@ -1418,6 +1439,7 @@ class Home extends Component {
 											<a
 												href="https://capillarytech.com/"
 												target="_blank"
+												rel="noopener noreferrer"
 											>
 												Capillary
 											</a>{" "}
@@ -1425,6 +1447,7 @@ class Home extends Component {
 											<a
 												href="https://www.crmnext.com/"
 												target="_blank"
+												rel="noopener noreferrer"
 											>
 												CRMNext
 											</a>{" "}
@@ -1432,6 +1455,7 @@ class Home extends Component {
 											<a
 												href="https://www.zenoti.com/"
 												target="_blank"
+												rel="noopener noreferrer"
 											>
 												Zenoti
 											</a>
@@ -1486,6 +1510,7 @@ class Home extends Component {
 												<a
 													href="https://twitter.com/kumarmohanv"
 													target="_blank"
+													rel="noopener noreferrer"
 												>
 													<img
 														src="https://s3.ap-south-1.amazonaws.com/avataar.vc/twitter_logo.svg"
@@ -1497,6 +1522,7 @@ class Home extends Component {
 												<a
 													href="https://www.linkedin.com/in/vmohankumar"
 													target="_blank"
+													rel="noopener noreferrer"
 												>
 													<img
 														src="https://s3.ap-south-1.amazonaws.com/avataar.vc/Linkedin.svg"
@@ -1540,6 +1566,7 @@ class Home extends Component {
 											<a
 												href="https://www.zenoti.com/"
 												target="_blank"
+												rel="noopener noreferrer"
 											>
 												Zenoti
 											</a>{" "}
@@ -1547,6 +1574,7 @@ class Home extends Component {
 											<a
 												href="https://www.elastic.run/"
 												target="_blank"
+												rel="noopener noreferrer"
 											>
 												Elastic Run
 											</a>{" "}
@@ -1554,6 +1582,7 @@ class Home extends Component {
 											<a
 												href="https://capillarytech.com"
 												target="_blank"
+												rel="noopener noreferrer"
 											>
 												Capillary
 											</a>{" "}
@@ -1561,6 +1590,7 @@ class Home extends Component {
 											<a
 												href="https://www.manthan.com/"
 												target="_blank"
+												rel="noopener noreferrer"
 											>
 												Manthan
 											</a>{" "}
@@ -1568,6 +1598,7 @@ class Home extends Component {
 											<a
 												href="https://appnomic.com/"
 												target="_blank"
+												rel="noopener noreferrer"
 											>
 												Appnomic Inc
 											</a>{" "}
@@ -1575,6 +1606,7 @@ class Home extends Component {
 											<a
 												href="https://www.crmnext.com/"
 												target="_blank"
+												rel="noopener noreferrer"
 											>
 												CRMNext
 											</a>
@@ -1629,6 +1661,7 @@ class Home extends Component {
 												<a
 													href="https://www.linkedin.com/in/mikemulica/"
 													target="_blank"
+													rel="noopener noreferrer"
 												>
 													<img
 														src="https://s3.ap-south-1.amazonaws.com/avataar.vc/Linkedin.svg"
@@ -1683,6 +1716,7 @@ class Home extends Component {
 											<a
 												href="https://appnomic.com/"
 												target="_blank"
+												rel="noopener noreferrer"
 											>
 												Appnomic Inc
 											</a>
@@ -1737,6 +1771,7 @@ class Home extends Component {
 												<a
 													href="https://twitter.com/George_Thangad"
 													target="_blank"
+													rel="noopener noreferrer"
 												>
 													<img
 														src="https://s3.ap-south-1.amazonaws.com/avataar.vc/twitter_logo.svg"
@@ -1748,6 +1783,7 @@ class Home extends Component {
 												<a
 													href="https://www.linkedin.com/in/george-thangadurai-9034ba3/"
 													target="_blank"
+													rel="noopener noreferrer"
 												>
 													<img
 														src="https://s3.ap-south-1.amazonaws.com/avataar.vc/Linkedin.svg"
@@ -1815,6 +1851,7 @@ class Home extends Component {
 											<a
 												href="https://appnomic.com/"
 												target="_blank"
+												rel="noopener noreferrer"
 											>
 												Appnomic Inc
 											</a>

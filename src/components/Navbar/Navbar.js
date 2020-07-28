@@ -1,33 +1,51 @@
 import React, { Component, Fragment } from "react";
 import "./navbar.css";
 import $ from "jquery";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 class Navbar extends Component {
 	componentDidMount() {
-		$(window).scroll(function () {
-			var scroll = $(window).scrollTop();
-			var $nav = $(".navbar-fixed-top");
-			if (scroll >= $nav.height()) {
-				$(".nav-link")
-					.parent()
-					.parent()
-					.parent()
-					.parent()[0].children[0].children[0].src =
-					"https://s3.ap-south-1.amazonaws.com/avataar.vc/avataar-logo-black-new.png";
-				$(".navbar").removeClass("navbar-dark");
-				$(".navbar").addClass("navbar-light");
-			} else {
-				$(".nav-link")
-					.parent()
-					.parent()
-					.parent()
-					.parent()[0].children[0].children[0].src =
-					"https://s3.ap-south-1.amazonaws.com/avataar.vc/avataar_log_white_new.png";
-				$(".navbar").removeClass("navbar-light");
-				$(".navbar").addClass("navbar-dark");
-			}
+		$(function () {
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 1000) {
+					$(".navbar .navbar-brand img").attr(
+						"src",
+						"https://s3.ap-south-1.amazonaws.com/avataar.vc/avataar-logo-black-new.png"
+					);
+				}
+				if ($(this).scrollTop() < 1000) {
+					$(".navbar .navbar-brand img").attr(
+						"src",
+						"https://s3.ap-south-1.amazonaws.com/avataar.vc/avataar_log_white_new.png"
+					);
+				}
+			});
 		});
+
+		// $(window).scroll(function () {
+		// 	var scroll = $(window).scrollTop();
+		// 	var $nav = $(".navbar-fixed-top");
+		// 	console.log(scroll, $nav);
+		// 	if (scroll >= $nav.height()) {
+		// 		$(".nav-link")
+		// 			.parent()
+		// 			.parent()
+		// 			.parent()
+		// 			.parent()[0].children[0].children[0].src =
+		// 			"https://s3.ap-south-1.amazonaws.com/avataar.vc/avataar-logo-black-new.png";
+		// 		$(".navbar").removeClass("navbar-dark");
+		// 		$(".navbar").addClass("navbar-light");
+		// 	} else {
+		// 		$(".nav-link")
+		// 			.parent()
+		// 			.parent()
+		// 			.parent()
+		// 			.parent()[0].children[0].children[0].src =
+		// 			"https://s3.ap-south-1.amazonaws.com/avataar.vc/avataar_log_white_new.png";
+		// 		$(".navbar").removeClass("navbar-light");
+		// 		$(".navbar").addClass("navbar-dark");
+		// 	}
+		// });
 	}
 
 	routeHandler = () => {
@@ -67,7 +85,11 @@ class Navbar extends Component {
 							id="navbarResponsive"
 						>
 							<ul className="navbar-nav ml-auto">
-								<li className="nav-item nav-link active">
+								<li
+									className="nav-item nav-link"
+									data-toggle="collapse"
+									data-target=".navbar-collapse.show"
+								>
 									<NavLink
 										to="/ethos"
 										activeClassName="activeRoute"
@@ -78,7 +100,11 @@ class Navbar extends Component {
 										</span>
 									</NavLink>
 								</li>
-								<li className="nav-item nav-link">
+								<li
+									className="nav-item nav-link"
+									data-toggle="collapse"
+									data-target=".navbar-collapse.show"
+								>
 									<NavLink
 										to="/portfolio"
 										activeClassName="activeRoute"
@@ -86,7 +112,11 @@ class Navbar extends Component {
 										PORTFOLIO
 									</NavLink>
 								</li>
-								<li className="nav-item nav-link">
+								<li
+									className="nav-item nav-link"
+									data-toggle="collapse"
+									data-target=".navbar-collapse.show"
+								>
 									<NavLink
 										to="/team"
 										activeClassName="activeRoute"
@@ -95,7 +125,11 @@ class Navbar extends Component {
 									</NavLink>
 								</li>
 
-								<li className="nav-item">
+								<li
+									className="nav-item"
+									data-toggle="collapse"
+									data-target=".navbar-collapse.show"
+								>
 									<a
 										className="nav-link"
 										id="media_nav"
@@ -104,7 +138,11 @@ class Navbar extends Component {
 										MEDIA
 									</a>
 								</li>
-								<li className="nav-item custom_nav_link_cursor">
+								<li
+									className="nav-item custom_nav_link_cursor"
+									data-toggle="collapse"
+									data-target=".navbar-collapse.show"
+								>
 									<a
 										className="nav-link"
 										id="contact_nav"

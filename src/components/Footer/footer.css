@@ -1,3 +1,6 @@
+.footer-link .home_link {
+    cursor: pointer;
+}
 @media (min-width: 320px) and (max-width: 480px) {
     .footer-content {
         display: flex;

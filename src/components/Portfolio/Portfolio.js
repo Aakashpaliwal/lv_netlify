@@ -81,15 +81,31 @@ class Portfolio extends Component {
 							<h1 className="ethos_banner_heading">
 								FOCUS & PORTFOLIO
 							</h1>
-							<div className="home-content d-inline-flex mt-5">
+							<div className="home-content mt-5">
 								<p className="sub_section portfolio_sub_section">
 									Here is our focus underlying all the
 									brilliant tech-startup that we are serving
 									today to build the next gen B2B Products.
+									<br />
+									<div className="portfolio_banner_content">
+										<span className="dot"></span>
+										$15 Million + in Annual Recurring
+										Revenues
+										<br />
+										<span className="dot"></span>
+										Strong Tech-Led B2B & SaaS Companies
+										<br />
+										<span className="dot"></span>
+										Open to Active Partnering
+										<br />
+										<span className="dot"></span>
+										Core Operations in India/ South East
+										Asia
+									</div>
 								</p>
 							</div>
-							<div className="focus-content mt-2 portfolio_banner_content">
-								{/*<center>
+							{/*<div className="focus-content mt-2 portfolio_banner_content">*/}
+							{/*<center>
 									<ul>
 										<li>
 											$15 Million + in Annual Recurring
@@ -103,7 +119,7 @@ class Portfolio extends Component {
 										</li>
 									</ul>
 								</center>*/}
-								<span className="dot"></span>
+							{/*<span className="dot"></span>
 								$15 Million + in Annual Recurring Revenues
 								<br />
 								<span className="dot"></span>
@@ -114,13 +130,13 @@ class Portfolio extends Component {
 								<br />
 								<span className="dot"></span>
 								Core Operations in India/ South East Asia
-							</div>
+							</div>*/}
 						</div>
 					</div>
 
 					<div
 						className="col-sm-12 text-center arrow bounce"
-						style={{ position: "absolute",bottom: "20px" }}
+						style={{ position: "absolute", bottom: "20px" }}
 					>
 						<a href="#ethos">
 							<img
@@ -728,67 +744,39 @@ class Portfolio extends Component {
 															</div>
 															<div clasasName="col-12">
 																<p className="mt-5">
-																	APPNOMIC
+																	ELASTIC RUN
 																	Founded in
-																	2001,
-																	CRMNEXT
-																	takes it
-																	from where
-																	traditional
-																	CRMs leave
-																	off. From
-																	Fortune 500
-																	to
-																	start-ups,
-																	businesses
-																	across nine
-																	verticals
-																	have built
-																	profitable
-																	customer
-																	relationships
-																	via CRMNEXT.
-																	It
-																	eliminates
+																	2016, by
+																	veterans in
 																	the
-																	artificial
-																	barriers
-																	between
-																	human and
-																	digital
-																	channels,
-																	enabling
-																	world-class,
-																	omni-channel
-																	customer
-																	interactions
-																	from a
-																	single,
-																	unified
-																	platform.
-																	With more
-																	than a
-																	million
-																	financial
-																	service
-																	associates
-																	and a
-																	billion
-																	customers
-																	supported by
-																	the platform
-																	globally,
-																	CRMNEXT
-																	effectively
-																	recalibrates
-																	banks’
-																	potential to
-																	grow
-																	engagement,
-																	drive
-																	profitability
-																	and deliver
-																	innovation.
+																	Logistics
+																	Industry,
+																	ElasticRun
+																	is an
+																	aggregated
+																	variable
+																	capacity
+																	transportation
+																	network
+																	built using
+																	idle
+																	transportation
+																	and
+																	logistics
+																	capacities
+																	from large
+																	number of
+																	dispersed
+																	entrepreneurs
+																	and ensure
+																	distribution
+																	across
+																	sectors and
+																	geographies
+																	ensuring a
+																	last-Mile
+																	connectivity.
+																	https://www.elastic.run/
 																	<br />
 																	<div className="website_url_container">
 																		<p>
@@ -859,67 +847,62 @@ class Portfolio extends Component {
 															</div>
 															<div clasasName="col-12">
 																<p className="mt-5">
-																	APPNOMIC
+																	MANTHAN
 																	Founded in
-																	2001,
-																	CRMNEXT
-																	takes it
-																	from where
-																	traditional
-																	CRMs leave
-																	off. From
-																	Fortune 500
-																	to
-																	start-ups,
+																	2003,
+																	Manthan’s
+																	missionis to
+																	build
+																	sophisticated
+																	analytics
+																	products
+																	intuitive
+																	for customer
+																	facing
+																	businesses.
+																	Their focus
+																	is on AI, to
+																	reimagine
+																	how business
+																	can
+																	reimagine
+																	their
+																	relationship
+																	with
+																	customers in
+																	a way our
+																	human
+																	capabilities
+																	or
+																	intelligence
+																	never could.
+																	Manthan
+																	partners
+																	with the
+																	leading data
+																	warehousing,
+																	business
+																	intelligence
+																	and other
+																	firms to
+																	offer a
+																	complete and
+																	better
+																	technology
+																	proposition.
+																	This makes
+																	it easier
+																	for
 																	businesses
-																	across nine
-																	verticals
-																	have built
-																	profitable
-																	customer
-																	relationships
-																	via CRMNEXT.
-																	It
-																	eliminates
-																	the
-																	artificial
-																	barriers
-																	between
-																	human and
-																	digital
-																	channels,
-																	enabling
-																	world-class,
-																	omni-channel
-																	customer
-																	interactions
-																	from a
-																	single,
-																	unified
-																	platform.
-																	With more
-																	than a
-																	million
-																	financial
-																	service
-																	associates
-																	and a
-																	billion
-																	customers
-																	supported by
-																	the platform
-																	globally,
-																	CRMNEXT
-																	effectively
-																	recalibrates
-																	banks’
-																	potential to
-																	grow
-																	engagement,
-																	drive
-																	profitability
-																	and deliver
-																	innovation.
+																	to adopt,
+																	integrate
+																	and
+																	collaborate
+																	on the
+																	latest
+																	technological
+																	offerings.
+																	www.manthan.com/
 																	<br />
 																	<div className="website_url_container">
 																		<p>
