@@ -43,7 +43,7 @@ class Team extends Component {
 									</p>
 									<p>
 										Come, explore the many “avataars" of
-										each of our team-members..
+										each of our team members…
 									</p>
 								</div>
 							</div>
@@ -550,7 +550,7 @@ class Team extends Component {
 															efficiently scale.
 														</p>
 														<p>
-															These team-members
+															These team members
 															will have deep
 															expertise in sales
 															(both enterprise &
@@ -628,13 +628,13 @@ class Team extends Component {
 												<div class="modal-body">
 													<div className="team-modal-para-detail">
 														<p>
-															Expert team-members
+															Expert team members
 															will help you with
 															tricky yet important
 															items like GDPR
 															compliance, data
 															warehouse design
-															&amp; BI / analytics
+															&amp; BI/analytics
 															support.
 														</p>
 													</div>
@@ -709,7 +709,7 @@ class Team extends Component {
 															in the past.
 														</p>
 														<p>
-															Eventually we might
+															Eventually, we might
 															even productize some
 															of these services
 															for faster execution
@@ -852,7 +852,7 @@ class Team extends Component {
 												Asia + Global COO @ Freshworks)
 												to being an entrepreneur (helped
 												co-found Epicenter, India’s 1st
-												voice call-center), a C-level
+												voice call-centre), a C-level
 												strategy advisor (McKinsey) & an
 												engineer/product manager (Ariba
 												& Microsoft).

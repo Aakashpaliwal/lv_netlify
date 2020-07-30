@@ -23,17 +23,17 @@ class Home extends Component {
 				loop: true,
 				margin: 10,
 				nav: false,
-				responsive: {
-					0: {
-						items: 1,
-					},
-					600: {
-						items: 3,
-					},
-					1000: {
-						items: 4,
-					},
-				},
+				// responsive: {
+				// 	0: {
+				// 		items: 1,
+				// 	},
+				// 	600: {
+				// 		items: 3,
+				// 	},
+				// 	1000: {
+				// 		items: 4,
+				// 	},
+				// },
 			},
 			options2: {
 				loop: true,
@@ -114,7 +114,7 @@ class Home extends Component {
 												&nbsp; growth stage, Operational
 												fund
 											</span>
-											&nbsp; partnering actively with
+											&nbsp; - partnering actively with
 											brilliant regional Tech-led B2B &
 											SaaS startups to Re-invent, Scale &
 											Transform into successful, enduring
@@ -125,7 +125,7 @@ class Home extends Component {
 											new peaks and transform India &
 											South-East Asia into product
 											nations, building for the world! So
-											say hello to your scale-up sherpas,
+											say hello to your scale-up sherpas
 											and goodbye to tons of preparation
 											for the next board meeting.
 										</p>
@@ -166,7 +166,7 @@ class Home extends Component {
 						<p>
 							Avataar partners are not just VCs on your board, we
 							are scale-up sherpas in action – labouring
-							responsibilities, portering our learnings and
+							responsibilities, portering our learning and
 							enabling the right global networks for our
 							entrepreneurs.
 						</p>
@@ -180,8 +180,8 @@ class Home extends Component {
 									4E framework
 								</span>
 							</Link>{" "}
-							which also form the core tenets to shape our
-							collective long-term success. We are committed to :
+							and are core tenets to shape our collective
+							long-term success. We are committed to :
 						</p>
 					</div>
 
@@ -449,31 +449,31 @@ class Home extends Component {
 															ready to roll up our
 															sleeves for you. You
 															still decide the
-															direction but we
-															bring timely
-															learnings & relevant
-															context from our
-															past successes &
-															failures (Avataar’s
-															partners have
+															direction; we bring
+															timely learnings &
+															relevant context
+															from our past
+															successes &
+															failures. Partners
+															at Avataar have had
 															several operating
 															stints as executives
 															at marquee SaaS
-															companies with the
+															companies, with the
 															largest ones
 															reaching multiple
 															billions of dollars
-															of Enterprise
-															Value).
+															of enterprise value.
 														</p>
 														<p>
-															Together, the
-															founder’s passion
-															coupled with these
-															learnings help our
-															companies accelerate
-															developing their own
-															scale-up success
+															Coupled with the
+															founder’s passion,
+															these learnings help
+															our companies
+															accelerate together;
+															and back companies
+															in developing their
+															own scale-up success
 															formula from $10M to
 															$100M in ARR.
 														</p>
@@ -544,7 +544,7 @@ class Home extends Component {
 															invest more in less.
 														</p>
 														<p>
-															We commit to only
+															We commit only on
 															8-10 investments per
 															fund. We concentrate
 															exclusively on
@@ -949,13 +949,13 @@ class Home extends Component {
 						data-aos-duration="1500"
 					>
 						<p className="theme_sub_heading team_heading mt-3">
-							The Avataar Ventures team starts their journey with
+							The Avataar Ventures team started its journey with
 							two founding partners who are seasoned campaigners
 							in the tech & startup space. Having successfully led
-							their own global scale journeys, they are now
-							committed to help create broader impact by building
-							out a world-class team that will actively support
-							you on different fronts & around the world.
+							our own global-scale journeys, we are now committed
+							to help create a broader impact by building a
+							world-class team that will actively support you on
+							different fronts & in different parts of the world.
 						</p>
 					</div>
 
@@ -1685,7 +1685,7 @@ class Home extends Component {
 												Asia + Global COO @ Freshworks)
 												to being an entrepreneur (helped
 												co-found Epicenter, India’s 1st
-												voice call-center), a C-level
+												voice call-centre), a C-level
 												strategy advisor (McKinsey) & an
 												engineer/product manager (Ariba
 												& Microsoft).

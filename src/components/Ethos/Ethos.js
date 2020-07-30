@@ -73,12 +73,11 @@ class Ethos extends Component {
 									complex global use-cases. From our personal
 									experience, we also know scaling globally
 									requires different networks, sales &
-									marketing models (often unique per geo) & at
-									times even product changes. The great news
+									marketing models (often unique to geos) & at
+									times, even product changes. The great news
 									is getting these formula tweaks right offers
-									up very compelling & sustainable unit
-									economics that underlie world-class B2B
-									companies.
+									very compelling & sustainable unit economics
+									that underlie world-class B2B companies.
 								</p>
 							</div>
 							{/*<button className="btn btn-primary theme_button">PRESS RELEASE</button>*/}
@@ -107,10 +106,10 @@ class Ethos extends Component {
 					<div className="ethos-subheading col-sm-12 mt-3 custom_ethos_component_subheading">
 						<p>
 							We believe that a successful enterprise is built in
-							the operational trenches week-on-week,
+							the operational trenches, week-on-week,
 							month-on-month, year-on-year; by the best &
-							hungriest founders who are willing to dream big &
-							put in the effort required to get there.In fact, we
+							hungriest founders who are willing to dream big and
+							put in the effort required to get there. In fact, we
 							believe the youth & mobile-first context of our
 							young entrepreneurs will help deliver these same
 							enterprise product use-cases in simpler & more
@@ -118,9 +117,9 @@ class Ethos extends Component {
 						</p>
 
 						<p>
-							And the final ingredient for global scale-up success
-							is the access to the right folks that are willing to
-							share their key learnings.Avataar was founded to
+							The final ingredient for global scale-up success is
+							the access to the right folks that are willing to
+							share their key learnings. Avataar was founded to
 							help with this last part and orchestrate a paradigm
 							shift in the Entrepreneur-VC equation for the
 							region. To achieve this, We have envisioned a robust
@@ -499,9 +498,9 @@ class Ethos extends Component {
 																	multiple
 																	tech
 																	businesses
-																	up to past
-																	$100M+ in
-																	ARR (eg.
+																	past up to
+																	past $100M+
+																	in ARR (eg.
 																	LinkedIn,
 																	Freshworks,
 																	Motorola).
@@ -530,10 +529,10 @@ class Ethos extends Component {
 																	healthy net
 																	expansion
 																	rates at
-																	120-130%
+																	120-130%.
 																</p>
 																<p>
-																	Learnings
+																	Learning
 																	from prior
 																	marketing &
 																	product
@@ -542,7 +541,7 @@ class Ethos extends Component {
 																	that helped
 																	us to foster
 																	sustainable
-																	growth
+																	growth.
 																</p>
 															</div>
 														</div>
@@ -668,8 +667,7 @@ class Ethos extends Component {
 																	that are
 																	very
 																	effective
-																	globally
-																	(eg.
+																	globally (
 																	McKinsey,
 																	IIT, MIT,
 																	Kellogg, H2,
@@ -818,9 +816,9 @@ class Ethos extends Component {
 																	with our
 																	portfolio
 																	companies
-																	indicates we
-																	are adding
-																	value.{" "}
+																	indicates
+																	the value we
+																	are adding.
 																</p>
 															</div>
 														</div>
@@ -959,7 +957,8 @@ class Ethos extends Component {
 																	active
 																	partner
 																	operating in
-																	the trenches
+																	the
+																	trenches,
 																	with you
 																	calling the
 																	shots.

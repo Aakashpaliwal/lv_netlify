@@ -85,7 +85,7 @@ class Portfolio extends Component {
 								<p className="sub_section portfolio_sub_section">
 									Here is our focus underlying all the
 									brilliant tech-startup that we are serving
-									today to build the next gen B2B Products.
+									today to build the next-gen B2B Products.
 									<br />
 									<div className="portfolio_banner_content portfolio_banner_content_ap">
 										<p className="mt10">
@@ -140,7 +140,7 @@ class Portfolio extends Component {
 					<div className="portfolio-subheading col-sm-12 mt-3 text-center">
 						<p>
 							Meet the mountaineers that are scaling new peaks &
-							building the next-generation of global businesses.
+							building the next generation of global businesses.
 							Our collective success comes from backing these
 							brilliant founders that have managed to build
 							meaningful sized businesses despite all odds.{" "}
@@ -207,7 +207,7 @@ class Portfolio extends Component {
 																	chain of
 																	spa, salon
 																	and fitness
-																	centers and
+																	centres and
 																	not finding
 																	software
 																	that was
@@ -377,9 +377,8 @@ class Portfolio extends Component {
 																	find ways to
 																	help brands
 																	stay
-																	consumer
-																	ready and
-																	deliver
+																	consumer-ready
+																	and deliver
 																	newer,
 																	better
 																	experiences
@@ -487,7 +486,7 @@ class Portfolio extends Component {
 																	channels,
 																	enabling
 																	world-class,
-																	omni-channel
+																	omnichannel
 																	customer
 																	interactions
 																	from a
@@ -591,67 +590,88 @@ class Portfolio extends Component {
 															</div>
 															<div clasasName="col-12">
 																<p className="mt-5">
-																	APPNOMIC
 																	Founded in
-																	2001,
-																	CRMNEXT
-																	takes it
-																	from where
-																	traditional
-																	CRMs leave
-																	off. From
-																	Fortune 500
-																	to
-																	start-ups,
-																	businesses
-																	across nine
-																	verticals
-																	have built
-																	profitable
-																	customer
-																	relationships
-																	via CRMNEXT.
-																	It
-																	eliminates
-																	the
-																	artificial
-																	barriers
-																	between
-																	human and
+																	2003,
+																	Appnomic
+																	helps
 																	digital
-																	channels,
-																	enabling
-																	world-class,
-																	omni-channel
-																	customer
-																	interactions
-																	from a
-																	single,
-																	unified
-																	platform.
-																	With more
-																	than a
-																	million
-																	financial
-																	service
-																	associates
-																	and a
-																	billion
-																	customers
-																	supported by
-																	the platform
-																	globally,
-																	CRMNEXT
-																	effectively
-																	recalibrates
-																	banks’
-																	potential to
-																	grow
-																	engagement,
-																	drive
-																	profitability
-																	and deliver
-																	innovation.
+																	enterprises
+																	achieve
+																	uninterrupted
+																	operations.
+																	The software
+																	enables
+																	autonomous
+																	IT
+																	operations
+																	by
+																	predicting
+																	and
+																	preventing
+																	problems
+																	before they
+																	happen.
+																	<p>
+																		Appnomic’s
+																		unique
+																		patented
+																		cognitive
+																		capabilities
+																		include
+																		predictive
+																		anomaly
+																		detection,
+																		anomaly
+																		linked
+																		healing
+																		triggers
+																		and
+																		unified
+																		causation
+																		that
+																		navigates
+																		the
+																		linkages
+																		between
+																		digital
+																		journeys,
+																		transactions,
+																		Applications
+																		and IT
+																		Infrastructure
+																		from
+																		edge to
+																		public
+																		and
+																		private
+																		cloud.
+																	</p>
+																	<p>
+																		As a
+																		category-defining
+																		application
+																		with
+																		abilities
+																		far
+																		beyond
+																		the
+																		AI-assisted
+																		APM,
+																		Appnomic
+																		elevates
+																		digital
+																		user
+																		experiences,
+																		optimizes
+																		IT
+																		resources,
+																		and
+																		achieves
+																		uninterrupted
+																		operations
+																		for the
+																		enterprises.
+																	</p>
 																	<br />
 																	<div className="website_url_container">
 																		<p>
@@ -743,7 +763,7 @@ class Portfolio extends Component {
 																	and
 																	logistics
 																	capacities
-																	from large
+																	from a large
 																	number of
 																	dispersed
 																	entrepreneurs
@@ -752,7 +772,7 @@ class Portfolio extends Component {
 																	across
 																	sectors and
 																	geographies
-																	ensuring a
+																	ensuring
 																	last-Mile
 																	connectivity.
 																	<br />
@@ -830,14 +850,14 @@ class Portfolio extends Component {
 																	Founded in
 																	2003,
 																	Manthan’s
-																	missionis to
-																	build
+																	mission is
+																	to build
 																	sophisticated
 																	analytics
 																	products
 																	intuitive
-																	for customer
-																	facing
+																	for
+																	customer-facing
 																	businesses.
 																	Their focus
 																	is on AI, to
