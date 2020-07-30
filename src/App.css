@@ -453,11 +453,18 @@ margin: auto; */
   width: 10em;
   /*height: 10em; */
 }
-
-#owl-example img.appnomic-img {
-  height: auto;
-  margin-top: 4em;
-  /*width: 70%; */
+.portfolio_ap_carousel {
+  margin-top: 50px;
+}
+.portfolio_ap_carousel img {
+  /*height: auto;*/
+  /*margin-top: 4em;*/
+  width: 50%!important; 
+  margin : 0 auto;
+}
+.portfolio_ap_carousel img.appnomic-img{
+  
+  padding-top: 5em;
 }
 
 .media_card_height {

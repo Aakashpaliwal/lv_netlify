@@ -1,0 +1,91 @@
+.contact_hero {
+    background: url("../assets/contact-us-min.jpg") center center no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+}
+.contact_hero:before {
+   content: "";
+  position: absolute;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+ background-color: rgba(51, 87, 130, 0.76);
+  /*background-color: rgba(7,5,5,0.53);*/
+}
+.contact_banner_text_bg {
+    /*background-color: rgba(51, 87, 130, 0.6);*/
+    background: rgba(32, 66, 106,0.47);
+    position: absolute;
+    bottom: 0;
+    padding-top: 2rem;
+    height: 536px;
+    width: 525px;
+}
+.content_sec_main_contact {
+  margin-top: 50px;
+}
+.contact_content_sec_bangalore, .contact_content_sec_delhi , .contact_content_sec_write{
+  color: #fff;
+  margin-bottom: 30px;
+}
+.content_sec_main_contact .bangalore {
+font-size: 18px;
+font-weight: 600;
+margin-bottom: 0;
+}
+.contact_content_sec_write .write {
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+.contact_content_sec_write .write_contact {
+  margin-bottom: 0;
+  font-size: 20px;
+}
+.contact_social_icons img {
+  margin : 0 1rem 0 0;
+}
+
+@media screen and (max-width: 320px), (min-device-width: 320px) and (max-device-width: 764px) {
+.contact_banner_text_bg {
+    background : none;
+    height: auto;
+    width: auto;
+}
+.contact_social_left_parent_padding {
+  padding-left: 0;
+}
+.contact_social_icons img {
+  margin : 0 1rem 0 0;
+}
+}
+@media screen and (min-width: 360px) and (max-width: 640px), (min-device-width: 360px) and
+(max-device-width: 960px) and (orientation : landscape) {
+.contact_hero { 
+  height: auto; 
+}
+.contact_social_left_parent_padding {
+  padding-left: 0;
+}
+.contact_banner_text_bg {
+ position: relative; height: auto; padding-top: 8rem; 
+}
+.contact_social_icons img {
+    margin: 0 0.2rem;
+}
+}
+
+@media screen and (max-width: 765px), (min-device-width: 765px) and (max-device-width: 768px) {
+.contact_social_icons img {
+    margin: 0;
+}
+  }
+
+/*@media screen and (max-width: 768px), (min-device-width: 768px) and (max-device-width: 1024px) {
+.media_hero .hero_text p {
+  width: auto;
+}
+.media_hero {
+  height: auto;
+}
+}*/

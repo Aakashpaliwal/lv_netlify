@@ -74,7 +74,7 @@ class Portfolio extends Component {
 						data-aos-duration="1500"
 					>
 						<div
-							className="col-sm-12 banner_text"
+							className="col-sm-12 banner_text custom_banner_text_ap"
 							data-aos="fade-up"
 							data-aos-duration="1500"
 						>
@@ -87,50 +87,29 @@ class Portfolio extends Component {
 									brilliant tech-startup that we are serving
 									today to build the next gen B2B Products.
 									<br />
-									<div className="portfolio_banner_content">
-										<span className="dot"></span>
-										$15 Million + in Annual Recurring
-										Revenues
-										<br />
-										<span className="dot"></span>
-										Strong Tech-Led B2B & SaaS Companies
-										<br />
-										<span className="dot"></span>
-										Open to Active Partnering
-										<br />
-										<span className="dot"></span>
-										Core Operations in India/ South East
-										Asia
+									<div className="portfolio_banner_content portfolio_banner_content_ap">
+										<p className="mt10">
+											<span className="dot" />
+											$15 Million + in Annual Recurring
+											Revenues
+										</p>
+										<p className="mt10">
+											<span className="dot" />
+											Strong Tech-Led B2B & SaaS Companies
+										</p>
+										<p className="mt10">
+											<span className="dot" />
+											Open to Active Partnering
+										</p>
+
+										<p className="mt10">
+											<span className="dot" />
+											Core Operations in India/ South East
+											Asia
+										</p>
 									</div>
 								</p>
 							</div>
-							{/*<div className="focus-content mt-2 portfolio_banner_content">*/}
-							{/*<center>
-									<ul>
-										<li>
-											$15 Million + in Annual Recurring
-											Revenues
-										</li>
-										<li>Strong Tech-Led B2B & SaaS</li>
-										<li>Open to Active Partnering</li>
-										<li>
-											Core Operations in India/ South East
-											Asia
-										</li>
-									</ul>
-								</center>*/}
-							{/*<span className="dot"></span>
-								$15 Million + in Annual Recurring Revenues
-								<br />
-								<span className="dot"></span>
-								Strong Tech-Led B2B & SaaS Companies
-								<br />
-								<span className="dot"></span>
-								Open to Active Partnering
-								<br />
-								<span className="dot"></span>
-								Core Operations in India/ South East Asia
-							</div>*/}
 						</div>
 					</div>
 
@@ -147,11 +126,7 @@ class Portfolio extends Component {
 						</a>
 					</div>
 				</div>
-				<div
-					className="row"
-					id="ethos"
-					style={{ height: "20px" }}
-				></div>
+				<div className="row" id="ethos" style={{ height: "20px" }} />
 				<div
 					className="ethos"
 					data-aos="fade-up"
@@ -208,7 +183,7 @@ class Portfolio extends Component {
 																<i
 																	className="lni lni-close"
 																	data-dismiss="modal"
-																></i>
+																/>
 															</div>
 														</div>
 													</div>
@@ -314,7 +289,7 @@ class Portfolio extends Component {
 																<i
 																	className="lni lni-close"
 																	data-dismiss="modal"
-																></i>
+																/>
 															</div>
 														</div>
 													</div>
@@ -466,7 +441,7 @@ class Portfolio extends Component {
 																<i
 																	className="lni lni-close"
 																	data-dismiss="modal"
-																></i>
+																/>
 															</div>
 														</div>
 													</div>
@@ -601,7 +576,7 @@ class Portfolio extends Component {
 																<i
 																	className="lni lni-close"
 																	data-dismiss="modal"
-																></i>
+																/>
 															</div>
 														</div>
 													</div>
@@ -733,7 +708,7 @@ class Portfolio extends Component {
 																<i
 																	className="lni lni-close"
 																	data-dismiss="modal"
-																></i>
+																/>
 															</div>
 														</div>
 													</div>
@@ -780,7 +755,6 @@ class Portfolio extends Component {
 																	ensuring a
 																	last-Mile
 																	connectivity.
-																	https://www.elastic.run/
 																	<br />
 																	<div className="website_url_container">
 																		<p>
@@ -837,7 +811,7 @@ class Portfolio extends Component {
 																<i
 																	className="lni lni-close"
 																	data-dismiss="modal"
-																></i>
+																/>
 															</div>
 														</div>
 													</div>
@@ -907,7 +881,6 @@ class Portfolio extends Component {
 																	latest
 																	technological
 																	offerings.
-																	www.manthan.com/
 																	<br />
 																	<div className="website_url_container">
 																		<p>
@@ -964,7 +937,7 @@ class Portfolio extends Component {
 																			float:
 																				"right",
 																		}}
-																	></i>
+																	/>
 																</span>
 															</div>
 															<div className="new_portfolio_content">
@@ -1076,7 +1049,7 @@ class Portfolio extends Component {
 																			float:
 																				"right",
 																		}}
-																	></i>
+																	/>
 																</span>
 															</div>
 															<div className="new_portfolio_content">
@@ -1244,7 +1217,7 @@ class Portfolio extends Component {
 																			float:
 																				"right",
 																		}}
-																	></i>
+																	/>
 																</span>
 															</div>
 															<div className="new_portfolio_content">
@@ -1382,7 +1355,7 @@ class Portfolio extends Component {
 																			float:
 																				"right",
 																		}}
-																	></i>
+																	/>
 																</span>
 															</div>
 															<div className="new_portfolio_content">
@@ -1520,7 +1493,7 @@ class Portfolio extends Component {
 																			float:
 																				"right",
 																		}}
-																	></i>
+																	/>
 																</span>
 															</div>
 															<div className="new_portfolio_content">
@@ -1658,7 +1631,7 @@ class Portfolio extends Component {
 																			float:
 																				"right",
 																		}}
-																	></i>
+																	/>
 																</span>
 															</div>
 															<div className="new_portfolio_content">
@@ -1775,11 +1748,15 @@ class Portfolio extends Component {
 										type="button"
 										className="btn btn-outline-primary portfolio_meet_end_btn_spec"
 									>
-										MEET THE SCALE-UP TEAM
-										<span>
-											{" "}
-											<i className="fas fa-angle-right"></i>
-										</span>
+										<div className="flex_btn">
+											<div>MEET THE SCALE-UP TEAM</div>
+											<div>
+												<span>
+													{" "}
+													<i className="fas fa-angle-right" />
+												</span>
+											</div>
+										</div>
 									</button>
 								</Link>
 							</center>

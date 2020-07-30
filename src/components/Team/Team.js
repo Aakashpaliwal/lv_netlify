@@ -124,7 +124,7 @@ class Team extends Component {
 													/>
 													<div className="overlay">
 														<div className="text">
-															NISHANT
+															NISHANT RAO
 															<br />
 															<span>
 																Investments
@@ -138,7 +138,36 @@ class Team extends Component {
 								</div>
 
 								<div className="row">
-									<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+									<div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+										<div className="text-center card_wrapper">
+											<div
+												className=""
+												data-toggle="modal"
+												data-target="#sudhanshuModal"
+											>
+												<div className="parent_team_img_container">
+													<img
+														src={require("../assets/Sudhanshu_Potrait.jpeg")}
+														className="card-img-top"
+														alt="..."
+														// onmouseover="this.src='https://s3.ap-south-1.amazonaws.com/avataar.vc/Mike-mulica.jpg'"
+														// onmouseout="this.src='https://s3.ap-south-1.amazonaws.com/avataar.vc/Mike-mulica-ConvertImage.jpg'"
+													/>
+													<div className="overlay george-overlay">
+														<div className="text">
+															SUDHANSHU BHASIN
+															<br />
+															<span>
+																Operations
+															</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 										<div className="text-center card_wrapper">
 											<div
 												className=""
@@ -151,12 +180,12 @@ class Team extends Component {
 														className="card-img-top"
 														alt="..."
 													/>
-													<div className="overlay george_team_component_text">
+													<div className="overlay george_seperaate_component">
 														<div className="text">
 															GEORGE THANGADURAI
 															<br />
 															<span>
-																Investments
+																Operations
 															</span>
 														</div>
 													</div>
@@ -165,7 +194,7 @@ class Team extends Component {
 										</div>
 									</div>
 
-									<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+									<div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 										<div className="text-center card_wrapper">
 											<div
 												className=""
@@ -183,7 +212,7 @@ class Team extends Component {
 															MIKE MULICA
 															<br />
 															<span>
-																Investments
+																Operations
 															</span>
 														</div>
 													</div>
@@ -254,7 +283,7 @@ class Team extends Component {
 															<i
 																className="lni lni-close"
 																data-dismiss="modal"
-															></i>
+															/>
 														</div>
 													</div>
 												</div>
@@ -396,7 +425,7 @@ class Team extends Component {
 															<i
 																className="lni lni-close"
 																data-dismiss="modal"
-															></i>
+															/>
 														</div>
 													</div>
 												</div>
@@ -503,7 +532,7 @@ class Team extends Component {
 															<i
 																className="lni lni-close"
 																data-dismiss="modal"
-															></i>
+															/>
 														</div>
 													</div>
 												</div>
@@ -592,7 +621,7 @@ class Team extends Component {
 															<i
 																className="lni lni-close"
 																data-dismiss="modal"
-															></i>
+															/>
 														</div>
 													</div>
 												</div>
@@ -664,7 +693,7 @@ class Team extends Component {
 															<i
 																className="lni lni-close"
 																data-dismiss="modal"
-															></i>
+															/>
 														</div>
 													</div>
 												</div>
@@ -706,11 +735,15 @@ class Team extends Component {
 									type="button"
 									className="btn btn-outline-primary team_avataar_media_end_btn_spec"
 								>
-									AVATAAR IN THE MEDIA
-									<span>
-										{" "}
-										<i className="fas fa-angle-right"></i>
-									</span>
+									<div className="flex_btn">
+										<div>AVATAAR IN THE MEDIA</div>
+										<div>
+											<span>
+												{" "}
+												<i className="fas fa-angle-right" />
+											</span>
+										</div>
+									</div>
 								</button>
 							</center>
 						</div>
@@ -721,7 +754,7 @@ class Team extends Component {
 				<div className="modal" id="nishantModal">
 					<div className="modal-dialog" style={{ maxWidth: "90%" }}>
 						<div className="modal-content">
-							<div className="inverted_line_modal"></div>
+							<div className="inverted_line_modal" />
 
 							<div className="modal-header">
 								<button
@@ -758,19 +791,18 @@ class Team extends Component {
 												</div>
 											</div>
 											<div className="stakeholder-social-links">
-												{/*<a
-													href="#"
+												<a
+													href="{#}"
 													target="_blank"
 													rel="noopener noreferrer"
-												>*/}
-												<img
-													src="https://s3.ap-south-1.amazonaws.com/avataar.vc/Mail_modal.svg"
-													alt="nishant_prop"
-													width="25"
-													height="25"
-													className="email_svg_nishant"
-												/>
-												{/*</a>*/}
+												>
+													<img
+														src="https://s3.ap-south-1.amazonaws.com/avataar.vc/Mail_modal.svg"
+														width="25"
+														height="25"
+														alt="..."
+													/>
+												</a>
 												<a
 													href="https://twitter.com/nishrao/"
 													target="_blank"
@@ -877,7 +909,7 @@ class Team extends Component {
 				<div className="modal" id="mohanModal">
 					<div className="modal-dialog" style={{ maxWidth: "90%" }}>
 						<div className="modal-content">
-							<div className="inverted_line_modal"></div>
+							<div className="inverted_line_modal" />
 
 							<div className="modal-header">
 								<button
@@ -1028,7 +1060,7 @@ class Team extends Component {
 				<div className="modal" id="mikeModal">
 					<div className="modal-dialog" style={{ maxWidth: "90%" }}>
 						<div className="modal-content">
-							<div className="inverted_line_modal"></div>
+							<div className="inverted_line_modal" />
 
 							<div className="modal-header">
 								<button
@@ -1138,7 +1170,7 @@ class Team extends Component {
 				<div className="modal" id="georgeModal">
 					<div className="modal-dialog" style={{ maxWidth: "90%" }}>
 						<div className="modal-content">
-							<div className="inverted_line_modal"></div>
+							<div className="inverted_line_modal" />
 
 							<div className="modal-header">
 								<button
@@ -1268,6 +1300,110 @@ class Team extends Component {
 					</div>
 				</div>
 				{/************END GEORGE MODAL******/}
+				{/****************SUDHANSHU MODAL********/}
+				<div className="modal" id="sudhanshuModal">
+					<div className="modal-dialog" style={{ maxWidth: "90%" }}>
+						<div className="modal-content">
+							<div className="inverted_line_modal" />
+
+							<div className="modal-header">
+								<button
+									type="button"
+									className="close"
+									data-dismiss="modal"
+								>
+									&times;
+								</button>
+							</div>
+
+							<div className="modal-body">
+								<div className="stakeholder">
+									<div className="card stakeholder-img">
+										<img
+											src={require("../assets/Sudhanshu_Potrait.jpeg")}
+											className="card-img-top"
+											alt="..."
+										/>
+									</div>
+									<div className="stakeholder-main">
+										<div className="stakeholder-head">
+											<div className="stakeholder-head-left">
+												<div className="stakeholder-name">
+													SUDHANSHU BHASIN
+												</div>
+												<div className="stakeholder-position">
+													<b>
+														Business Analysis &
+														Modeling Guru | BizOps |
+														Investment Banking
+													</b>
+												</div>
+											</div>
+											<div className="stakeholder-social-links">
+												<a
+													href="https://www.linkedin.com/in/sudhanshubhasin/"
+													target="_blank"
+													rel="noopener noreferrer"
+												>
+													<img
+														src="https://s3.ap-south-1.amazonaws.com/avataar.vc/Linkedin.svg"
+														width="25"
+														height="25"
+														alt="linkedin_logo"
+													/>
+												</a>
+											</div>
+										</div>
+										<div className="stakeholder-content">
+											<p>
+												Sudhanshu brings in deep domain
+												knowledge of the B2B technology
+												and SaaS space. As an
+												ex-investment banker at Lincoln
+												International, he worked
+												extensively with multiple
+												technology companies.
+											</p>
+											<p>
+												In his last role, Sudhanshu
+												helped raise growth capital for
+												an HR-tech SaaS company and a
+												global, Enterprise-focused
+												Logistics SaaS company. Prior to
+												that, he held investment banking
+												roles at Nomura and Edelweiss.
+												Sudhanshu also has extensive
+												capital markets experience
+												having executed several IPOs in
+												his previous roles.
+											</p>
+											<p>
+												Sudhanshu holds an MBA from
+												NMIMS ( Mumbai) and a B.E. from
+												Delhi College of Engineering
+												(Delhi University). He is also
+												CFA Level-III cleared.{" "}
+											</p>
+										</div>
+										{/*<div className="heading">
+											Current Companies
+										</div>
+
+										<div className="current_companies">
+											<a
+												href="https://appnomic.com/"
+												target="_blank"
+											>
+												Appnomic Inc
+											</a>
+										</div>*/}
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				{/***************END SUDHANSHU MODAL***********/}
 			</Fragment>
 		);
 	}

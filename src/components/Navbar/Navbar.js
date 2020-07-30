@@ -7,25 +7,27 @@ class Navbar extends Component {
 	componentDidMount() {
 		$(function () {
 			$(window).scroll(function () {
-				if ($(this).scrollTop() > 1000) {
+				if ($(this).scrollTop() > 100) {
 					$(".navbar .navbar-brand img").attr(
 						"src",
 						"https://s3.ap-south-1.amazonaws.com/avataar.vc/avataar-logo-black-new.png"
 					);
+					$(".navbar").removeClass("navbar-dark");
+					$(".navbar").addClass("navbar-light");
 				}
-				if ($(this).scrollTop() < 1000) {
+				if ($(this).scrollTop() < 100) {
 					$(".navbar .navbar-brand img").attr(
 						"src",
 						"https://s3.ap-south-1.amazonaws.com/avataar.vc/avataar_log_white_new.png"
 					);
+					$(".navbar").removeClass("navbar-light");
+					$(".navbar").addClass("navbar-dark");
 				}
 			});
 		});
-
 		// $(window).scroll(function () {
 		// 	var scroll = $(window).scrollTop();
 		// 	var $nav = $(".navbar-fixed-top");
-		// 	console.log(scroll, $nav);
 		// 	if (scroll >= $nav.height()) {
 		// 		$(".nav-link")
 		// 			.parent()
@@ -78,7 +80,7 @@ class Navbar extends Component {
 							aria-expanded="false"
 							aria-label="Toggle navigation"
 						>
-							<span className="navbar-toggler-icon"></span>
+							<span className="navbar-toggler-icon" />
 						</button>
 						<div
 							className="collapse navbar-collapse custom-collapse-bg"
@@ -126,36 +128,48 @@ class Navbar extends Component {
 								</li>
 
 								<li
-									className="nav-item"
+									className="nav-item nav-link"
 									data-toggle="collapse"
 									data-target=".navbar-collapse.show"
 								>
-									<a
+									<NavLink
+										to="/media"
+										activeClassName="activeRoute"
+									>
+										MEDIA
+									</NavLink>
+									{/*<a
 										className="nav-link"
 										id="media_nav"
 										href="#media"
 									>
 										MEDIA
-									</a>
+									</a>*/}
 								</li>
 								<li
-									className="nav-item custom_nav_link_cursor"
+									className="nav-item nav-link custom_nav_link_cursor"
 									data-toggle="collapse"
 									data-target=".navbar-collapse.show"
 								>
-									<a
+									<NavLink
+										to="/contact"
+										activeClassName="activeRoute"
+									>
+										CONTACT
+									</NavLink>
+									{/*<a
 										className="nav-link"
 										id="contact_nav"
 										href="#contact"
 									>
 										CONTACT
-									</a>
+									</a>*/}
 								</li>
 							</ul>
 						</div>
 					</div>
 				</nav>
-				<div className="navbar_space"></div>
+				<div className="navbar_space" />
 				{/*<div id="page-wrapper">
 					<div id="title">Sidebar Interaction</div>
 				</div>

@@ -1,7 +1,6 @@
 import React, { Fragment } from "react";
 import "./footer.css";
 import { Link } from "react-router-dom";
-
 const Footer = (props) => {
 	const homeRouteHandler = () => {
 		window.location.assign("/");
@@ -45,28 +44,34 @@ const Footer = (props) => {
 							</Link>
 						</div>
 						<div className="footer-link">
-							<div className="home_link">MEDIA</div>
+							<Link to="/media">
+								<div className="home_link">MEDIA</div>
+							</Link>
 						</div>
 						<div className="footer-link">
-							<div className="home_link">CONTACT</div>
+							<Link to="/contact">
+								<div className="home_link">CONTACT</div>
+							</Link>
 						</div>
 					</div>
 					<div className="follow-us">
 						<div>FOLLOW US</div>
 						<div>
 							<a
-								href="{https://twitter.com/AvataarVC}"
+								href="https://twitter.com/AvataarVC"
 								target="_blank"
+								rel="noopener noreferrer"
 							>
 								<img
 									src="https://s3.ap-south-1.amazonaws.com/avataar.vc/Twitter.svg"
-									alt="avataar_twitter"
 									className="m-1"
+									alt="avataar_twitter"
 								/>
 							</a>
 							<a
-								href="{https://www.linkedin.com/company/avataarvc}"
+								href="https://www.linkedin.com/company/avataarvc"
 								target="_blank"
+								rel="noopener noreferrer"
 							>
 								<img
 									src="https://s3.ap-south-1.amazonaws.com/avataar.vc/LinkedIn.svg"

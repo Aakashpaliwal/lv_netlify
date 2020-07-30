@@ -91,7 +91,7 @@
 
 .concentrated_reactangle_toogle_div {
    /* opacity: 0.95; */
-    background-color: #2a518a;
+    background-color: #4a75b8;
     padding: 2rem;
     /* width: 306px; */
     color: #fff;
@@ -265,6 +265,12 @@ height: 55px;
   padding-left: 4%;
 }
 
+.btn_flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .team_btn_center {
 	position: relative;
 }
@@ -287,7 +293,6 @@ padding-right: 2rem;
 .team_btn_center .lni-chevron-right {
   float: right;
   position: relative;
-  top: 4px; 
 }
 .home_team_btn_focus_bg:focus {
   
@@ -482,36 +487,21 @@ color: #3b73b5;
 font-weight: 500;
 }
 .george-overlay .text {
+    font-size : 15px;
     width: 100%;
   }
 .media_section_parent_div {
   height: 6.25rem;
 }
-  @media only screen and (min-width:320px) and (max-width : 480px) {
-  .custom_home_section {
-    height: 90vh;
-  }
-  .custom_home_section .banner_text_bg {
-    background-color: rgba(51, 87, 130, 0);
-    width: 90%;
-    margin-bottom: 70px;
-  }
-  .mobile_bounce{
-    position: absolute;
-    bottom: 30px;
-  }
-  .about_btn_center .btn {
-    font-size: 14px;
-    height: auto;
-    width: 90%;
-    height: 53px;
-  }
-
-  .contact-wrapper .contact-item {
-    margin-top: 40px;
-  }
-
-  }
+@media screen and (max-width: 320px), (min-device-width: 320px) and (max-device-width: 480px) and (orientation : portrait) {
+.custom-card-spec {
+  width: 100%;
+  margin : auto;
+}
+.contact_inverted_line {
+  height: 50rem;
+}
+}
 
 @media only screen and (min-width : 320px) and (max-width : 568px) {
   .banner_text_bg {
@@ -573,6 +563,13 @@ font-weight: 500;
     height: auto;
     width: 60%;
   }
+  .custom-card-spec {
+  width: 100%;
+  margin : auto;
+}
+.contact_inverted_line {
+  height: 40rem;
+}
   }
 
   @media screen and (max-width: 360px), (min-device-width: 360px) and (max-device-width: 640px) and (orientation : portrait) {
@@ -602,6 +599,10 @@ display: none;
   .theme_sub_heading {
     font-size: 1rem;
   }
+  .custom-card-spec {
+  width: 100%;
+  margin : auto;
+}
 }
 @media screen and (max-width: 600px), (min-device-width: 600px) and (max-device-width: 960px) and (orientation : portrait) {
 .banner_text_bg {
@@ -609,6 +610,10 @@ display: none;
 }
 .page_heading {
   font-size: 1rem;
+}
+.custom-card-spec {
+  width: 100%;
+  margin : auto;
 }
 }
 @media screen and (min-width: 600px) and (max-width: 960px), (min-device-width: 600px) and
@@ -619,12 +624,31 @@ display: none;
 .page_heading {
   font-size: 1rem;
 }
+.custom-card-spec {
+  width: 100%;
+  margin : auto;
+}
+.contact_inverted_line {
+  height: 30rem;
+}
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px), (min-device-width: 768px) and
 (max-device-width: 1024px) and (orientation : landscape) {
 .page_heading {
   font-size: 1.8rem;
+}
+.custom-card-spec {
+  width: 100%;
+  margin : auto;
+}
+}
+@media screen and (max-width: 768px), (min-device-width: 768px) and (max-device-width: 1024px) and (orientation : portrait) {
+.page_heading {
+  font-size: 1.2rem;
+}
+.parent_team_img_container {
+  width: auto;
 }
 }
 
@@ -705,4 +729,74 @@ display: none;
   flex-wrap: wrap;
 }
 
+}
+
+@media  (min-width:320px) and (max-width : 480px) {
+  .custom_home_section {
+    height: 100vh;
+  }
+  .custom_home_section .banner_text_bg {
+    top: 135px;
+    background-color: rgba(51, 87, 130, 0);
+    width: 90%;
+  }
+  .about_btn_center .btn {
+    font-size: 14px;
+    height: auto;
+    width: 90%;
+    height: 53px;
+  }
+  .home_content_subsection{
+    font-size: 15px;
+  }
+  .ethos-heading{
+    font-size: 24px;
+  }
+  .home_ethos_subheading {
+    padding: 0 5%;
+  }
+  .ethos-subheading p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+  .focus {
+    padding: 3rem 5%;
+  }
+  .focus-subheading {
+    font-size: 15px;
+  }
+  .contact-wrapper .contact-item {
+    margin-top: 40px;
+  }
+  .theme_sub_heading {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+  .team_heading {
+    width: 90%;
+    margin:  0 auto;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+  .team_btn_center .btn,.about_btn_center .btn{
+    width: 80%;
+    text-align: left;
+    margin: 15px auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    height: auto;
+  }
+  .contact-us-content {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .contact-item {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1366px) {
+  .banner_text_bg {
+    height: 436px;
+  }
 }

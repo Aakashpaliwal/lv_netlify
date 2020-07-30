@@ -458,22 +458,19 @@ class Ethos extends Component {
 							</div>
 
 							{this.state.isExpansionShow ? (
-								<div className="container">
-									<div className="people_flex_container mt-4 new_flex_container_display">
-										<div className="row">
-											<div
-												className="col-lg-12 col-md-12 col-sm-12 col-xs-12"
-												style={{ padding: "0" }}
-											>
-												<Animated
-													animationIn="fadeInLeft"
-													animationOut="fadeOutLeft"
-													animationInDuration={1000}
-													animationOutDuration={1000}
-													isVisible={
-														this.state
-															.isExpansionShow
-													}
+								<Animated
+									animationIn="fadeInLeft"
+									animationOut="fadeOutLeft"
+									animationInDuration={1000}
+									animationOutDuration={1000}
+									isVisible={this.state.isExpansionShow}
+								>
+									<div className="container">
+										<div className="people_flex_container mt-4 new_flex_container_display">
+											<div className="row">
+												<div
+													className="col-lg-12 col-md-12 col-sm-12 col-xs-12"
+													style={{ padding: "0" }}
 												>
 													<div className="new_expansion_rectangle">
 														<div className="row">
@@ -493,7 +490,7 @@ class Ethos extends Component {
 																				float:
 																					"right",
 																			}}
-																		></i>
+																		/>
 																	</span>
 																</div>
 																<p className="mt-5">
@@ -550,12 +547,11 @@ class Ethos extends Component {
 															</div>
 														</div>
 													</div>
-												</Animated>
+												</div>
 											</div>
-										</div>
 
-										{/**************NEW DIV*************/}
-										{/*{this.state.isExpansionShow ? (
+											{/**************NEW DIV*************/}
+											{/*{this.state.isExpansionShow ? (
 									<Animated
 										animationIn="fadeInLeft"
 										animationOut="fadeOutLeft"
@@ -603,9 +599,10 @@ class Ethos extends Component {
 									</Animated>
 								) : null}*/}
 
-										{/*************END NEW DIV************/}
+											{/*************END NEW DIV************/}
+										</div>
 									</div>
-								</div>
+								</Animated>
 							) : null}
 
 							{this.state.isExecutionShow ? (
@@ -641,7 +638,7 @@ class Ethos extends Component {
 																				float:
 																					"right",
 																			}}
-																		></i>
+																		/>
 																	</span>
 																</div>
 																<p className="mt-5">
@@ -789,7 +786,7 @@ class Ethos extends Component {
 																				float:
 																					"right",
 																			}}
-																		></i>
+																		/>
 																	</span>
 																</div>
 																<p className="mt-5">
@@ -918,7 +915,7 @@ class Ethos extends Component {
 																				float:
 																					"right",
 																			}}
-																		></i>
+																		/>
 																	</span>
 																</div>
 																<p className="mt-5">
@@ -1040,11 +1037,18 @@ class Ethos extends Component {
 												type="button"
 												className="btn btn-outline-primary ethos_investment_portfolio_end_btn_spec"
 											>
-												OUR INVESTMENT FOCUS & PORTFOLIO{" "}
-												<span>
-													{" "}
-													<i className="lni lni-chevron-right"></i>
-												</span>
+												<div className="flex_btn">
+													<div>
+														OUR INVESTMENT FOCUS &
+														PORTFOLIO{" "}
+													</div>
+													<div>
+														<span>
+															{" "}
+															<i className="lni lni-chevron-right" />
+														</span>
+													</div>
+												</div>
 											</button>
 										</Link>
 									</center>

@@ -130,6 +130,7 @@
           navigation: true,
           navigationText: [],
         });
+    
         $("#media_section").owlCarousel({
           itemsDesktop: [1499, 3],
           itemsDesktopSmall: [1199, 3],
@@ -137,8 +138,8 @@
           itemsMobile: [599, 1],
           navigation: true,
           navigationText: [],
-          // autoWidth: true,
-          items: 3,
+          autoWidth: true,
+          // items: 3,
         });
         $(".").on("click", function (e) {
           $("#exampleModal").modal("show");
@@ -185,5 +186,11 @@
         $(".navbar-collapse").collapse("hide");
       });
     </script>
+    <!-- <script type="text/javascript">
+      // optional
+      $("#blogCarousel").carousel({
+        interval: 5000,
+      });
+    </script> -->
   </body>
 </html>

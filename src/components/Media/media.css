@@ -1,0 +1,129 @@
+.media_hero {
+    background: url("../assets/Ethos_Banner-min.png") center center no-repeat;
+  background-size: cover;
+  position: relative;
+  /*height: 100vh;*/
+  height: 516px;
+}
+.media_hero:before {
+   content: "";
+  position: absolute;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+ background-color: rgba(18, 27, 66, 0.9);
+  /*background-color: rgba(7,5,5,0.53);*/
+}
+/*.hero {
+   background: url('http://lorempixel.com/output/city-q-c-960-480-4.jpg') no-repeat center center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+display: table;
+width: 100%;
+height: 100vh;
+    }*/
+
+.media_hero .hero_text {
+  margin-top: 20%;
+  color: #fff;
+  margin-left: 8%;
+/*display: table-cell;
+text-align: center;
+vertical-align: middle;
+*//*height: 689px;*/
+}
+.media_banner_heading {
+  font-weight:  400;
+  font-size: 48px;
+}
+.media_hero .hero_text p {
+  font-size: 32px;
+  line-height: 1.5;
+  margin-top: 30px;
+  width: 880px;
+}
+.blog .carousel-indicators {
+  left: 0;
+  top: auto;
+    bottom: -40px;
+
+}
+
+/* The colour of the indicators */
+.blog .carousel-indicators li {
+    background: #a3a3a3;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+}
+
+.blog .carousel-indicators .active {
+background: #707070;
+}
+.seperate_card_ap_border {
+  border-top: solid 2px #909090;
+  box-shadow: none;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  background: #f7f7f7;
+  height: 542px;
+}
+.seperate_card_ap_border:hover {
+      border-top-color: #3b73b5;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.15);
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    cursor: pointer;
+    transform: none;
+}
+.seperate-img-card {
+  height: 220px;
+  overflow: hidden;
+}
+.seperate-img-card img {
+  width: 100%;
+  height: 100%;
+}
+.seperate_card_body_ap .card-title {
+  color: #3b73b5;
+  font-size: 0.8rem;
+}
+.seperate_card_body_ap a {
+  color: #3b73b5;
+  font-weight: 600;
+}
+.seperate_card_body_ap .card-text {
+  color: #4a4a4a;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+
+@media screen and (max-width: 320px), (min-device-width: 320px) and (max-device-width: 764px) {
+.media_hero .hero_text {
+  margin-top: 50%;
+}
+.media_hero .hero_text p {
+  font-size: 1rem;
+  width: auto;
+}
+.media_hero {
+  height: auto;
+}
+.media_hero .arrow {
+  display: none;
+}
+}
+
+@media screen and (max-width: 768px), (min-device-width: 768px) and (max-device-width: 1024px) {
+.media_hero .hero_text p {
+  width: auto;
+}
+.media_hero {
+  height: auto;
+}
+}
+  
+

@@ -2,6 +2,9 @@ import React, { Fragment, Component } from "react";
 import "./home.css";
 import { Link } from "react-router-dom";
 import { Animated } from "react-animated-css";
+import OwlCarousel from "react-owl-carousel";
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
 // import Slider from "react-slick";
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
@@ -16,6 +19,38 @@ class Home extends Component {
 			isGrowthDivShow: false,
 			isOperationDisShow: false,
 			isConcentratedDivShow: false,
+			options: {
+				loop: true,
+				margin: 10,
+				nav: false,
+				responsive: {
+					0: {
+						items: 1,
+					},
+					600: {
+						items: 3,
+					},
+					1000: {
+						items: 4,
+					},
+				},
+			},
+			options2: {
+				loop: true,
+				margin: 10,
+				nav: false,
+				responsive: {
+					0: {
+						items: 1,
+					},
+					600: {
+						items: 2,
+					},
+					1000: {
+						items: 3,
+					},
+				},
+			},
 		};
 	}
 
@@ -74,9 +109,10 @@ class Home extends Component {
 								<div className="home-content d-inline-flex mt-5 mt-xs-0">
 									<div className="sub_section home_content_subsection">
 										<p>
-											Avataar is a&nbsp;
+											Avataar is a
 											<span className="strong">
-												growth stage, Operational fund
+												&nbsp; growth stage, Operational
+												fund
 											</span>
 											&nbsp; partnering actively with
 											brilliant regional Tech-led B2B &
@@ -102,7 +138,7 @@ class Home extends Component {
 
 					<div
 						className="col-sm-12 text-center arrow bounce mobile_bounce"
-						style={{ position: "absolute" }}
+						style={{ position: "absolute", bottom: "20px" }}
 					>
 						<a href="#ethos">
 							<img
@@ -170,7 +206,7 @@ class Home extends Component {
 									</div>
 									<div className="ethos-content">
 										KNOW MORE
-										<i className="lni lni-chevron-right"></i>
+										<i className="lni lni-chevron-right" />
 									</div>
 								</div>
 							</div>
@@ -195,7 +231,7 @@ class Home extends Component {
 									</div>
 									<div className="ethos-content">
 										KNOW MORE
-										<i className="lni lni-chevron-right"></i>
+										<i className="lni lni-chevron-right" />
 									</div>
 								</div>
 							</div>
@@ -220,7 +256,7 @@ class Home extends Component {
 									</div>
 									<div className="ethos-content">
 										KNOW MORE
-										<i className="lni lni-chevron-right"></i>
+										<i className="lni lni-chevron-right" />
 									</div>
 								</div>
 							</div>
@@ -269,7 +305,7 @@ class Home extends Component {
 												}
 											>
 												<div className="row">
-													<div className="col-lg-2 col-md-2 col-sm-0 col-xs-0"></div>
+													<div className="col-lg-2 col-md-2 col-sm-0 col-xs-0" />
 													<div className="col-lg-10 col-md-10 col-sm-12 col-xs-12">
 														<span className="ethos-title">
 															GROWTH & EXPANSION
@@ -282,7 +318,7 @@ class Home extends Component {
 																this
 																	.closeHandler
 															}
-														></i>
+														/>
 													</div>
 												</div>
 												<div className="row mt-3">
@@ -381,7 +417,7 @@ class Home extends Component {
 												}
 											>
 												<div className="row">
-													<div className="col-lg-2 col-md-2 col-sm-0 col-xs-0"></div>
+													<div className="col-lg-2 col-md-2 col-sm-0 col-xs-0" />
 													<div className="col-lg-10 col-md-10 col-sm-12 col-xs-12">
 														<span className="ethos-title">
 															OPERATIONAL MINDSET
@@ -392,7 +428,7 @@ class Home extends Component {
 																this
 																	.closeHandler
 															}
-														></i>
+														/>
 													</div>
 												</div>
 												<div className="row mt-3">
@@ -471,7 +507,7 @@ class Home extends Component {
 												}
 											>
 												<div className="row">
-													<div className="col-lg-2 col-md-2 col-sm-0 col-xs-0"></div>
+													<div className="col-lg-2 col-md-2 col-sm-0 col-xs-0" />
 													<div className="col-lg-10 col-md-10 col-sm-12 col-xs-12">
 														<span className="ethos-title">
 															CONCENTRATED
@@ -483,7 +519,7 @@ class Home extends Component {
 																this
 																	.closeHandler
 															}
-														></i>
+														/>
 													</div>
 												</div>
 												<div className="row mt-3">
@@ -615,11 +651,18 @@ class Home extends Component {
 											type="button"
 											className="btn btn-outline-primary content_end_btn_spec"
 										>
-											ABOUT OUR 4E FRAMEWORK{" "}
-											<span>
-												{" "}
-												<i className="lni lni-chevron-right"></i>
-											</span>
+											{" "}
+											<div className="btn_flex">
+												<div>
+													ABOUT OUR 4E FRAMEWORK{" "}
+												</div>
+												<div>
+													<span>
+														{" "}
+														<i className="lni lni-chevron-right" />
+													</span>
+												</div>
+											</div>
 										</button>
 									</Link>
 								</center>
@@ -693,14 +736,99 @@ class Home extends Component {
 							businesses.
 						</p>
 
-						<div id="owl-example" className="owl-carousel mt-4">
-							<div>
+						<OwlCarousel
+							className="owl-theme portfolio_ap_carousel"
+							{...this.state.options}
+						>
+							<div class="item">
 								<a
-									href="{https://www.zenoti.com/}"
+									href="https://www.zenoti.com/"
 									target="_blank"
+									rel="noopener noreferrer"
 								>
 									<img
-										// src={"https://s3.ap-south-1.amazonaws.com/avataar.vc/Zenoti.svg"}
+										src={require("../assets/Zenoti.png")}
+										alt="Zenoti"
+										className="img-fluid appnomic-img"
+									/>
+								</a>
+							</div>
+							<div class="item">
+								<a
+									href="https://www.elastic.run/"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<img
+										src={require("../assets/Elastic_Run.png")}
+										alt="Elastic_Run"
+										className="img-fluid appnomic-img"
+									/>
+								</a>
+							</div>
+							<div class="item">
+								<a
+									href="https://www.capillarytech.com/"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<img
+										src={require("../assets/Capillary.png")}
+										alt="Capillary"
+										className="img-fluid"
+									/>
+								</a>
+							</div>
+							<div class="item">
+								<a
+									href="{https://www.manthan.com/}"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<img
+										src={require("../assets/Manthan.png")}
+										alt="Manthan"
+										className="img-fluid appnomic-img"
+									/>
+								</a>
+							</div>
+							<div class="item">
+								<a
+									href="https://www.crmnext.com/"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<img
+										src={require("../assets/CRM_Next.png")}
+										alt="CRM"
+										className="img-fluid"
+									/>
+								</a>
+							</div>
+							<div class="item">
+								<a
+									href="http://appnomic.com/"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<img
+										src={require("../assets/APPNOmic.png")}
+										alt="appnomic"
+										className="appnomic-img img-fluid"
+									/>
+								</a>
+							</div>
+						</OwlCarousel>
+
+						{/*<div id="owl-example" className="owl-carousel mt-4">
+							<div>
+								<a
+									href="https://www.zenoti.com/"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<img
+										
 										src={require("../assets/Zenoti.png")}
 										alt="Zenoti"
 										className="img-fluid appnomic-img"
@@ -709,11 +837,12 @@ class Home extends Component {
 							</div>
 							<div>
 								<a
-									href="{https://www.elastic.run/}"
+									href="https://www.elastic.run/"
 									target="_blank"
+									rel="noopener noreferrer"
 								>
 									<img
-										// src="https://s3.ap-south-1.amazonaws.com/avataar.vc/Elastic_Run.svg"
+									
 										src={require("../assets/Elastic_Run.png")}
 										alt="Elastic_Run"
 										className="img-fluid appnomic-img"
@@ -722,11 +851,12 @@ class Home extends Component {
 							</div>
 							<div>
 								<a
-									href="{https://www.capillarytech.com/}"
+									href="https://www.capillarytech.com/"
 									target="_blank"
+									rel="noopener noreferrer"
 								>
 									<img
-										// src="https://s3.ap-south-1.amazonaws.com/avataar.vc/Capillary.svg"
+										
 										src={require("../assets/Capillary.png")}
 										alt="Capillary"
 										className="img-fluid"
@@ -737,9 +867,10 @@ class Home extends Component {
 								<a
 									href="{https://www.manthan.com/}"
 									target="_blank"
+									rel="noopener noreferrer"
 								>
 									<img
-										// src="https://s3.ap-south-1.amazonaws.com/avataar.vc/Manthan.svg"
+									
 										src={require("../assets/Manthan.png")}
 										alt="Manthan"
 										className="img-fluid appnomic-img"
@@ -748,11 +879,12 @@ class Home extends Component {
 							</div>
 							<div>
 								<a
-									href="{https://www.crmnext.com/}"
+									href="https://www.crmnext.com/"
 									target="_blank"
+									rel="noopener noreferrer"
 								>
 									<img
-										// src="https://s3.ap-south-1.amazonaws.com/avataar.vc/CRM.svg"
+										
 										src={require("../assets/CRM_Next.png")}
 										alt="CRM"
 										className="img-fluid"
@@ -761,19 +893,16 @@ class Home extends Component {
 							</div>
 
 							<div>
-								<a
-									href="{http://appnomic.com/}"
-									target="_blank"
-								>
+								<a href="http://appnomic.com/" target="_blank">
 									<img
-										// src="https://s3.ap-south-1.amazonaws.com/avataar.vc/appnomic.png"
+										
 										src={require("../assets/APPNOmic.png")}
 										alt="appnomic"
 										className="appnomic-img img-fluid"
 									/>
 								</a>
 							</div>
-						</div>
+						</div>*/}
 					</div>
 					<div className="container">
 						<div className="portfolio_btn_center">
@@ -785,7 +914,7 @@ class Home extends Component {
 									>
 										KNOW MORE
 										<span>
-											<i className="lni lni-chevron-right"></i>
+											<i className="lni lni-chevron-right" />
 										</span>
 									</button>
 								</Link>
@@ -793,14 +922,13 @@ class Home extends Component {
 						</div>
 					</div>
 				</div>
-
 				{/*TEAM SECTION*/}
-				<div className="inverted_line"></div>
+				<div className="inverted_line" />
 				<div
 					className="row"
 					id="people"
 					// style={{ height: "40px" }}
-				></div>
+				/>
 				<div className="people_section pt-5 pb-5">
 					<div className="row text-center">
 						<div
@@ -916,7 +1044,7 @@ class Home extends Component {
 													/>
 													<div className="overlay">
 														<div className="text">
-															NISHANT
+															NISHANT RAO
 															<br />
 															<span>
 																Investments
@@ -966,7 +1094,57 @@ class Home extends Component {
 								</div>
 
 								<div className="row">
-									<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+									<div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+										<div className="text-center card_wrapper">
+											<div
+												className=""
+												data-toggle="modal"
+												data-target="#sudhanshuModal"
+											>
+												<div className="parent_team_img_container">
+													<img
+														src={require("../assets/Sudhanshu_Potrait.jpeg")}
+														className="card-img-top"
+														alt="..."
+														// onmouseover="this.src='https://s3.ap-south-1.amazonaws.com/avataar.vc/Mike-mulica.jpg'"
+														// onmouseout="this.src='https://s3.ap-south-1.amazonaws.com/avataar.vc/Mike-mulica-ConvertImage.jpg'"
+													/>
+													<div className="overlay george-overlay">
+														<div className="text">
+															SUDHANSHU BHASIN
+															<br />
+															<span>
+																Operations
+															</span>
+														</div>
+													</div>
+												</div>
+												{/*<div className="card-body">
+								<h5 className="card-title card_title">
+									Mike Mulica
+								</h5>
+								<p className="card-text"></p>
+							</div>
+							<div className="d-flex justify-content-center">
+								<p className="p-2">
+									<a
+										href="https://www.linkedin.com/in/mikemulica/"
+										target="_blank"
+									>
+										<img
+											src="https://s3.ap-south-1.amazonaws.com/avataar.vc/linkedin_icon.svg"
+											height="25"
+											width="25"
+											alt="mohan_linkedin"
+										/>
+									</a>
+								</p>
+							</div>*/}
+											</div>
+										</div>
+									</div>
+
+									<div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 										<div className="text-center card_wrapper">
 											<div
 												className=""
@@ -986,7 +1164,7 @@ class Home extends Component {
 															GEORGE THANGADURAI
 															<br />
 															<span>
-																Investments
+																Operations
 															</span>
 														</div>
 													</div>
@@ -1029,7 +1207,7 @@ class Home extends Component {
 										</div>
 									</div>
 
-									<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+									<div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 										<div className="text-center card_wrapper">
 											<div
 												className=""
@@ -1049,7 +1227,7 @@ class Home extends Component {
 															MIKE MULICA
 															<br />
 															<span>
-																Investments
+																Operations
 															</span>
 														</div>
 													</div>
@@ -1091,10 +1269,16 @@ class Home extends Component {
 											type="button"
 											className="btn btn-outline-primary home_team_btn_focus_bg"
 										>
-											THE TEAMS WE ARE BUILDING
-											<span>
-												<i className="lni lni-chevron-right"></i>
-											</span>
+											<div className="btn_flex">
+												<div>
+													THE TEAMS WE ARE BUILDING
+												</div>
+												<div>
+													<span>
+														<i className="lni lni-chevron-right" />
+													</span>
+												</div>
+											</div>
 										</button>
 									</Link>
 								</center>
@@ -1104,7 +1288,7 @@ class Home extends Component {
 				</div>
 
 				{/***MEDIA SECTION*******/}
-				<div className="row media_section_parent_div" id="media"></div>
+				<div className="row media_section_parent_div" id="media" />
 				<div
 					className="row justify-content-center mb-5"
 					data-aos="fade-up"
@@ -1114,15 +1298,102 @@ class Home extends Component {
 						<div className="ethos-heading text-center">
 							<p>IN THE MEDIA</p>
 						</div>
+
 						<div className="custom_media_card_container">
-							<div
+							<OwlCarousel
+								className="owl-theme"
+								{...this.state.options2}
+							>
+								<div class="item">
+									<div className="card custom-card-spec">
+										<img
+											className="card-img-top"
+											src={require("./288x331.png")}
+											alt="Card cap"
+										/>
+										<div className="card-body">
+											<p className="card-title">
+												21 Sep 2019, Bangalore
+											</p>
+											<p className="card-text">
+												Blogpost 1 - Loreem Ipsum dolor
+												amet Loreem Ipsum dolor amet
+												Loreem Ipsum dolor amet
+											</p>
+											<p
+												style={{
+													color: "#3b73b5",
+													cursor: "pointer",
+												}}
+											>
+												More<span>&nbsp;&#62;</span>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div className="card custom-card-spec">
+										<img
+											className="card-img-top"
+											src={require("./288x331.png")}
+											alt="Card cap"
+										/>
+										<div className="card-body">
+											<p className="card-title">
+												21 Sep 2019, Bangalore
+											</p>
+											<p className="card-text">
+												Blogpost 1 - Loreem Ipsum dolor
+												amet Loreem Ipsum dolor amet
+												Loreem Ipsum dolor amet
+											</p>
+											<p
+												style={{
+													color: "#3b73b5",
+													cursor: "pointer",
+												}}
+											>
+												More<span>&nbsp;&#62;</span>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div className="card custom-card-spec">
+										<img
+											className="card-img-top"
+											src={require("./288x331.png")}
+											alt="Card cap"
+										/>
+										<div className="card-body">
+											<p className="card-title">
+												21 Sep 2019, Bangalore
+											</p>
+											<p className="card-text">
+												Blogpost 1 - Loreem Ipsum dolor
+												amet Loreem Ipsum dolor amet
+												Loreem Ipsum dolor amet
+											</p>
+											<p
+												style={{
+													color: "#3b73b5",
+													cursor: "pointer",
+												}}
+											>
+												More<span>&nbsp;&#62;</span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</OwlCarousel>
+							{/*<div
 								id="media_section"
 								className="owl-carousel mt-5"
 							>
-								{/*card -1*/}
+								
 								<div
 									className="card custom-card-spec"
-									// style={{ width: "18rem" }}
+								
 								>
 									<img
 										className="card-img-top"
@@ -1138,12 +1409,12 @@ class Home extends Component {
 											Loreem Ipsum dolor amet Loreem Ipsum
 											dolor amet
 										</p>
-										<a href="{#}">
+										<a href="#">
 											More<span>&nbsp;&#62;</span>
 										</a>
 									</div>
-								</div>
-								{/*<a
+								</div>*/}
+							{/*<a
 							href="/press-release"
 							target="_blank"
 							style={{ textDecoration: "none" }}
@@ -1161,8 +1432,7 @@ class Home extends Component {
 								<p className="media_card_link">More ></p>
 							</div>
 						</a>*/}
-								{/*card -2*/}
-								<div className="card custom-card-spec">
+							{/*<div className="card custom-card-spec">
 									<img
 										className="card-img-top"
 										src={require("./288x331.png")}
@@ -1177,12 +1447,12 @@ class Home extends Component {
 											Loreem Ipsum dolor amet Loreem Ipsum
 											dolor amet
 										</p>
-										<a href="{#}">
+										<a href="#">
 											More<span>&nbsp;&#62;</span>
 										</a>
 									</div>
-								</div>
-								{/*<a
+								</div>*/}
+							{/*<a
 							href="https://economictimes.indiatimes.com/small-biz/startups/newsbuzz/avataar-venture-partners-to-invest-300m-in-b2b-and-saas-companies/articleshow/71251825.cms"
 							target="_blank"
 							style={{ textDecoration: "none" }}
@@ -1201,10 +1471,10 @@ class Home extends Component {
 								<p className="media_card_link">More ></p>
 							</div>
 						</a>*/}
-								{/*card-3*/}
-								<div
+
+							{/*<div
 									className="card custom-card-spec"
-									// style={{ width: "18rem" }}
+									
 								>
 									<img
 										className="card-img-top"
@@ -1220,12 +1490,12 @@ class Home extends Component {
 											Loreem Ipsum dolor amet Loreem Ipsum
 											dolor amet
 										</p>
-										<a href="{#}">
+										<a href="#">
 											More<span>&nbsp;&#62;</span>
 										</a>
 									</div>
-								</div>
-								{/*<a
+								</div>*/}
+							{/*<a
 							href="https://inc42.com/buzz/former-freshworks-norwest-partners-executives-launch-300-mn-investment-fund/"
 							target="_blank"
 							style={{ textDecoration: "none" }}
@@ -1242,13 +1512,13 @@ class Home extends Component {
 								<p className="media_card_link">More ></p>
 							</div>
 						</a>*/}
-							</div>
+							{/*</div>*/}
 						</div>
 					</div>
 				</div>
 
 				{/******CONTACT SECTION*********/}
-				<div className="contact_inverted_line"></div>
+				<div className="contact_inverted_line" />
 
 				<div className="row contact-us pt-3 pb-5" id="contact">
 					<div
@@ -1317,7 +1587,7 @@ class Home extends Component {
 				<div className="modal" id="nishantModal">
 					<div className="modal-dialog" style={{ maxWidth: "90%" }}>
 						<div className="modal-content">
-							<div className="inverted_line_modal"></div>
+							<div className="inverted_line_modal" />
 
 							<div className="modal-header">
 								<button
@@ -1354,19 +1624,18 @@ class Home extends Component {
 												</div>
 											</div>
 											<div className="stakeholder-social-links">
-												{/*<a
-													href="{}"
-													target="_blank"
-													rel="noopener noreferrer"
-												>*/}
-												<img
-													src="https://s3.ap-south-1.amazonaws.com/avataar.vc/Mail_modal.svg"
-													width="25"
-													height="25"
-													alt="mail_modal"
-													className="email_svg_nishant"
-												/>
-												{/*</a>*/}
+												<div
+													style={{
+														cursor: "pointer",
+													}}
+												>
+													<img
+														src="https://s3.ap-south-1.amazonaws.com/avataar.vc/Mail_modal.svg"
+														width="25"
+														height="25"
+														alt="..."
+													/>
+												</div>
 												<a
 													href="https://twitter.com/nishrao/"
 													target="_blank"
@@ -1473,7 +1742,7 @@ class Home extends Component {
 				<div className="modal" id="mohanModal">
 					<div className="modal-dialog" style={{ maxWidth: "90%" }}>
 						<div className="modal-content">
-							<div className="inverted_line_modal"></div>
+							<div className="inverted_line_modal" />
 
 							<div className="modal-header">
 								<button
@@ -1624,7 +1893,7 @@ class Home extends Component {
 				<div className="modal" id="mikeModal">
 					<div className="modal-dialog" style={{ maxWidth: "90%" }}>
 						<div className="modal-content">
-							<div className="inverted_line_modal"></div>
+							<div className="inverted_line_modal" />
 
 							<div className="modal-header">
 								<button
@@ -1734,7 +2003,7 @@ class Home extends Component {
 				<div className="modal" id="georgeModal">
 					<div className="modal-dialog" style={{ maxWidth: "90%" }}>
 						<div className="modal-content">
-							<div className="inverted_line_modal"></div>
+							<div className="inverted_line_modal" />
 
 							<div className="modal-header">
 								<button
@@ -1864,6 +2133,110 @@ class Home extends Component {
 					</div>
 				</div>
 				{/************END GEORGE MODAL******/}
+				{/****************SUDHANSHU MODAL********/}
+				<div className="modal" id="sudhanshuModal">
+					<div className="modal-dialog" style={{ maxWidth: "90%" }}>
+						<div className="modal-content">
+							<div className="inverted_line_modal" />
+
+							<div className="modal-header">
+								<button
+									type="button"
+									className="close"
+									data-dismiss="modal"
+								>
+									&times;
+								</button>
+							</div>
+
+							<div className="modal-body">
+								<div className="stakeholder">
+									<div className="card stakeholder-img">
+										<img
+											src={require("../assets/Sudhanshu_Potrait.jpeg")}
+											className="card-img-top"
+											alt="..."
+										/>
+									</div>
+									<div className="stakeholder-main">
+										<div className="stakeholder-head">
+											<div className="stakeholder-head-left">
+												<div className="stakeholder-name">
+													SUDHANSHU BHASIN
+												</div>
+												<div className="stakeholder-position">
+													<b>
+														Business Analysis &
+														Modeling Guru | BizOps |
+														Investment Banking
+													</b>
+												</div>
+											</div>
+											<div className="stakeholder-social-links">
+												<a
+													href="https://www.linkedin.com/in/sudhanshubhasin/"
+													target="_blank"
+													rel="noopener noreferrer"
+												>
+													<img
+														src="https://s3.ap-south-1.amazonaws.com/avataar.vc/Linkedin.svg"
+														width="25"
+														height="25"
+														alt="linkedin_logo"
+													/>
+												</a>
+											</div>
+										</div>
+										<div className="stakeholder-content">
+											<p>
+												Sudhanshu brings in deep domain
+												knowledge of the B2B technology
+												and SaaS space. As an
+												ex-investment banker at Lincoln
+												International, he worked
+												extensively with multiple
+												technology companies.
+											</p>
+											<p>
+												In his last role, Sudhanshu
+												helped raise growth capital for
+												an HR-tech SaaS company and a
+												global, Enterprise-focused
+												Logistics SaaS company. Prior to
+												that, he held investment banking
+												roles at Nomura and Edelweiss.
+												Sudhanshu also has extensive
+												capital markets experience
+												having executed several IPOs in
+												his previous roles.
+											</p>
+											<p>
+												Sudhanshu holds an MBA from
+												NMIMS ( Mumbai) and a B.E. from
+												Delhi College of Engineering
+												(Delhi University). He is also
+												CFA Level-III cleared.{" "}
+											</p>
+										</div>
+										{/*<div className="heading">
+											Current Companies
+										</div>
+
+										<div className="current_companies">
+											<a
+												href="https://appnomic.com/"
+												target="_blank"
+											>
+												Appnomic Inc
+											</a>
+										</div>*/}
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				{/***************END SUDHANSHU MODAL***********/}
 			</Fragment>
 		);
 	}
