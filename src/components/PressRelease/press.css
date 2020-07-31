@@ -1,0 +1,46 @@
+
+.press_media_hero {
+    background: url("../assets/Ethos_Banner-min.png") center center no-repeat;
+  background-size: cover;
+  position: relative;
+  /*height: 100vh;*/
+  height: 316px;
+}
+.press_media_hero:before {
+   content: "";
+  position: absolute;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+ background-color: rgba(18, 27, 66, 0.9);
+  /*background-color: rgba(7,5,5,0.53);*/
+}
+.press_media_hero .hero_text {
+  margin-top: 15%;
+  color: #fff;
+  margin-left: 8%;
+/*display: table-cell;
+text-align: center;
+vertical-align: middle;
+*//*height: 689px;*/
+}
+.custom_press_subheading {
+	color: #3b73b5;
+	font-weight: 600;
+}
+.press_theme_color {
+	color: #3b73b5;
+	letter-spacing: 0.1rem;
+}
+.custom_press_release_title {
+	    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+}
+.press_release_content p {
+	font-size: 1rem;
+    color: #474747;
+    line-height: 2rem;
+}
+.press_release_content a {
+	color: #0056b3;
+}

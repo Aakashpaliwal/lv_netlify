@@ -54,7 +54,9 @@ class Home extends Component {
 		};
 	}
 
-	componentDidMount() {}
+	componentDidMount() {
+		localStorage.removeItem("press_route");
+	}
 
 	growth_div_toggle = () => {
 		this.setState({
@@ -78,6 +80,11 @@ class Home extends Component {
 			isOperationDisShow: false,
 			isConcentratedDivShow: false,
 		});
+	};
+
+	pressRouteHandler = () => {
+		localStorage.setItem("press_route", true);
+		window.location.assign("/press-release");
 	};
 
 	render() {
@@ -1305,7 +1312,10 @@ class Home extends Component {
 								{...this.state.options2}
 							>
 								<div class="item">
-									<div className="card custom-card-spec">
+									<div
+										className="card custom-card-spec"
+										onClick={this.pressRouteHandler}
+									>
 										<img
 											className="card-img-top"
 											src={require("./288x331.png")}
@@ -1332,58 +1342,72 @@ class Home extends Component {
 									</div>
 								</div>
 								<div class="item">
-									<div className="card custom-card-spec">
-										<img
-											className="card-img-top"
-											src={require("./288x331.png")}
-											alt="Card cap"
-										/>
-										<div className="card-body">
-											<p className="card-title">
-												21 Sep 2019, Bangalore
-											</p>
-											<p className="card-text">
-												Blogpost 1 - Loreem Ipsum dolor
-												amet Loreem Ipsum dolor amet
-												Loreem Ipsum dolor amet
-											</p>
-											<p
-												style={{
-													color: "#3b73b5",
-													cursor: "pointer",
-												}}
-											>
-												More<span>&nbsp;&#62;</span>
-											</p>
+									<a
+										href="https://economictimes.indiatimes.com/small-biz/startups/newsbuzz/avataar-venture-partners-to-invest-300m-in-b2b-and-saas-companies/articleshow/71251825.cms"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										<div className="card custom-card-spec">
+											<img
+												className="card-img-top"
+												src={require("./288x331.png")}
+												alt="Card cap"
+											/>
+											<div className="card-body">
+												<p className="card-title">
+													21 Sep 2019, Bangalore
+												</p>
+												<p className="card-text">
+													Blogpost 1 - Loreem Ipsum
+													dolor amet Loreem Ipsum
+													dolor amet Loreem Ipsum
+													dolor amet
+												</p>
+												<p
+													style={{
+														color: "#3b73b5",
+														cursor: "pointer",
+													}}
+												>
+													More<span>&nbsp;&#62;</span>
+												</p>
+											</div>
 										</div>
-									</div>
+									</a>
 								</div>
 								<div class="item">
-									<div className="card custom-card-spec">
-										<img
-											className="card-img-top"
-											src={require("./288x331.png")}
-											alt="Card cap"
-										/>
-										<div className="card-body">
-											<p className="card-title">
-												21 Sep 2019, Bangalore
-											</p>
-											<p className="card-text">
-												Blogpost 1 - Loreem Ipsum dolor
-												amet Loreem Ipsum dolor amet
-												Loreem Ipsum dolor amet
-											</p>
-											<p
-												style={{
-													color: "#3b73b5",
-													cursor: "pointer",
-												}}
-											>
-												More<span>&nbsp;&#62;</span>
-											</p>
+									<a
+										href="https://inc42.com/buzz/former-freshworks-norwest-partners-executives-launch-300-mn-investment-fund/"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										<div className="card custom-card-spec">
+											<img
+												className="card-img-top"
+												src={require("./288x331.png")}
+												alt="Card cap"
+											/>
+											<div className="card-body">
+												<p className="card-title">
+													21 Sep 2019, Bangalore
+												</p>
+												<p className="card-text">
+													Blogpost 1 - Loreem Ipsum
+													dolor amet Loreem Ipsum
+													dolor amet Loreem Ipsum
+													dolor amet
+												</p>
+												<p
+													style={{
+														color: "#3b73b5",
+														cursor: "pointer",
+													}}
+												>
+													More<span>&nbsp;&#62;</span>
+												</p>
+											</div>
 										</div>
-									</div>
+									</a>
 								</div>
 							</OwlCarousel>
 							{/*<div
